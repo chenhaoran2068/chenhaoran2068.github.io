@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import re
 import unittest
+from html.parser import HTMLParser
 from pathlib import Path
 
 import yaml
@@ -35,6 +36,32 @@ class SiteNavigationTests(unittest.TestCase):
                 self.assertTrue(
                     (page.parent / target).resolve().is_file(),
                     f"{page.relative_to(ROOT)} has unresolved link: {target}",
+                )
+
+    def test_raw_html_anchors_do_not_link_to_markdown_source_files(self) -> None:
+        class AnchorCollector(HTMLParser):
+            def __init__(self) -> None:
+                super().__init__()
+                self.hrefs: list[str] = []
+
+            def handle_starttag(
+                self, tag: str, attrs: list[tuple[str, str | None]]
+            ) -> None:
+                if tag != "a":
+                    return
+                for name, value in attrs:
+                    if name == "href" and value is not None:
+                        self.hrefs.append(value)
+
+        for page in (ROOT / "docs").rglob("*.md"):
+            collector = AnchorCollector()
+            collector.feed(page.read_text(encoding="utf-8"))
+            for href in collector.hrefs:
+                if "://" in href or href.startswith("mailto:"):
+                    continue
+                self.assertFalse(
+                    href.split("#", 1)[0].split("?", 1)[0].endswith(".md"),
+                    f"{page.relative_to(ROOT)} raw HTML anchor links to Markdown source: {href}",
                 )
 
 

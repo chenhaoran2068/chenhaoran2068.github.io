@@ -69,7 +69,7 @@ class PublicBoundaryTests(unittest.TestCase):
         actual = {
             path.relative_to(ROOT).as_posix()
             for path in ROOT.rglob("*")
-            if path.is_file()
+            if path.is_file() and ".git" not in path.relative_to(ROOT).parts
         }
         self.assertEqual(actual, ALLOWED_PUBLIC_FILES)
 
