@@ -1,0 +1,27 @@
+site_name: Chenhaoran Governed Research Collaboration
+site_description: Public navigation for governed research collaboration components
+site_url: https://chenhaoran2068.github.io/
+repo_url: https://github.com/chenhaoran2068/chenhaoran2068.github.io
+repo_name: chenhaoran2068/chenhaoran2068.github.io
+theme:
+  name: mkdocs
+  language: zh
+extra_css:
+  - stylesheets/portal.css
+nav:
+  - 首页: index.md
+  - 架构地图: architecture-map.md
+  - Framework: framework.md
+  - Systems:
+      - Governed Research Workflow: systems/governed-research-workflow.md
+  - Skills / Modules:
+      - research-ethics: skills/research-ethics.md
+  - 使用路线:
+      - 概览: user-paths/index.md
+      - 可能的新研究: user-paths/possible-new-study.md
+      - 既有 Study、手稿与返修: user-paths/existing-study-manuscript-revision.md
+      - 伦理准备何时可进入: user-paths/ethics-preparation.md
+  - 版本与兼容: releases.md
+  - 发布说明 v0.1.0: release/RELEASE_NOTES_v0.1.0.md
+  - 治理与安全: governance.md
+  - 路线图: roadmap.md

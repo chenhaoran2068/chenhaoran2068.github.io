@@ -1,0 +1,33 @@
+catalog_version: 0.1.0
+reviewed_on: 2026-08-08
+components:
+  - component_id: workspace-framework
+    display_name: Governed Research Workspace Framework
+    kind: framework
+    version: v0.2.0
+    repository_url: https://github.com/chenhaoran2068/governed-research-workspace-framework
+    release_url: https://github.com/chenhaoran2068/governed-research-workspace-framework/releases/tag/v0.2.0
+    official_rule_url: https://github.com/chenhaoran2068/governed-research-workspace-framework/blob/v0.2.0/docs/reference_workspace_tree.md
+    purpose: Provide workspace ownership, registration, and multi-System boundaries.
+    entry_conditions: Used when defining or maintaining the governed workspace structure.
+    non_goals: Does not define a Study's analysis, manuscript, or ethics decisions.
+  - component_id: governed-research-workflow
+    display_name: Governed Research Workflow
+    kind: system
+    version: v1.10.0
+    repository_url: https://github.com/chenhaoran2068/governed-research-workflow
+    release_url: https://github.com/chenhaoran2068/governed-research-workflow/releases/tag/v1.10.0
+    official_rule_url: https://github.com/chenhaoran2068/governed-research-workflow/blob/v1.10.0/SKILL.md
+    purpose: Route governed research work, lifecycle control, execution, manuscript, and experience boundaries.
+    entry_conditions: Used for possible new Studies and explicitly governed existing-Study tasks.
+    non_goals: Does not independently approve ethics, access data, submit work, or decide scientific conclusions.
+  - component_id: research-ethics
+    display_name: research-ethics
+    kind: skill-module
+    version: v1.1.1
+    repository_url: https://github.com/chenhaoran2068/research-ethics
+    release_url: https://github.com/chenhaoran2068/research-ethics/releases/tag/v1.1.1
+    official_rule_url: https://github.com/chenhaoran2068/research-ethics/blob/v1.1.1/skill/research-ethics/SKILL.md
+    purpose: Prepare bounded ethics and registration materials for supported China-mainland observational routes.
+    entry_conditions: Requires an explicit request, confirmed route, named Study root, material mode, allowed inputs, and deliverable.
+    non_goals: Does not infer approval, access data, upload, submit, or support interventional trial routes.

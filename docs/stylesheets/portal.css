@@ -1,0 +1,70 @@
+:root {
+  --portal-ink: #172033;
+  --portal-muted: #506076;
+  --portal-blue: #075985;
+  --portal-teal: #0f766e;
+  --portal-line: #cbd5e1;
+  --portal-surface: #f8fafc;
+}
+
+body {
+  color: var(--portal-ink);
+  background: var(--portal-surface);
+}
+
+.wy-nav-side {
+  background: #102a43;
+}
+
+.wy-side-nav-search {
+  background: var(--portal-blue);
+}
+
+.wy-nav-content {
+  max-width: 980px;
+}
+
+.wy-nav-content-wrap {
+  background: #ffffff;
+}
+
+.rst-content a {
+  color: var(--portal-blue);
+}
+
+.rst-content h1,
+.rst-content h2,
+.rst-content h3 {
+  color: var(--portal-ink);
+  letter-spacing: 0;
+}
+
+.rst-content table.docutils {
+  border: 1px solid var(--portal-line);
+}
+
+.rst-content table.docutils th {
+  background: #e0f2fe;
+}
+
+.rst-content code {
+  color: #7c2d12;
+}
+
+@media screen and (max-width: 768px) {
+  .navbar-brand {
+    max-width: calc(100% - 4.5rem);
+    white-space: normal;
+    line-height: 1.25;
+  }
+
+  .wy-nav-content {
+    margin: 0;
+    padding: 1.25rem;
+  }
+
+  .rst-content table.docutils {
+    display: block;
+    overflow-x: auto;
+  }
+}
