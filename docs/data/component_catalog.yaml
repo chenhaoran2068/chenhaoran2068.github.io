@@ -1,24 +1,24 @@
-catalog_version: 0.1.0
-reviewed_on: 2026-08-08
+catalog_version: 0.2.0
+reviewed_on: 2026-08-10
 components:
   - component_id: workspace-framework
     display_name: Governed Research Workspace Framework
     kind: framework
-    version: v0.3.0
+    version: v0.4.0
     repository_url: https://github.com/chenhaoran2068/governed-research-workspace-framework
-    release_url: https://github.com/chenhaoran2068/governed-research-workspace-framework/releases/tag/v0.3.0
-    official_rule_url: https://github.com/chenhaoran2068/governed-research-workspace-framework/blob/v0.3.0/docs/reference_workspace_tree.md
-    purpose: Provide workspace ownership, registration, and multi-System boundaries.
+    release_url: https://github.com/chenhaoran2068/governed-research-workspace-framework/releases/tag/v0.4.0
+    official_rule_url: https://github.com/chenhaoran2068/governed-research-workspace-framework/blob/v0.4.0/docs/reference_workspace_tree.md
+    purpose: Provide workspace ownership, registration, multi-System boundaries, and an opt-in managed local reference-library boundary.
     entry_conditions: Used when defining or maintaining the governed workspace structure.
     non_goals: Does not define a Study's analysis, manuscript, or ethics decisions.
   - component_id: governed-research-workflow
     display_name: Governed Research Workflow
     kind: system
-    version: v1.11.0
+    version: v1.12.0
     repository_url: https://github.com/chenhaoran2068/governed-research-workflow
-    release_url: https://github.com/chenhaoran2068/governed-research-workflow/releases/tag/v1.11.0
-    official_rule_url: https://github.com/chenhaoran2068/governed-research-workflow/blob/v1.11.0/SKILL.md
-    purpose: Route governed research work, lifecycle control, execution, manuscript, experience boundaries, and optional Skill handoffs.
+    release_url: https://github.com/chenhaoran2068/governed-research-workflow/releases/tag/v1.12.0
+    official_rule_url: https://github.com/chenhaoran2068/governed-research-workflow/blob/v1.12.0/SKILL.md
+    purpose: Route governed research work, lifecycle control, execution, manuscript, experience boundaries, and optional metadata-only knowledge handoffs.
     entry_conditions: Used for possible new Studies and explicitly governed existing-Study tasks.
     non_goals: Does not independently approve ethics, access data, submit work, or decide scientific conclusions.
   - component_id: research-ethics
@@ -34,10 +34,10 @@ components:
   - component_id: research-paper-reading
     display_name: research-paper-reading
     kind: skill
-    version: v0.1.0
+    version: v0.2.0
     repository_url: https://github.com/chenhaoran2068/research-paper-reading
-    release_url: https://github.com/chenhaoran2068/research-paper-reading/releases/tag/v0.1.0
-    official_rule_url: https://github.com/chenhaoran2068/research-paper-reading/blob/v0.1.0/skill/research-paper-reading/SKILL.md
-    purpose: Guide a human through understanding and critically reading one scholarly paper within a bounded session.
-    entry_conditions: Used only for an explicit paper-reading request; session_only is the default unless a separate retention path is explicitly configured.
-    non_goals: Does not automatically download papers, save notes, synchronize a reference manager, create knowledge records, or start a Study.
+    release_url: https://github.com/chenhaoran2068/research-paper-reading/releases/tag/v0.2.0
+    official_rule_url: https://github.com/chenhaoran2068/research-paper-reading/blob/v0.2.0/skill/research-paper-reading/SKILL.md
+    purpose: Guide a human through understanding one scholarly paper and, when explicitly configured, operate a managed local reading-knowledge service.
+    entry_conditions: Used only for an explicit paper-reading request; managed retention additionally requires explicit configuration and source-specific human confirmation.
+    non_goals: Does not scan a workspace, directly write a reference-manager database, automatically import papers, create a Study, or promote knowledge to rules.
