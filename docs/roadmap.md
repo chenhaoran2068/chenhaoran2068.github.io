@@ -14,6 +14,7 @@
       <li>工作区 Framework 的结构与 System 边界。</li>
       <li>Research Workflow 的研究任务路由与受治理生命周期。</li>
       <li>research-ethics 的明确进入条件和受限范围。</li>
+      <li>research-paper-reading 的单篇论文会话式理解与精读边界。</li>
     </ul>
   </div>
   <div>
@@ -21,6 +22,7 @@
     <h2>未来可能扩展</h2>
     <ul>
       <li>经过审查的其他公开科研组件页面。</li>
+      <li>在明确授权、工具配置和公开边界审查后的受控知识服务集成。</li>
       <li>经材料、权利和隐私审查后的公开经验衍生物说明。</li>
       <li>因果设计、随机试验、系统综述或其他专门模块的独立页面。</li>
     </ul>

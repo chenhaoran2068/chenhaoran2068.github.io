@@ -16,6 +16,14 @@
   <figcaption>实线表示工作区与绑定关系；虚线表示满足特定条件后的受控引用。两者均不表示自动调用、从属关系、权限继承或事实性批准。</figcaption>
 </figure>
 
+<div class="map-reference-strip" aria-label="当前组件示例">
+  <span>当前公开示例</span>
+  <a href="framework/">Framework v0.3.0</a>
+  <a href="systems/governed-research-workflow/">Research System v1.11.0</a>
+  <a href="skills/">两个独立 Skills</a>
+  <span>阅读 Skill 可直接因明确请求进入，不是 System 的下级。</span>
+</div>
+
 <section class="architecture-reading" aria-labelledby="reading-title">
   <div>
     <p class="map-kicker">HOW TO READ THE MAP</p>

@@ -2,20 +2,20 @@
 
 <header class="component-category-header">
   <div>
-    <p class="map-context">PUBLIC CATEGORY / 03</p>
-    <h1>Skills</h1>
-    <p>Skills 是可独立使用的专门能力类别，各自维护输入、输出、适用范围和禁止动作。它们可在某些 System 路线中被受控引用，但不属于任何一个 System。</p>
+    <p class="map-context">PUBLIC SKILL</p>
+    <h1>research-ethics</h1>
+    <p>面向受支持的中国大陆观察性研究路线，组织伦理与登记准备材料，并明确缺口与人工核对点。</p>
   </div>
   <aside class="component-category-count" aria-label="当前公开目录">
-    <strong>CURRENT CATALOGUE</strong>
-    <span>1 个公开 Skill</span>
+    <strong>CURRENT RELEASE</strong>
+    <span>v1.1.1</span>
   </aside>
 </header>
 
 <section class="component-category-section" aria-labelledby="skills-catalogue-title">
   <div class="component-category-section-heading">
-    <p class="map-kicker">CURRENT PUBLIC COMPONENT</p>
-    <h2 id="skills-catalogue-title">当前目录</h2>
+    <p class="map-kicker">SKILL ROLE</p>
+    <h2 id="skills-catalogue-title">当前能力</h2>
   </div>
   <article class="component-entry skill-entry">
     <p class="component-entry-kind">SKILL</p>
@@ -54,7 +54,7 @@
     <p class="map-kicker">RELATIONSHIP</p>
     <h2 id="skills-relationship-title">与其他类别的关系</h2>
   </div>
-  <p><strong>Skills 与 Systems：</strong>Skill 可独立使用。Research Workflow 仅在满足特定路线条件时提供 metadata-only 桥接；它不会自动调用 research-ethics，也不会替它确认输入范围或生成批准结论。</p>
+  <p><strong>Skills 与 Systems：</strong>Skill 可独立使用。Research Workflow 仅在满足特定路线条件时提供 metadata-only 桥接；它不会自动调用 research-ethics，也不会替它确认输入范围或生成批准结论。论文阅读由另一个独立 Skill 处理，两者不共享自动启动行为。</p>
   <p><strong>Skills 与 Frameworks：</strong>Skill 的存在或被受控引用，不会改变 Framework 的工作区合同、项目绑定或公共/私有边界。</p>
 </section>
 

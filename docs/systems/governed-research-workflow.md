@@ -23,8 +23,8 @@
       <h3>Governed Research Workflow</h3>
       <p>路由可能的新研究、既有 Study、分析执行、结果权威、手稿、返修、投稿准备和经验治理。</p>
     </div>
-    <p class="component-entry-version">v1.10.0</p>
-    <a href="https://github.com/chenhaoran2068/governed-research-workflow/releases/tag/v1.10.0">查看 Release <span aria-hidden="true">&rarr;</span></a>
+    <p class="component-entry-version">v1.11.0</p>
+    <a href="https://github.com/chenhaoran2068/governed-research-workflow/releases/tag/v1.11.0">查看 Release <span aria-hidden="true">&rarr;</span></a>
   </article>
 </section>
 
@@ -55,7 +55,7 @@
     <h2 id="systems-relationship-title">与其他类别的关系</h2>
   </div>
   <p><strong>Frameworks → Systems：</strong>Frameworks 提供工作区和绑定概念；System 在该边界内组织其任务路线、生命周期与正式规则引用。</p>
-  <p><strong>Systems ··· Skills：</strong>Skill 不是 System 的下级或默认下一步。仅当某个 System 路线处于特定模式或阶段，用户明确请求并确认所需输入范围时，System 才能受控引用相应的独立 Skill。</p>
+  <p><strong>Systems ··· Skills：</strong>Skill 不是 System 的下级或默认下一步。v1.11.0 明确：用户要求阅读一篇具体论文时不应被误当作新 Study；这只保留阅读 Skill 的独立入口，不会自动调用它。其他受控引用仍要求特定路线、用户明确请求与输入范围确认。</p>
 </section>
 
 <section class="component-category-section component-sources" aria-labelledby="systems-sources-title">
@@ -64,10 +64,11 @@
     <h2 id="systems-sources-title">正式来源</h2>
   </div>
   <ul>
-    <li><a href="https://github.com/chenhaoran2068/governed-research-workflow/releases/tag/v1.10.0">v1.10.0 Release</a></li>
-    <li><a href="https://github.com/chenhaoran2068/governed-research-workflow/blob/v1.10.0/SKILL.md">System entry</a></li>
-    <li><a href="https://github.com/chenhaoran2068/governed-research-workflow/blob/v1.10.0/references/future-study-lifecycle-design-governance-and-analysis-state.md">Future Study lifecycle</a></li>
-    <li><a href="https://github.com/chenhaoran2068/governed-research-workflow/blob/v1.10.0/references/research-ethics-preparation-bridge.md">research-ethics bridge</a></li>
+    <li><a href="https://github.com/chenhaoran2068/governed-research-workflow/releases/tag/v1.11.0">v1.11.0 Release</a></li>
+    <li><a href="https://github.com/chenhaoran2068/governed-research-workflow/blob/v1.11.0/SKILL.md">System entry</a></li>
+    <li><a href="https://github.com/chenhaoran2068/governed-research-workflow/blob/v1.11.0/references/future-study-lifecycle-design-governance-and-analysis-state.md">Future Study lifecycle</a></li>
+    <li><a href="https://github.com/chenhaoran2068/governed-research-workflow/blob/v1.11.0/references/research-ethics-preparation-bridge.md">research-ethics bridge</a></li>
+    <li><a href="https://github.com/chenhaoran2068/governed-research-workflow/blob/v1.11.0/references/research-paper-reading-bridge.md">research-paper-reading boundary bridge</a></li>
   </ul>
 </section>
 

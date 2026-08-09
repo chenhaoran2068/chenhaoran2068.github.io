@@ -45,11 +45,14 @@ ALLOWED_PUBLIC_FILES = {
     "docs/architecture-map.md",
     "docs/framework.md",
     "docs/systems/governed-research-workflow.md",
+    "docs/skills/index.md",
     "docs/skills/research-ethics.md",
+    "docs/skills/research-paper-reading.md",
     "docs/user-paths/index.md",
     "docs/user-paths/possible-new-study.md",
     "docs/user-paths/existing-study-manuscript-revision.md",
     "docs/user-paths/ethics-preparation.md",
+    "docs/user-paths/paper-reading.md",
     "docs/releases.md",
     "docs/governance.md",
     "docs/roadmap.md",
@@ -57,10 +60,12 @@ ALLOWED_PUBLIC_FILES = {
     "docs/stylesheets/portal.css",
     "docs/assets/architecture-map.svg",
     "docs/release/RELEASE_NOTES_v0.1.0.md",
+    "docs/release/RELEASE_NOTES_v0.2.0.md",
     "tests/test_component_catalog.py",
     "tests/test_public_boundary.py",
     "tests/test_site_navigation.py",
     "tests/test_release_links.py",
+    "tests/test_reading_skill_route.py",
 }
 
 

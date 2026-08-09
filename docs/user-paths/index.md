@@ -31,6 +31,14 @@
     </div>
     <a href="ethics-preparation/">查看条件 <span aria-hidden="true">&rarr;</span></a>
   </article>
+  <article class="route-entry">
+    <p>04</p>
+    <div>
+      <h2>阅读一篇论文</h2>
+      <p>理解或批判性审阅一篇具体论文，默认只在当前会话讨论；不会自动保存或启动新的 Study。</p>
+    </div>
+    <a href="paper-reading/">查看路线 <span aria-hidden="true">&rarr;</span></a>
+  </article>
 </section>
 
 </div>
