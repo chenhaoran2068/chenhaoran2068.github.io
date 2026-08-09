@@ -70,6 +70,9 @@ class PublicBoundaryTests(unittest.TestCase):
             path.relative_to(ROOT).as_posix()
             for path in ROOT.rglob("*")
             if path.is_file()
+            and ".git" not in path.relative_to(ROOT).parts
+            and "__pycache__" not in path.relative_to(ROOT).parts
+            and path.suffix != ".pyc"
         }
         self.assertEqual(actual, ALLOWED_PUBLIC_FILES)
 
