@@ -18,8 +18,8 @@
 
 <div class="map-reference-strip" aria-label="当前组件示例">
   <span>当前公开示例</span>
-  <a href="framework/">Framework v0.3.0</a>
-  <a href="systems/governed-research-workflow/">Research System v1.11.0</a>
+  <a href="framework/">Framework v0.4.0</a>
+  <a href="systems/governed-research-workflow/">Research System v1.12.0</a>
   <a href="skills/">两个独立 Skills</a>
   <span>阅读 Skill 可直接因明确请求进入，不是 System 的下级。</span>
 </div>

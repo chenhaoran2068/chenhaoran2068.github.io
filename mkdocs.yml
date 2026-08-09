@@ -1,31 +1,33 @@
-site_name: Chenhaoran · 科研协作
+site_name: Chenhaoran Research Collaboration
 site_description: Public navigation for governed research collaboration components
 site_url: https://chenhaoran2068.github.io/
 repo_url: https://github.com/chenhaoran2068/chenhaoran2068.github.io
 repo_name: chenhaoran2068/chenhaoran2068.github.io
 theme:
   name: mkdocs
-  language: zh
+  language: en
 extra_css:
   - stylesheets/portal.css
 nav:
-  - 首页: index.md
-  - 开始使用:
-      - 概览: user-paths/index.md
-      - 可能的新研究: user-paths/possible-new-study.md
-      - 既有 Study、手稿与返修: user-paths/existing-study-manuscript-revision.md
-      - 伦理准备何时可进入: user-paths/ethics-preparation.md
-      - 阅读一篇论文: user-paths/paper-reading.md
-  - 组件地图: architecture-map.md
-  - 组件分类:
+  - Home: index.md
+  - User paths:
+      - Overview: user-paths/index.md
+      - Possible new Study: user-paths/possible-new-study.md
+      - Existing Study, manuscript, and revision: user-paths/existing-study-manuscript-revision.md
+      - Ethics preparation: user-paths/ethics-preparation.md
+      - Paper reading: user-paths/paper-reading.md
+      - Managed reading and knowledge service: user-paths/managed-reading-knowledge.md
+  - Architecture map: architecture-map.md
+  - Component categories:
       - Frameworks: framework.md
       - Systems: systems/governed-research-workflow.md
       - Skills: skills/index.md
       - research-ethics: skills/research-ethics.md
       - research-paper-reading: skills/research-paper-reading.md
-  - 治理与版本:
-      - 版本与兼容: releases.md
-      - 治理与安全: governance.md
-      - 路线图: roadmap.md
-      - 发布说明 v0.2.0: release/RELEASE_NOTES_v0.2.0.md
-      - 发布说明 v0.1.0: release/RELEASE_NOTES_v0.1.0.md
+  - Releases and governance:
+      - Releases and compatibility: releases.md
+      - Governance: governance.md
+      - Roadmap: roadmap.md
+      - Release notes v0.3.0: release/RELEASE_NOTES_v0.3.0.md
+      - Release notes v0.2.0: release/RELEASE_NOTES_v0.2.0.md
+      - Release notes v0.1.0: release/RELEASE_NOTES_v0.1.0.md
