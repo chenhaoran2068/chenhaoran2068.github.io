@@ -16,7 +16,12 @@ class ComponentCatalogTests(unittest.TestCase):
         components = data["components"]
         self.assertEqual(
             [component["component_id"] for component in components],
-            ["workspace-framework", "governed-research-workflow", "research-ethics"],
+            [
+                "workspace-framework",
+                "governed-research-workflow",
+                "research-ethics",
+                "research-paper-reading",
+            ],
         )
 
     def test_required_fields_and_tagged_public_links(self) -> None:

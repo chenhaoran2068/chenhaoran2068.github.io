@@ -23,8 +23,8 @@
       <h3>Governed Research Workspace Framework</h3>
       <p>提供通用工作区根目录、System 注册、项目绑定和多 System 隔离边界。</p>
     </div>
-    <p class="component-entry-version">v0.2.0</p>
-    <a href="https://github.com/chenhaoran2068/governed-research-workspace-framework/releases/tag/v0.2.0">查看 Release <span aria-hidden="true">&rarr;</span></a>
+    <p class="component-entry-version">v0.3.0</p>
+    <a href="https://github.com/chenhaoran2068/governed-research-workspace-framework/releases/tag/v0.3.0">查看 Release <span aria-hidden="true">&rarr;</span></a>
   </article>
 </section>
 
@@ -64,9 +64,9 @@
     <h2 id="framework-sources-title">正式来源</h2>
   </div>
   <ul>
-    <li><a href="https://github.com/chenhaoran2068/governed-research-workspace-framework/releases/tag/v0.2.0">v0.2.0 Release</a></li>
-    <li><a href="https://github.com/chenhaoran2068/governed-research-workspace-framework/blob/v0.2.0/docs/reference_workspace_tree.md">Reference workspace tree</a></li>
-    <li><a href="https://github.com/chenhaoran2068/governed-research-workspace-framework/blob/v0.2.0/docs/multi_system_contract.md">Multi-System contract</a></li>
+    <li><a href="https://github.com/chenhaoran2068/governed-research-workspace-framework/releases/tag/v0.3.0">v0.3.0 Release</a></li>
+    <li><a href="https://github.com/chenhaoran2068/governed-research-workspace-framework/blob/v0.3.0/docs/reference_workspace_tree.md">Reference workspace tree</a></li>
+    <li><a href="https://github.com/chenhaoran2068/governed-research-workspace-framework/blob/v0.3.0/docs/multi_system_contract.md">Multi-System contract</a></li>
   </ul>
 </section>
 

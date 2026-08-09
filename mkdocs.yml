@@ -15,13 +15,17 @@ nav:
       - 可能的新研究: user-paths/possible-new-study.md
       - 既有 Study、手稿与返修: user-paths/existing-study-manuscript-revision.md
       - 伦理准备何时可进入: user-paths/ethics-preparation.md
+      - 阅读一篇论文: user-paths/paper-reading.md
   - 组件地图: architecture-map.md
   - 组件分类:
       - Frameworks: framework.md
       - Systems: systems/governed-research-workflow.md
-      - Skills: skills/research-ethics.md
+      - Skills: skills/index.md
+      - research-ethics: skills/research-ethics.md
+      - research-paper-reading: skills/research-paper-reading.md
   - 治理与版本:
       - 版本与兼容: releases.md
       - 治理与安全: governance.md
       - 路线图: roadmap.md
+      - 发布说明 v0.2.0: release/RELEASE_NOTES_v0.2.0.md
       - 发布说明 v0.1.0: release/RELEASE_NOTES_v0.1.0.md

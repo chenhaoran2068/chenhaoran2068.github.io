@@ -40,7 +40,7 @@
         <h3>独立的专门能力</h3>
         <p>具有自身输入、输出和限制；可在明确任务条件下独立使用或被特定 System 路线受控引用。</p>
       </div>
-    <a href="skills/research-ethics/">浏览 Skills <span aria-hidden="true">&rarr;</span></a>
+    <a href="skills/">浏览 Skills <span aria-hidden="true">&rarr;</span></a>
     </article>
   </div>
   <div class="category-relation-note">

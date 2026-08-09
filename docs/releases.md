@@ -11,11 +11,18 @@
   <table>
     <thead><tr><th>类别</th><th>组件</th><th>当前审查公开版本</th><th>用途</th></tr></thead>
     <tbody>
-      <tr><td>Framework</td><td>Governed Research Workspace Framework</td><td><a href="https://github.com/chenhaoran2068/governed-research-workspace-framework/releases/tag/v0.2.0">v0.2.0</a></td><td>工作区结构与 System 边界</td></tr>
-      <tr><td>System</td><td>Governed Research Workflow</td><td><a href="https://github.com/chenhaoran2068/governed-research-workflow/releases/tag/v1.10.0">v1.10.0</a></td><td>研究任务路由与治理</td></tr>
+      <tr><td>Framework</td><td>Governed Research Workspace Framework</td><td><a href="https://github.com/chenhaoran2068/governed-research-workspace-framework/releases/tag/v0.3.0">v0.3.0</a></td><td>工作区结构、System 边界与通用知识服务注册</td></tr>
+      <tr><td>System</td><td>Governed Research Workflow</td><td><a href="https://github.com/chenhaoran2068/governed-research-workflow/releases/tag/v1.11.0">v1.11.0</a></td><td>研究任务路由与治理；明确论文阅读的独立入口</td></tr>
       <tr><td>Skill</td><td>research-ethics</td><td><a href="https://github.com/chenhaoran2068/research-ethics/releases/tag/v1.1.1">v1.1.1</a></td><td>受限伦理与登记准备</td></tr>
+      <tr><td>Skill</td><td>research-paper-reading</td><td><a href="https://github.com/chenhaoran2068/research-paper-reading/releases/tag/v0.1.0">v0.1.0</a></td><td>人类主导的单篇论文理解与精读</td></tr>
     </tbody>
   </table>
+</section>
+
+<section class="portal-document-section" aria-labelledby="compatibility-title">
+  <p class="map-kicker">CURRENT COMPATIBILITY</p>
+  <h2 id="compatibility-title">当前关系</h2>
+  <p>Framework v0.3.0 提供可选知识服务注册的通用边界。Research Workflow v1.11.0 只保留 research-paper-reading 的独立入口，不会自动调用该 Skill。research-ethics 与阅读 Skill 都保持独立合同、独立输入条件和独立 Release。</p>
 </section>
 
 <section class="portal-document-section" aria-labelledby="release-boundary-title">
