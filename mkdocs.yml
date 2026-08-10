@@ -28,6 +28,7 @@ nav:
       - Releases and compatibility: releases.md
       - Governance: governance.md
       - Roadmap: roadmap.md
+      - Release notes v0.4.0: release/RELEASE_NOTES_v0.4.0.md
       - Release notes v0.3.0: release/RELEASE_NOTES_v0.3.0.md
       - Release notes v0.2.0: release/RELEASE_NOTES_v0.2.0.md
       - Release notes v0.1.0: release/RELEASE_NOTES_v0.1.0.md
