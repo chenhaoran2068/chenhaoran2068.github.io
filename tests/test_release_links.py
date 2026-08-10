@@ -14,11 +14,11 @@ class ReleaseLinkTests(unittest.TestCase):
             "governed-research-workspace-framework/releases/tag/v0.4.0",
             "governed-research-workflow/releases/tag/v1.12.0",
             "research-ethics/releases/tag/v1.1.1",
-            "research-paper-reading/releases/tag/v0.2.0",
+            "research-paper-reading/releases/tag/v0.3.0",
             "/blob/v0.4.0/",
             "/blob/v1.12.0/",
             "/blob/v1.1.1/",
-            "/blob/v0.2.0/",
+            "/blob/v0.3.0/",
         )
         for value in expected:
             self.assertIn(value, catalog)

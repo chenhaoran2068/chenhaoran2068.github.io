@@ -32,7 +32,7 @@
       <h3>research-paper-reading</h3>
       <p>在单次受控会话中协助人类读懂并批判性审阅一篇论文；默认不会保存、下载或同步材料。</p>
     </div>
-    <p class="component-entry-version">v0.2.0</p>
+    <p class="component-entry-version">v0.3.0</p>
     <a href="research-paper-reading/">查看说明 <span aria-hidden="true">&rarr;</span></a>
   </article>
 </section>

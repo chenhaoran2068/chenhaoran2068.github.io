@@ -17,6 +17,8 @@ class ReadingSkillRouteTests(unittest.TestCase):
         self.assertIn("session_only", text)
         self.assertIn("does not scan a workspace", text)
         self.assertIn("reference-manager database directly", text)
+        self.assertIn("full_close_reading", text)
+        self.assertIn("closeout triage", text)
 
     def test_managed_route_requires_explicit_source_confirmation(self) -> None:
         text = MANAGED_ROUTE_PAGE.read_text(encoding="utf-8")

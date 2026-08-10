@@ -63,6 +63,7 @@ ALLOWED_PUBLIC_FILES = {
     "docs/release/RELEASE_NOTES_v0.1.0.md",
     "docs/release/RELEASE_NOTES_v0.2.0.md",
     "docs/release/RELEASE_NOTES_v0.3.0.md",
+    "docs/release/RELEASE_NOTES_v0.4.0.md",
     "tests/test_component_catalog.py",
     "tests/test_public_boundary.py",
     "tests/test_site_navigation.py",
