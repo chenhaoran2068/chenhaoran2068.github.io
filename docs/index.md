@@ -1,7 +1,7 @@
 <div class="portal-home">
 
 <header class="portal-home-header">
-  <p class="portal-context">Chenhaoran 公开科研协作组件</p>
+  <p class="portal-context">公开科研协作组件</p>
   <h1>科研协作组件</h1>
   <p class="portal-lead">这里汇总当前公开维护的组件及其正式来源。门户用于了解结构和定位入口；规则、版本与安装信息仍以各组件的精确 Release 和正式文档为准。</p>
 </header>
@@ -80,7 +80,27 @@
             <button class="workspace-file workspace-selectable" type="button" data-map-key="shared"><span class="tree-branch" aria-hidden="true">|-</span><span class="tree-folder">Shared/</span><span class="tree-translation"># 共享材料</span></button>
             <button class="workspace-file workspace-selectable" type="button" data-map-key="knowledge"><span class="tree-branch" aria-hidden="true">|-</span><span class="tree-folder">Knowledge/</span><span class="tree-translation"># 知识服务</span></button>
             <button class="workspace-file workspace-selectable" type="button" data-map-key="methods"><span class="tree-branch" aria-hidden="true">|-</span><span class="tree-folder">Methods/</span><span class="tree-translation"># 方法与工具</span></button>
-            <button class="workspace-file workspace-selectable" type="button" data-map-key="instances"><span class="tree-branch" aria-hidden="true">|-</span><span class="tree-folder">Instances/</span><span class="tree-translation"># 项目实例</span></button>
+            <details class="workspace-node workspace-study-layout" open>
+              <summary data-map-key="instances"><span class="tree-marker" aria-hidden="true">&gt;</span><span class="tree-branch" aria-hidden="true">|-</span><span class="tree-folder">Instances/</span><span class="tree-translation"># 项目实例</span></summary>
+              <div class="workspace-children">
+                <button class="workspace-file workspace-selectable" type="button" data-map-key="study-layout"><span class="tree-branch" aria-hidden="true">|_</span><span class="tree-folder workspace-system-tone">&lt;study-id&gt;/</span><span class="tree-translation"># 一项实际研究</span></button>
+                <div class="workspace-children workspace-study-directories" aria-label="Study 内部目录">
+                  <p><span class="tree-branch" aria-hidden="true">|-</span><span class="tree-folder workspace-system-tone">00_state/</span><span class="tree-translation"># 当前状态与决定</span></p>
+                  <p><span class="tree-branch" aria-hidden="true">|-</span><span class="tree-folder workspace-system-tone">01_intake/</span><span class="tree-translation"># 研究请求与 intake</span></p>
+                  <p><span class="tree-branch" aria-hidden="true">|-</span><span class="tree-folder workspace-system-tone">02_registry/</span><span class="tree-translation"># 登记与合规证据</span></p>
+                  <p><span class="tree-branch" aria-hidden="true">|-</span><span class="tree-folder workspace-system-tone">03_protocol/</span><span class="tree-translation"># 设计与当前方案</span></p>
+                  <p><span class="tree-branch" aria-hidden="true">|-</span><span class="tree-folder workspace-system-tone">04_knowledge/</span><span class="tree-translation"># 本 Study 的知识与应用判断</span></p>
+                  <p><span class="tree-branch" aria-hidden="true">|-</span><span class="tree-folder workspace-system-tone">05_memory/</span><span class="tree-translation"># 决策记忆与项目复盘</span></p>
+                  <p><span class="tree-branch" aria-hidden="true">|-</span><span class="tree-folder workspace-system-tone">06_data/</span><span class="tree-translation"># 项目数据工作面</span></p>
+                  <p><span class="tree-branch" aria-hidden="true">|-</span><span class="tree-folder workspace-system-tone">07_analysis/</span><span class="tree-translation"># 合同、环境、实现与运行</span></p>
+                  <p><span class="tree-branch" aria-hidden="true">|-</span><span class="tree-folder workspace-system-tone">08_results/</span><span class="tree-translation"># 结果与当前结果权威</span></p>
+                  <p><span class="tree-branch" aria-hidden="true">|-</span><span class="tree-folder workspace-system-tone">09_manuscript/</span><span class="tree-translation"># 手稿、表图与主张</span></p>
+                  <p><span class="tree-branch" aria-hidden="true">|-</span><span class="tree-folder workspace-system-tone">10_submission/</span><span class="tree-translation"># 投稿、返修与录用</span></p>
+                  <p><span class="tree-branch" aria-hidden="true">|-</span><span class="tree-folder workspace-system-tone">11_qa/</span><span class="tree-translation"># 运行 QA</span></p>
+                  <p><span class="tree-branch" aria-hidden="true">|_</span><span class="tree-folder workspace-system-tone">12_archive/</span><span class="tree-translation"># 最终归档</span></p>
+                </div>
+              </div>
+            </details>
             <button class="workspace-file workspace-selectable" type="button" data-map-key="data-raw"><span class="tree-branch" aria-hidden="true">|-</span><span class="tree-folder">Data_Raw/</span><span class="tree-translation"># 原始数据</span></button>
             <button class="workspace-file workspace-selectable" type="button" data-map-key="github"><span class="tree-branch" aria-hidden="true">|-</span><span class="tree-folder">Github/</span><span class="tree-translation"># Git 仓库</span></button>
             <button class="workspace-file workspace-selectable" type="button" data-map-key="ops"><span class="tree-branch" aria-hidden="true">|-</span><span class="tree-folder">Ops/</span><span class="tree-translation"># 运行与维护</span></button>
@@ -125,7 +145,8 @@
       shared: ["Shared/", "跨项目可共用但仍需治理的材料区域。其内容应有明确所有者、适用范围和访问边界。", "共享不表示可自由复制到任意项目，也不等同于公开材料。", "framework/", "查看 Framework 介绍"],
       knowledge: ["Knowledge/", "保存文献阅读、知识卡与可追溯的知识服务材料。它与项目记忆、经验治理和原始论文分别保持边界。", "知识可以服务多个项目，但不能仅因有标签就变成正式规则或项目结论。", "integrations/", "查看知识与集成说明"],
       methods: ["Methods/", "放置可复用的方法、技术路线或特定领域工具的工作区域。", "它不替代某个 Study 的方案、分析合同或结果权威。", "framework/", "查看 Framework 介绍"],
-      instances: ["Instances/", "存放具体项目或实际工作实例。Study 的方案、数据、分析、结果与手稿应在其自身边界内管理。", "项目局部材料不会因位于这里而自动成为共享经验或公开内容。", "framework/", "查看 Framework 介绍"],
+      instances: ["Instances/", "存放具体项目或实际工作实例。一项 Study 会在这里建立自己的目录，而不是把方案、数据、分析、结果与手稿混入 System。", "展开下方的 <study-id>/ 可以看到从 00_state/ 到 12_archive/ 的完整目录名称。", "systems/governed-research-workflow/#study-layout-title", "查看完整 Study 布局"],
+      "study-layout": ["<study-id>/", "一项实际研究的根目录。它按 00_state/ 到 12_archive/ 分开保存状态、方案、治理资料、数据、分析、结果、手稿、投稿和归档材料。", "这个目录结构由 Governed Research Workflow 提供；它位于 Instances/，不属于 System 本身的规则文件。", "systems/governed-research-workflow/#study-layout-title", "查看完整 Study 布局"],
       "data-raw": ["Data_Raw/", "受控原始材料的工作区区域。访问、复制、处理和保留均应遵守适用的数据权限与项目规则。", "它不是普通的临时文件夹，也不应被公开组件自动读取。", "framework/", "查看 Framework 介绍"],
       github: ["Github/", "本地仓库与公开衍生物的工作区域。公开内容仍需经过版本、边界、审查和发布流程。", "在这里存在的材料不等于已公开或适合公开。", "releases/", "查看发布与兼容"],
       ops: ["Ops/", "用于维护、安装、验证和运行层面的操作性材料。", "操作记录不等于组件规则，也不应被当作用户任务的正式输入。", "governance/", "查看治理边界"],

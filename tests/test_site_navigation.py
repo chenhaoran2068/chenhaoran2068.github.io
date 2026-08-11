@@ -111,6 +111,35 @@ class SiteNavigationTests(unittest.TestCase):
                 f"{relative_path} must use published-page relative guide links",
             )
 
+    def test_homepage_exposes_the_study_layout_under_instances(self) -> None:
+        homepage = (DOCS_ROOT / "index.md").read_text(encoding="utf-8")
+
+        self.assertIn('data-map-key="instances"', homepage)
+        self.assertIn('data-map-key="study-layout"', homepage)
+        self.assertIn("00_state/", homepage)
+        self.assertIn("06_data/", homepage)
+        self.assertIn("12_archive/", homepage)
+        self.assertNotIn("00_state/ … 12_archive/", homepage)
+        self.assertIn(
+            "systems/governed-research-workflow/#study-layout-title", homepage
+        )
+
+    def test_system_workflow_page_exposes_the_results_first_work_sequence(self) -> None:
+        page = (DOCS_ROOT / "systems" / "governed-research-workflow.md").read_text(
+            encoding="utf-8"
+        )
+
+        for expected in (
+            "完成结果与手稿",
+            "先完成 Results，再按顺序完成其他章节",
+            "Methods、Discussion 与 Conclusion、Introduction、Abstract 或 Summary",
+            "展开查看 Results 怎样逐层完成",
+            "<details id=\"stage-inspector-examples\"",
+            "默认可图文并行",
+            "不能借此改变结果事实或把探索写成预先验证",
+        ):
+            self.assertIn(expected, page)
+
 
 if __name__ == "__main__":
     unittest.main()

@@ -8,7 +8,7 @@
 
 <section class="component-section component-summary system-summary">
   <p>当一项研究需要持续整理方案、执行、结果、手稿和返修材料时，使用这个 System。它把材料放到可追溯的位置，并在关键节点保留人类确认。</p>
-  <div class="release-stamp"><span>当前公开 Release</span><strong><a href="https://github.com/chenhaoran2068/governed-research-workflow/releases/tag/v1.13.0">v1.13.0</a></strong></div>
+  <div class="release-stamp"><span>当前公开 Release</span><strong><a href="https://github.com/chenhaoran2068/governed-research-workflow/releases/tag/v1.14.0">v1.14.0</a></strong></div>
 </section>
 
 <section class="component-section" aria-labelledby="study-layout-title">
@@ -85,52 +85,52 @@
             <div class="system-flow-return-labels" aria-hidden="true"></div>
 
             <section class="system-flow-phase system-flow-phase-design" aria-labelledby="system-phase-design-title">
-              <header><span>03–04</span><strong id="system-phase-design-title">确认研究问题与设计</strong></header>
+              <header><span>03–05</span><strong id="system-phase-design-title">确定研究思路</strong></header>
               <div class="system-flow-stage-row">
-                <button type="button" class="system-flow-node" data-stage-key="3" data-flow-node="3"><span>03</span><strong>问题与环境</strong><small>说明问题、资源与限制；外查前明确许可</small></button>
+                <button type="button" class="system-flow-node" data-stage-key="3" data-flow-node="3"><span>03</span><strong>确认研究问题</strong><small>把想研究什么、为什么值得研究先说清</small></button>
               </div>
               <div class="system-flow-stage-row">
-                <button type="button" class="system-flow-node" data-stage-key="4" data-flow-node="4"><span>04</span><strong>设计与可行性</strong><small>共同确定设计、偏倚和数据可行性</small></button>
+                <button type="button" class="system-flow-node" data-stage-key="4" data-flow-node="4"><span>04</span><strong>确认研究设计</strong><small>把研究对象、比较方式、结局、观察时间等关键设计事项定下来</small></button>
+              </div>
+              <div class="system-flow-stage-row">
+                <button type="button" class="system-flow-node" data-stage-key="5" data-flow-node="5"><span>05</span><strong>写研究计划书，准备伦理、登记与数据访问材料</strong><small>完成详细研究设计，按适用要求办理伦理与备案</small><span class="system-flow-skill-hint">满足条件时可联动 Skill：<b>research-ethics</b></span></button>
               </div>
             </section>
 
-            <section class="system-flow-phase system-flow-phase-feasibility" aria-labelledby="system-phase-feasibility-title">
-              <header><span>05</span><strong id="system-phase-feasibility-title">确认研究是否能做</strong></header>
+            <section class="system-flow-phase system-flow-phase-decision" aria-labelledby="system-phase-decision-title">
+              <header><span>06</span><strong id="system-phase-decision-title">判断研究是否值得继续</strong></header>
               <div class="system-flow-stage-row">
-                <button type="button" class="system-flow-node" data-stage-key="5" data-flow-node="5"><span>05</span><strong>方案草案与治理准备</strong><small>形成尚未锁定的方案；真实材料前核对访问、伦理和登记</small><span class="system-flow-skill-hint">满足条件时可联动 Skill：<b>research-ethics</b></span></button>
-              </div>
-              <div class="system-flow-stage-row">
-                <div class="system-flow-key-part" data-flow-node="key-part"><span>检查</span><strong>关键路径检查</strong><small>先写明关键不确定项和判断条件；再在已允许范围内完成最小检查</small></div>
+                <button type="button" class="system-flow-key-part" data-stage-key="6" data-flow-node="key-part"><span>检查</span><strong>关键部分检查</strong><small>用研究核心部分，以较小范围判断研究是否值得继续。<br>也看它能否发展成一篇有价值、可诚实报告的论文；不以阳性或显著为唯一条件。</small></button>
               </div>
               <div class="system-flow-stage-row system-flow-decision-row">
-                <div class="system-flow-decision" data-flow-node="feasibility-decision"><span>人类决定</span><strong>继续 / 附条件继续 / 重构 / 停止</strong><small>附条件继续时，列明条件必须在下一关前解决；不能把初步检查写成最终研究结论。</small></div>
+                <div class="system-flow-decision" data-flow-node="feasibility-decision"><span>人类决定</span><strong>继续 / 附条件继续 / 重构 / 停止</strong><small>附条件继续时，列明每项条件及其最迟解决关卡；不能把初步检查写成最终研究结论。</small></div>
                 <div class="system-flow-stop" data-flow-node="stop"><span>暂停 / 停止</span><small>保留判断、理由和未解风险；不再作为当前论文候选继续推进。</small></div>
+              </div>
+              <div class="system-flow-stage-row">
+                <div class="system-flow-continuation" data-flow-node="6"><span>继续后</span><strong>锁定方案并开展正式分析</strong><small>声明分析性质，冻结正式运行版本；正式运行不覆盖旧版本</small><span class="system-flow-skill-hint">按具体任务可联动 Skill：<b>governed-engineering</b></span></div>
               </div>
             </section>
 
             <section class="system-flow-phase system-flow-phase-analysis" aria-labelledby="system-phase-analysis-title">
-              <header><span>06–08</span><strong id="system-phase-analysis-title">完成研究分析与协作</strong></header>
+              <header><span>07–08</span><strong id="system-phase-analysis-title">形成可整体审查的研究材料</strong></header>
               <div class="system-flow-stage-row">
-                <button type="button" class="system-flow-node" data-stage-key="6" data-flow-node="6"><span>06</span><strong>受控分析</strong><small>继续决定后，声明分析性质、冻结正式运行版本并开展分析</small><span class="system-flow-skill-hint">按具体任务可联动 Skill：<b>governed-engineering</b></span></button>
+                <button type="button" class="system-flow-node" data-stage-key="7" data-flow-node="7"><span>07</span><strong>完成结果与手稿</strong><small>先完成 Results，再按顺序完成其他章节</small></button>
               </div>
               <div class="system-flow-stage-row">
-                <button type="button" class="system-flow-node" data-stage-key="7" data-flow-node="7"><span>07</span><strong>结果与手稿</strong><small>从已审查结果包形成图表、主张和手稿</small></button>
-              </div>
-              <div class="system-flow-stage-row">
-                <button type="button" class="system-flow-node" data-stage-key="8" data-flow-node="8"><span>08</span><strong>全部材料联合审查</strong><small>把方案、运行、结果、手稿和声明一起核对</small></button>
+                <button type="button" class="system-flow-node" data-stage-key="8" data-flow-node="8"><span>08</span><strong>联合审查全部材料</strong><small>把方案、运行、结果、手稿和声明一起核对</small></button>
               </div>
             </section>
 
             <section class="system-flow-phase system-flow-phase-submission" aria-labelledby="system-phase-submission-title">
-              <header><span>09–11</span><strong id="system-phase-submission-title">投稿、返修与收尾</strong></header>
+              <header><span>09–11</span><strong id="system-phase-submission-title">从投稿到归档</strong></header>
               <div class="system-flow-stage-row">
-                <button type="button" class="system-flow-node" data-stage-key="9" data-flow-node="9"><span>09</span><strong>投稿包</strong><small>给出目标期刊和文章类型，整理投稿包</small></button>
+                <button type="button" class="system-flow-node" data-stage-key="9" data-flow-node="9"><span>09</span><strong>准备投稿包</strong><small>给出目标期刊和文章类型，整理投稿包</small></button>
               </div>
               <div class="system-flow-stage-row">
-                <button type="button" class="system-flow-node" data-stage-key="10" data-flow-node="10"><span>10</span><strong>编辑决定与返修</strong><small>提供意见，逐条决定并同步修改</small></button>
+                <button type="button" class="system-flow-node" data-stage-key="10" data-flow-node="10"><span>10</span><strong>处理编辑意见与返修</strong><small>提供意见，逐条决定并同步修改</small></button>
               </div>
               <div class="system-flow-stage-row">
-                <button type="button" class="system-flow-node" data-stage-key="11" data-flow-node="11"><span>11</span><strong>录用、归档与复盘</strong><small>处理校样、权利和最终材料，再归档复盘</small></button>
+                <button type="button" class="system-flow-node" data-stage-key="11" data-flow-node="11"><span>11</span><strong>完成归档与复盘</strong><small>处理校样、权利和最终材料，再归档复盘</small></button>
               </div>
             </section>
           </div>
@@ -146,6 +146,10 @@
         <div><dt>一起完成</dt><dd id="stage-inspector-work">先把目前知道的情况说出来即可。题目、数据或方法还不清楚也没关系；AI 会先帮你分清这是新研究、已有项目，还是先讨论一个想法。</dd></div>
         <div><dt>完成以后</dt><dd id="stage-inspector-next">你可以说“按这个方向继续”“我想换一种做法”或“先暂停”。确认继续后，才进入工作区、Study 名称和协作方式的讨论。</dd></div>
       </dl>
+      <details id="stage-inspector-examples" class="system-route-examples" hidden>
+        <summary id="stage-inspector-examples-title"></summary>
+        <ol id="stage-inspector-examples-list"></ol>
+      </details>
       <p class="system-route-boundary">绿色提示表示：此步骤可联动对应的 Skill。独立组件若进入 Study，只保留 <code>metadata-only</code> 信息；需要明确点名，Research System 不会自动启动它。</p>
     </aside>
   </div>
@@ -191,55 +195,70 @@
         next: "确认候选 System、工作区位置、Study 名称、材料范围和停止边界后，才建立空工作区并进入问题与环境。申请受限自主执行时，先设计并取得该范围的精确授权；未获批准前，仍按人机交互方式推进。"
       },
       "3": {
-        title: "03 问题与环境",
-        start: "说明想解决的问题、研究对象或场景、已有资源和实际限制；需要外查时明确许可范围。",
-        work: "把你关心的临床或实际问题、手头资源和限制摊开讨论。获得许可后，AI 可以比较研究方向、已有工作、可能的数据来源和主要风险。",
-        next: "当研究问题、它的价值和最重要的未知项已说清，就可以进入设计讨论；若发现资源或问题不合适，也可以重构或停止。"
+        title: "03 确认研究问题",
+        start: "先从你关心的现象或问题说起：你发现了什么、想弄清什么、为什么认为它值得研究。题目还不完整也可以。",
+        work: "题目还不完整没有关系。需要查文献、指南或数据库时，先说明希望查什么、允许查到什么范围。",
+        next: "讨论清楚后，再把它收成一个可以设计的研究问题。如果发现条件不合适，就换方向，或者先停在这里。"
       },
       "4": {
-        title: "04 设计与可行性",
-        start: "可以说“请根据当前问题，和我一起确定研究设计并检查可行性”。",
-        work: "一起把研究类型、对象、time zero、测量窗、随访、结局、偏倚和数据可行性讲清楚。因果或治疗效应问题会另行进入因果设计或目标试验模拟审查，不会只靠“数据库研究”这个名称下结论。",
-        next: "当当前设计、关键定义和继续或重构的判断已经清楚，就把它写入方案记录，并转入真实材料前的准备。"
+        title: "04 确认研究设计",
+        start: "把第 03 阶段的问题落到一个可以执行的设计：研究谁、怎样比较、看什么结局、从何时开始观察、跟多久。",
+        work: "设计要能说明时间线、资料和主要偏倚。因果或治疗效应问题会另行进入因果设计或目标试验模拟审查，不会只靠“数据库研究”这个名称下结论。",
+        next: "设计能站住后，把当前做法写入方案草案，进入第 05 阶段准备研究计划书和治理材料。",
+        examplesTitle: "确认设计时，顺手看四件事",
+        examples: [
+          "研究谁、比较什么、看什么结局。",
+          "从什么时候开始观察，指标在什么时候测，结局跟多久。",
+          "计划使用的资料是否可能提供需要的变量、时间信息和足够对象。",
+          "是否会遇到选择偏倚、混杂、暴露发生在结局之后或 time zero 不一致。"
+        ]
       },
       "5": {
-        title: "05 方案草案与治理准备",
-        start: "在读取或提取真实材料前，提供尚未锁定的方案草案，并要求核对数据访问、伦理、注册、辖区和机构要求。",
-        work: "这里把两件事分开：方案草案是否已经写清，以及关键检查若要接触真实材料，还需要满足哪些访问、伦理、注册、辖区或机构要求。若要准备伦理或登记材料，明确点名 `research-ethics`，并提供 Study 根目录、允许读取的材料和想得到的交付物。",
-        next: "当允许范围、仍存缺口和下一项可做的动作都清楚时，才可进入关键路径检查；任何一项还不清楚，就留在这里补齐。"
+        title: "05 写研究计划书，准备伦理、登记与数据访问材料",
+        start: "把第 04 阶段的设计写成详细研究计划书；再按研究类型、机构和所在地要求，准备伦理审查、备案和数据访问所需材料。",
+        work: "伦理、备案和访问要求不会完全相同，要以实际机构和数据方的要求为准。要使用 `research-ethics` 时，明确点名它，并提供 Study 根目录、允许读取的材料和希望生成的内容。",
+        next: "先分清第 06 阶段的关键检查是否会读取真实材料。会读取的，先完成对应的访问与治理准备；不会读取的，可以保留已知缺口并进入第 06 阶段。"
       },
       "6": {
-        title: "06 受控分析",
-        start: "关键路径检查获得继续或附条件继续决定后，明确本轮是探索、预测开发、独立验证、验证性估计还是混合工作，并说明正式运行范围。",
-        work: "先完成尚未做过的条件，再记录分析状态并锁定当前正式运行或报告的版本。正式运行会保留自己的运行记录，不覆盖旧版本；冻结不自动证明结果正确或已获批准。需要改代码、数据库、接收数据或运行时，可以从这里分入绿色工程支线。",
-        next: "当条件、分析状态、可执行版本和本轮运行范围已经确定，就可以生成候选结果；发现错误、新想法或实质变更时，回到相应记录重新说明。"
+        title: "06 判断研究是否值得继续",
+        start: "先选研究核心部分：用较小范围的检查，判断结果、数据和设计是否支持继续投入。",
+        work: "先写下继续、附条件继续、重构或停止的判断标准；再在已允许范围内完成检查。它也会帮助判断这项研究能否发展成一篇有价值、可诚实报告的论文；阳性或显著不是唯一标准。",
+        next: "看完后，由你决定继续、附条件继续、重构或停止。只有继续后，才锁定方案，记录分析状态和冻结正式运行版本，再开展正式分析。"
       },
       "7": {
-        title: "07 结果与手稿",
-        start: "在已有受控运行和结果包后，说“请用这份已审查结果整理图表、主张和手稿”。",
-        work: "先用已审查的结果包组织图表、表格和主张，再形成手稿。Methods 回到方案与执行记录，Results 回到结果 manifest，Discussion 再解释证据强度和限制。",
-        next: "当手稿、图表、结果包和 QA 能够一起被审查时，就进入联合审查，而不是只留下单独的文字草稿或图片。"
+        title: "07 完成结果与手稿",
+        start: "在已有受控运行和结果包后，可以说“请先把这项 Study 的 Results 部分做完整，再按顺序完成其他章节”。",
+        work: "先完成 Results 的图、表、文字和主张之间的核对；再依次完成 Methods、Discussion 与 Conclusion、Introduction、Abstract 或 Summary，以及声明、补充材料、投稿信和回复材料。期刊最终排版可以不同。",
+        next: "当结果、手稿、图表、结果包和 QA 能够一起审查时，进入第 08 阶段；不要只留下单独的文字草稿或图片。",
+        examplesTitle: "展开查看 Results 怎样逐层完成",
+        examples: [
+          "先定 Results 的结构：主要结果、次要结果、敏感性或探索性结果分别放在哪里；每个表和图负责说明什么。",
+          "每个结果单元可先做图表、图文并行，或先写有限的结果文字。默认可图文并行，但在人工审查前必须把文字、图表和对应结果核对完整。",
+          "按顺序复核：Results 整体目的 → 小节顺序 → 每段要说明什么 → 句子和主张 → 对应结果与图表 → 句子、图表和证据是否对应 → 段落、小节和整个 Results 是否连贯。",
+          "Results 定下来后，Methods 回到方案和实际执行记录；Discussion 与 Conclusion 解释已经确定的结果和限制；Introduction、Abstract 或 Summary 最后与整篇文章核对。",
+          "方法学论文、系统综述、定性研究或期刊采用特殊章节结构时，可以另行说明为什么换顺序；但不能借此改变结果事实或把探索写成预先验证。"
+        ]
       },
       "8": {
-        title: "08 全部材料联合审查",
+        title: "08 联合审查全部材料",
         start: "可以说“请对这项 Study 的方案、运行、结果、手稿、声明和投稿材料做联合审查”。",
         work: "把方案、治理记录、运行、结果、手稿、声明和投稿材料放在一起核对。AI 会找出版本不一致、材料缺口和需要重新审查的地方；你来决定哪些必须修，哪些应当作为限制保留。",
         next: "没有与投稿相冲突的问题时，进入投稿包；若发现问题，就回到受影响的阶段修订后再审。"
       },
       "9": {
-        title: "09 投稿包",
+        title: "09 准备投稿包",
         start: "给出目标期刊和文章类型，并请求按该期刊当前要求整理投稿包。",
         work: "按一个明确的期刊和文章类型整理投稿路线。获得许可后，AI 会核对当前官方要求，把手稿、声明、图表、补充材料和必要记录组成一个版本化投稿包。",
         next: "投稿包准备好后，由你核对并决定是否实际提交；提交后，这条路线进入编辑决定、技术退回或审稿阶段。"
       },
       "10": {
-        title: "10 编辑决定与返修",
+        title: "10 处理编辑意见与返修",
         start: "提供编辑或审稿意见、Study 根目录和当前投稿路线，并说明希望先讨论还是直接规划逐条回应。",
         work: "把编辑或审稿意见逐条拆开：哪些接受、哪些部分接受、哪些解释后不改。每一个决定都要对应到实际修改的位置；若牵动方法、结果或主张，就一起判断是否补分析并重新审查。",
         next: "当修订稿、逐条回复和所有受影响材料已经同步更新，就可以再次联合审查，并按期刊路线决定重投或提交返修。"
       },
       "11": {
-        title: "11 录用、归档与复盘",
+        title: "11 完成归档与复盘",
         start: "提供录用、校样、权利或发表后更正任务，并说明是否希望同时建立项目局部复盘。",
         work: "处理校样、版权或开放获取、最终材料和可能的发表后更正。若要复盘，AI 可以帮你整理这一项 Study 的经验；它默认仍只属于该项目，不会自动变成共享规则。",
         next: "最终材料、权利和归档状态清楚后，这个 Study 就可以收口。若出现值得推广的经验，之后再单独决定是否进入共享审查。"
@@ -254,6 +273,9 @@
     const stageStart = document.getElementById("stage-inspector-start");
     const stageWork = document.getElementById("stage-inspector-work");
     const stageNext = document.getElementById("stage-inspector-next");
+    const stageExamples = document.getElementById("stage-inspector-examples");
+    const stageExamplesTitle = document.getElementById("stage-inspector-examples-title");
+    const stageExamplesList = document.getElementById("stage-inspector-examples-list");
     const stageEntries = document.querySelectorAll("[data-stage-key]");
     const systemFlow = document.querySelector("[data-system-flow]");
 
@@ -373,6 +395,15 @@
       stageStart.textContent = entry.start;
       stageWork.textContent = entry.work;
       stageNext.textContent = entry.next;
+      const examples = entry.examples ?? [];
+      stageExamples.hidden = examples.length === 0;
+      stageExamplesTitle.textContent = entry.examplesTitle ?? "";
+      stageExamples.open = false;
+      stageExamplesList.replaceChildren(...examples.map((example) => {
+        const item = document.createElement("li");
+        item.textContent = example;
+        return item;
+      }));
       stageEntries.forEach((element) => element.classList.toggle("is-selected", element.dataset.stageKey === key));
     };
 

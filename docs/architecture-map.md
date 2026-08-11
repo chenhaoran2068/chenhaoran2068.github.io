@@ -33,7 +33,7 @@
   <div class="section-header"><div><p class="section-context">当前入口</p><h2 id="map-sources-title">正式组件页</h2></div></div>
   <div class="guide-links">
     <a href="../framework/">Framework v0.4.0</a>
-    <a href="../systems/governed-research-workflow/">Research System v1.13.0</a>
+    <a href="../systems/governed-research-workflow/">Research System v1.14.0</a>
     <a href="../skills/">两个独立 Skill 与一个 Skill 包</a>
   </div>
 </section>
