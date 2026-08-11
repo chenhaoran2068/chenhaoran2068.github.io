@@ -1,24 +1,11 @@
-<div class="route-detail-page">
+<div class="guide-page">
 
-<header class="route-page-header">
-  <p class="map-context">USER PATH / 02</p>
-  <h1>既有 Study、手稿与返修</h1>
-  <p>已有 Study 不应被普通新研究导航重新分类或重新建目录。处理应以明确的项目边界和当前权威材料为准。</p>
-</header>
+<header class="guide-header"><p class="guide-kind">Research System 使用指南</p><h1>已有 Study、手稿与返修</h1><p>当工作已有具名 Study、手稿、审稿意见或结果包时，应从当前权威材料与明确的任务范围进入，而不是重新走新 Study intake。</p></header>
 
-<section class="route-detail-section route-detail-facts" aria-labelledby="existing-study-inputs-title">
-  <h2 id="existing-study-inputs-title">以什么为准</h2>
-  <dl>
-    <div><dt>项目边界</dt><dd>明确的 Study 根目录和任务范围，避免把不同项目的材料、结论或决定混用。</dd></div>
-    <div><dt>当前权威</dt><dd>当前方案、结果 manifest、QA、手稿和人工决定，而非旧草稿或历史输出。</dd></div>
-    <div><dt>返修关系</dt><dd>审稿意见、回应、实际修改和稿件位置应可逐项对应。</dd></div>
-  </dl>
-</section>
+<section class="guide-section"><div class="guide-summary"><p>系统首先区分是修订、结果核对、手稿撰写、投稿准备还是交接，并只读取该任务所需的当前规则和经允许材料。</p><div class="release-stamp"><span>相关组件</span><strong>Governed Research Workflow</strong></div></div></section>
 
-<section class="route-detail-section" aria-labelledby="existing-study-boundary-title">
-  <p class="map-kicker">BOUNDARY</p>
-  <h2 id="existing-study-boundary-title">实质变化如何处理</h2>
-  <p>涉及方法、结果、主张、图表、声明或外部要求的实质变化，需要重新核对受影响的当前权威和解释边界。System 可以帮助列出缺口和一致性问题；作者与人类负责人仍决定改什么、不改什么、是否补分析以及是否再次投稿。</p>
-</section>
+<section class="guide-section" aria-labelledby="existing-steps"><div class="section-header"><div><p class="section-context">基本路径</p><h2 id="existing-steps">先确认权威，再修改</h2></div></div><div class="guide-step-list"><article><h3>确认 Study 与材料范围</h3><p>明确 Study 根目录、当前任务、允许读取的材料以及当前方案、结果、手稿或审稿意见。</p></article><article><h3>识别受影响链条</h3><p>一项修改可能影响方案、代码、结果、图表、主张、声明或回复信，应列出而非静默跳过。</p></article><article><h3>重审最新版本</h3><p>修复后必须审查当前版本；不能把旧版本的测试或阶段性认可直接当作新版本结论。</p></article></div></section>
+
+<section class="guide-section" aria-labelledby="existing-boundary"><div class="section-header"><div><p class="section-context">停止边界</p><h2 id="existing-boundary">不把技术状态写成科学结论</h2></div></div><div class="boundary-grid"><div><h3>QA 不等于正确性</h3><p>技术 QA、内部验证或阶段性认可不自动证明科学正确、伦理批准或投稿许可。</p></div><div><h3>返修不等于重写历史</h3><p>不能为迎合意见而静默替换主要结局、删除不利结果或把新探索伪装成原方案。</p></div></div></section>
 
 </div>

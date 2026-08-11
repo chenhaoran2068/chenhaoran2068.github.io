@@ -10,6 +10,7 @@ import yaml
 
 ROOT = Path(__file__).resolve().parents[1]
 CONFIG = ROOT / "mkdocs.yml"
+DOCS_ROOT = ROOT / "docs"
 
 
 def flatten_nav(value: object) -> list[str]:
@@ -63,6 +64,52 @@ class SiteNavigationTests(unittest.TestCase):
                     href.split("#", 1)[0].split("?", 1)[0].endswith(".md"),
                     f"{page.relative_to(ROOT)} raw HTML anchor links to Markdown source: {href}",
                 )
+
+    def test_new_raw_html_component_links_resolve_from_published_pages(self) -> None:
+        expected = {
+            "docs/architecture-map.md": {
+                "../integrations/",
+                "../framework/",
+                "../systems/governed-research-workflow/",
+                "../skills/",
+            },
+            "docs/catalog.md": {
+                "../framework/",
+                "../systems/governed-research-workflow/",
+                "../skills/research-ethics/",
+                "../skills/research-paper-reading/",
+            },
+        }
+        for relative_path, expected_hrefs in expected.items():
+            page = ROOT / relative_path
+            content = page.read_text(encoding="utf-8")
+            hrefs = set(re.findall(r'<a[^>]+href="([^"]+)"', content))
+            self.assertTrue(
+                expected_hrefs <= hrefs,
+                f"{relative_path} must use published-page relative paths",
+            )
+
+    def test_deep_component_pages_link_to_guides_from_their_published_depth(self) -> None:
+        expected = {
+            "docs/systems/governed-research-workflow.md": {
+                "../../user-paths/possible-new-study/",
+                "../../user-paths/existing-study-manuscript-revision/",
+            },
+            "docs/skills/research-ethics.md": {
+                "../../user-paths/ethics-preparation/",
+            },
+            "docs/skills/research-paper-reading.md": {
+                "../../user-paths/paper-reading/",
+                "../../user-paths/managed-reading-knowledge/",
+            },
+        }
+        for relative_path, expected_hrefs in expected.items():
+            page = ROOT / relative_path
+            hrefs = set(re.findall(r'<a[^>]+href="([^"]+)"', page.read_text(encoding="utf-8")))
+            self.assertTrue(
+                expected_hrefs <= hrefs,
+                f"{relative_path} must use published-page relative guide links",
+            )
 
 
 if __name__ == "__main__":

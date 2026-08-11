@@ -15,21 +15,21 @@ class ReadingSkillRouteTests(unittest.TestCase):
     def test_reading_skill_is_explicit_and_session_only_by_default(self) -> None:
         text = READING_PAGE.read_text(encoding="utf-8")
         self.assertIn("session_only", text)
-        self.assertIn("does not scan a workspace", text)
-        self.assertIn("reference-manager database directly", text)
+        self.assertIn("不会扫描工作区", text)
+        self.assertIn("直接写入文献管理器数据库", text)
         self.assertIn("full_close_reading", text)
         self.assertIn("closeout triage", text)
 
     def test_managed_route_requires_explicit_source_confirmation(self) -> None:
         text = MANAGED_ROUTE_PAGE.read_text(encoding="utf-8")
-        self.assertIn("Name one source", text)
-        self.assertIn("authorize", text)
-        self.assertIn("does not scan existing files", text)
+        self.assertIn("指定一份来源", text)
+        self.assertIn("确认下载、导入或保留的授权", text)
+        self.assertIn("不会扫描现有文件", text)
 
     def test_system_receives_metadata_only_and_no_automatic_skill_call(self) -> None:
         text = SYSTEM_PAGE.read_text(encoding="utf-8")
         self.assertIn("metadata-only", text)
-        self.assertIn("does not start that Skill automatically", text)
+        self.assertIn("不会自动启动它", text)
 
     def test_reading_route_does_not_start_a_study(self) -> None:
         text = ROUTE_PAGE.read_text(encoding="utf-8")

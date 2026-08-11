@@ -1,73 +1,15 @@
-<div class="component-category-page skills-category-page">
+<div class="component-page">
 
-<header class="component-category-header">
-  <div>
-    <p class="map-context">PUBLIC SKILL</p>
-    <h1>research-ethics</h1>
-    <p>面向受支持的中国大陆观察性研究路线，组织伦理与登记准备材料，并明确缺口与人工核对点。</p>
-  </div>
-  <aside class="component-category-count" aria-label="当前公开目录">
-    <strong>CURRENT RELEASE</strong>
-    <span>v1.1.1</span>
-  </aside>
-</header>
+<header class="component-header"><p class="component-kind">Skill</p><h1>research-ethics</h1><p>为受支持的中国大陆观察性研究路线组织伦理与登记准备材料。它生成可供人类核对的结构化草稿，不作出事实性批准或提交。</p></header>
 
-<section class="component-category-section" aria-labelledby="skills-catalogue-title">
-  <div class="component-category-section-heading">
-    <p class="map-kicker">SKILL ROLE</p>
-    <h2 id="skills-catalogue-title">当前能力</h2>
-  </div>
-  <article class="component-entry skill-entry">
-    <p class="component-entry-kind">SKILL</p>
-    <div>
-      <h3>research-ethics</h3>
-      <p>面向受支持的中国大陆观察性研究路线，组织伦理与登记准备材料，并明确缺口与人工核对点。</p>
-    </div>
-    <p class="component-entry-version">v1.1.1</p>
-    <a href="https://github.com/chenhaoran2068/research-ethics/releases/tag/v1.1.1">查看 Release <span aria-hidden="true">&rarr;</span></a>
-  </article>
-</section>
+<section class="component-section component-summary"><p>使用前必须有明确的伦理准备请求、已确认的适用路线、具名 Study 根目录、材料模式、允许读取范围和目标交付物。任何缺项都应停在确认阶段。</p><div class="release-stamp"><span>当前公开 Release</span><strong><a href="https://github.com/chenhaoran2068/research-ethics/releases/tag/v1.1.1">v1.1.1</a></strong></div></section>
 
-<section class="component-category-section component-facts" aria-labelledby="skills-role-title">
-  <div class="component-category-section-heading">
-    <p class="map-kicker">CATEGORY ROLE</p>
-    <h2 id="skills-role-title">负责什么，不负责什么</h2>
-  </div>
-  <dl>
-    <div>
-      <dt>定义</dt>
-      <dd>在已确认适用范围后，协助组织代码化研究计划书骨架、材料缺口和平台顺序填写稿。</dd>
-    </div>
-    <div>
-      <dt>进入时机</dt>
-      <dd>用户明确请求，路线、Study 根目录、材料模式、允许读取范围和目标交付物均已确认时。</dd>
-    </div>
-    <div>
-      <dt>不执行</dt>
-      <dd>不确认伦理批准、数据访问或注册完成；不上传、提交、处理凭据，亦不覆盖随机或干预性研究路线。</dd>
-    </div>
-  </dl>
-</section>
+<section class="component-section" aria-labelledby="ethics-role-title"><div class="section-header"><div><p class="section-context">它能协助什么</p><h2 id="ethics-role-title">准备，不推进</h2></div></div><dl class="facts-grid"><div><dt>方案材料骨架</dt><dd>整理代码化研究计划书结构、缺口和待确认事实。</dd></div><div><dt>登记准备</dt><dd>按支持路线组织逐项填写清单与中英文配对内容。</dd></div><div><dt>材料核对</dt><dd>指出哪些附件、确认或证据仍缺失，而不替用户臆造事实。</dd></div><div><dt>路线边界</dt><dd>干预性和产品注册路线必须转入未来专门模块，不可套用当前范围。</dd></div></dl></section>
 
-<section class="component-category-section component-category-relationship" aria-labelledby="skills-relationship-title">
-  <div class="component-category-section-heading">
-    <p class="map-kicker">RELATIONSHIP</p>
-    <h2 id="skills-relationship-title">与其他类别的关系</h2>
-  </div>
-  <p><strong>Skills 与 Systems：</strong>Skill 可独立使用。Research Workflow 仅在满足特定路线条件时提供 metadata-only 桥接；它不会自动调用 research-ethics，也不会替它确认输入范围或生成批准结论。论文阅读由另一个独立 Skill 处理，两者不共享自动启动行为。</p>
-  <p><strong>Skills 与 Frameworks：</strong>Skill 的存在或被受控引用，不会改变 Framework 的工作区合同、项目绑定或公共/私有边界。</p>
-</section>
+<section class="component-section" aria-labelledby="ethics-boundary-title"><div class="section-header"><div><p class="section-context">不做什么</p><h2 id="ethics-boundary-title">不产生批准事实</h2></div></div><div class="boundary-grid"><div><h3>不推断状态</h3><p>不确认伦理批准、登记完成、数据访问、豁免或机构要求已经满足。</p></div><div><h3>不对外提交</h3><p>不上传平台、不提交材料、不推进任何现实世界的伦理或登记状态。</p></div></div></section>
 
-<section class="component-category-section component-sources" aria-labelledby="skills-sources-title">
-  <div class="component-category-section-heading">
-    <p class="map-kicker">OFFICIAL SOURCES</p>
-    <h2 id="skills-sources-title">正式来源</h2>
-  </div>
-  <ul>
-    <li><a href="https://github.com/chenhaoran2068/research-ethics/releases/tag/v1.1.1">v1.1.1 Release</a></li>
-    <li><a href="https://github.com/chenhaoran2068/research-ethics/blob/v1.1.1/skill/research-ethics/SKILL.md">Skill entry</a></li>
-    <li><a href="https://github.com/chenhaoran2068/research-ethics/blob/v1.1.1/skill/research-ethics/references/governed-study-bridge.md">Governed Study bridge</a></li>
-  </ul>
-</section>
+<section class="component-section" aria-labelledby="ethics-guide-title"><div class="section-header"><div><p class="section-context">使用指南</p><h2 id="ethics-guide-title">何时可进入</h2></div></div><div class="guide-links"><a href="../../user-paths/ethics-preparation/">伦理准备的前置条件</a></div></section>
+
+<section class="component-section" aria-labelledby="ethics-sources-title"><div class="section-header"><div><p class="section-context">正式来源</p><h2 id="ethics-sources-title">从精确版本核对</h2></div></div><ul class="source-list"><li><a href="https://github.com/chenhaoran2068/research-ethics/releases/tag/v1.1.1">v1.1.1 Release</a></li><li><a href="https://github.com/chenhaoran2068/research-ethics/blob/v1.1.1/skill/research-ethics/SKILL.md">Skill entry</a></li><li><a href="https://github.com/chenhaoran2068/research-ethics/blob/v1.1.1/skill/research-ethics/references/governed-study-bridge.md">Governed Study bridge</a></li></ul></section>
 
 </div>

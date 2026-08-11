@@ -1,31 +1,11 @@
-<div class="route-detail-page">
+<div class="guide-page">
 
-<header class="route-page-header">
-  <p class="map-context">USER PATH / PAPER READING</p>
-  <h1>阅读一篇论文</h1>
-  <p>这条路线用于理解、讨论或批判性审阅一篇具体论文。它不是新 Study intake，也不自动保存或导入任何阅读材料。</p>
-</header>
+<header class="guide-header"><p class="guide-kind">research-paper-reading 使用指南</p><h1>阅读一篇论文</h1><p>当用户明确要理解、解释、批判性评价或学习一篇指定论文时，使用 research-paper-reading；这不是新 Study 路由。</p></header>
 
-<section class="route-detail-section route-detail-facts" aria-labelledby="reading-route-facts-title">
-  <p class="map-kicker">STARTING CONDITIONS</p>
-  <h2 id="reading-route-facts-title">开始前确认</h2>
-  <dl>
-    <div><dt>你提供什么</dt><dd>论文、可访问的文本片段，或希望理解的具体图、表、方法和问题。</dd></div>
-    <div><dt>默认得到什么</dt><dd>会话内的逐步解释、追问、批判性阅读和不确定点梳理。</dd></div>
-    <div><dt>默认不发生什么</dt><dd>不会自动下载、复制、保存、同步或将内容写入知识库。</dd></div>
-  </dl>
-</section>
+<section class="guide-section"><div class="guide-summary"><p>开始前应确认论文来源、阅读目标、阅读层级与覆盖范围。默认 session_only：只在当前对话中解释，不保存任何材料。</p><div class="release-stamp"><span>相关组件</span><strong>research-paper-reading</strong></div></div></section>
 
-<section class="route-detail-section" aria-labelledby="reading-route-flow-title">
-  <p class="map-kicker">SESSION FLOW</p>
-  <h2 id="reading-route-flow-title">会话中的顺序</h2>
-  <p>先确认阅读目标和已提供材料，再按问题、设计、方法、结果、图表、论证和限制逐步讨论。用户可要求停在任何层次，也可只聚焦一个图、一个方法或一个结论。Skill 不会把解释性讨论写成事实性研究结论。</p>
-</section>
+<section class="guide-section" aria-labelledby="reading-steps"><div class="section-header"><div><p class="section-context">阅读路径</p><h2 id="reading-steps">从问题到边界</h2></div></div><div class="guide-step-list"><article><h3>确认阅读范围</h3><p>指定论文、目标、阅读深度，以及本轮要覆盖的章节、段落、图表或方法。</p></article><article><h3>按来源顺序解释</h3><p>逐段解释论证、定义、方法和数字；逐图逐表说明元素、阅读方法、解释边界和常见误读。</p></article><article><h3>结束时回顾</h3><p>进行理解核对，并只提出是否值得保存、关联或进一步讨论的建议。</p></article></div></section>
 
-<section class="route-detail-section" aria-labelledby="reading-route-boundary-title">
-  <p class="map-kicker">BOUNDARY</p>
-  <h2 id="reading-route-boundary-title">何时转到其他路线</h2>
-  <p>若目标变成“基于这篇论文启动或规划新研究”，再进入 Research System 的新研究导航。若需要保留笔记、关联文献管理器或建立知识记录，必须先明确选择相应受控路径和授权范围；不能由普通阅读会话自动升级。</p>
-</section>
+<section class="guide-section" aria-labelledby="reading-guide-boundary"><div class="section-header"><div><p class="section-context">停止边界</p><h2 id="reading-guide-boundary">不因此创建 Study</h2></div></div><div class="boundary-grid"><div><h3>不自动导入或保存</h3><p>阅读不会自动下载 PDF、导入 Zotero、建立知识卡或贴标签。</p></div><div><h3>不变成研究决定</h3><p>论文中的内容不自动成为当前 Study 的方法依据、伦理事实或正式规则。</p></div></div></section>
 
 </div>
