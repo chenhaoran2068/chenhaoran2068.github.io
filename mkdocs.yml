@@ -5,29 +5,32 @@ repo_url: https://github.com/chenhaoran2068/chenhaoran2068.github.io
 repo_name: chenhaoran2068/chenhaoran2068.github.io
 theme:
   name: mkdocs
-  language: en
+  language: zh
 extra_css:
   - stylesheets/portal.css
 nav:
-  - Home: index.md
-  - User paths:
-      - Overview: user-paths/index.md
-      - Possible new Study: user-paths/possible-new-study.md
-      - Existing Study, manuscript, and revision: user-paths/existing-study-manuscript-revision.md
-      - Ethics preparation: user-paths/ethics-preparation.md
-      - Paper reading: user-paths/paper-reading.md
-      - Managed reading and knowledge service: user-paths/managed-reading-knowledge.md
-  - Architecture map: architecture-map.md
-  - Component categories:
-      - Frameworks: framework.md
-      - Systems: systems/governed-research-workflow.md
-      - Skills: skills/index.md
+  - 首页: index.md
+  - 组件目录: catalog.md
+  - 架构地图: architecture-map.md
+  - 组件:
+      - Framework: framework.md
+      - Research System: systems/governed-research-workflow.md
+      - Skills 总览: skills/index.md
       - research-ethics: skills/research-ethics.md
       - research-paper-reading: skills/research-paper-reading.md
-  - Releases and governance:
-      - Releases and compatibility: releases.md
-      - Governance: governance.md
-      - Roadmap: roadmap.md
+  - 使用指南:
+      - 总览: user-paths/index.md
+      - 可能的新 Study: user-paths/possible-new-study.md
+      - 已有 Study、手稿与返修: user-paths/existing-study-manuscript-revision.md
+      - 伦理准备: user-paths/ethics-preparation.md
+      - 阅读一篇论文: user-paths/paper-reading.md
+      - 受控知识保留: user-paths/managed-reading-knowledge.md
+  - 外部集成: integrations.md
+  - 版本与治理:
+      - 发布与兼容: releases.md
+      - 治理边界: governance.md
+      - 路线图: roadmap.md
+      - Release notes v0.4.1: release/RELEASE_NOTES_v0.4.1.md
       - Release notes v0.4.0: release/RELEASE_NOTES_v0.4.0.md
       - Release notes v0.3.0: release/RELEASE_NOTES_v0.3.0.md
       - Release notes v0.2.0: release/RELEASE_NOTES_v0.2.0.md

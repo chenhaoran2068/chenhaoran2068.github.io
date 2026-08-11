@@ -1,61 +1,9 @@
-<div class="component-category-page skills-category-page">
+<div class="portal-page">
 
-<header class="component-category-header">
-  <div>
-    <p class="map-context">PUBLIC CATEGORY / 03</p>
-    <h1>Skills</h1>
-    <p>Skills 是独立维护的专门能力。每个 Skill 自己定义输入、输出、进入条件和禁止动作；它们可被某些 System 路线受控引用，也可在明确请求下独立进入。</p>
-  </div>
-  <aside class="component-category-count" aria-label="当前公开目录">
-    <strong>CURRENT CATALOGUE</strong>
-    <span>2 个公开 Skill</span>
-  </aside>
-</header>
+<header class="portal-header"><p class="portal-context">Skills</p><h1>独立的专门能力</h1><p>Skill 有各自的明确输入、输出和停止边界。它们不是某个 System 的下级页面，也不会因门户展示而自动被调用。</p></header>
 
-<section class="component-category-section" aria-labelledby="skills-catalogue-title">
-  <div class="component-category-section-heading">
-    <p class="map-kicker">CURRENT PUBLIC COMPONENTS</p>
-    <h2 id="skills-catalogue-title">当前目录</h2>
-  </div>
-  <article class="component-entry skill-entry">
-    <p class="component-entry-kind">SKILL</p>
-    <div>
-      <h3>research-ethics</h3>
-      <p>为受支持的中国大陆观察性研究路线组织伦理与登记准备材料，并明确缺口和人工核对点。</p>
-    </div>
-    <p class="component-entry-version">v1.1.1</p>
-    <a href="research-ethics/">查看说明 <span aria-hidden="true">&rarr;</span></a>
-  </article>
-  <article class="component-entry skill-entry">
-    <p class="component-entry-kind">SKILL</p>
-    <div>
-      <h3>research-paper-reading</h3>
-      <p>在单次受控会话中协助人类读懂并批判性审阅一篇论文；默认不会保存、下载或同步材料。</p>
-    </div>
-    <p class="component-entry-version">v0.3.0</p>
-    <a href="research-paper-reading/">查看说明 <span aria-hidden="true">&rarr;</span></a>
-  </article>
-</section>
+<section class="portal-section" aria-labelledby="skills-current-title"><div class="section-header"><div><p class="section-context">当前公开维护</p><h2 id="skills-current-title">两个独立 Skill 与一个 Skill 包</h2></div><p>Skill 包是相关专项能力的共同分发单元，不是新的 Framework 或 System 类别。</p></div><div class="catalog-list"><article class="catalog-entry"><div class="catalog-entry-meta">Skill<br>v1.1.1</div><div><h3>research-ethics</h3><p>在明确条件、受支持路线和明确输入范围内，协助伦理与登记准备。</p></div><a href="research-ethics/" class="link-arrow">查看 Skill</a></article><article class="catalog-entry"><div class="catalog-entry-meta">Skill<br>v0.3.0</div><div><h3>research-paper-reading</h3><p>以人类理解为中心，带领用户逐段、逐图、逐表阅读和分析一篇论文。</p></div><a href="research-paper-reading/" class="link-arrow">查看 Skill</a></article><article class="catalog-entry"><div class="catalog-entry-meta">Skill 包<br>v0.1.1</div><div><h3>Governed Engineering</h3><p>包含 governed-code-change、governed-database-change、governed-data-ingestion、governed-runtime-operation 与 audit-governed-delivery。</p></div><a href="https://github.com/chenhaoran2068/governed-engineering/releases/tag/v0.1.1" class="link-arrow">查看 Release</a></article></div></section>
 
-<section class="component-category-section component-facts" aria-labelledby="skills-role-title">
-  <div class="component-category-section-heading">
-    <p class="map-kicker">CATEGORY ROLE</p>
-    <h2 id="skills-role-title">如何进入</h2>
-  </div>
-  <dl>
-    <div>
-      <dt>明确任务</dt>
-      <dd>每个 Skill 都需要用户明确提出对应任务；存在于门户或本机不等于已经被调用。</dd>
-    </div>
-    <div>
-      <dt>独立合同</dt>
-      <dd>输入范围、保存条件、输出位置和禁止动作由各 Skill 的正式仓库定义。</dd>
-    </div>
-    <div>
-      <dt>不继承权限</dt>
-      <dd>System 的某条路线受控引用 Skill，不会自动授予数据、Study、平台或批准权限。</dd>
-    </div>
-  </dl>
-</section>
+<section class="portal-section" aria-labelledby="skills-boundary-title"><div class="section-header"><div><p class="section-context">共同边界</p><h2 id="skills-boundary-title">明确请求后才进入</h2></div></div><div class="boundary-grid"><div><h3>请求与输入必须明确</h3><p>每个 Skill 只在用户明确请求且该 Skill 所需输入满足时才可使用。</p></div><div><h3>不替代人类决定</h3><p>Skill 不自行确认伦理、访问、研究结论、投稿或发布事实。</p></div></div></section>
 
 </div>

@@ -42,6 +42,7 @@ ALLOWED_PUBLIC_FILES = {
     "requirements-docs.lock.txt",
     "mkdocs.yml",
     "docs/index.md",
+    "docs/catalog.md",
     "docs/architecture-map.md",
     "docs/framework.md",
     "docs/systems/governed-research-workflow.md",
@@ -54,6 +55,7 @@ ALLOWED_PUBLIC_FILES = {
     "docs/user-paths/ethics-preparation.md",
     "docs/user-paths/paper-reading.md",
     "docs/user-paths/managed-reading-knowledge.md",
+    "docs/integrations.md",
     "docs/releases.md",
     "docs/governance.md",
     "docs/roadmap.md",
@@ -64,12 +66,21 @@ ALLOWED_PUBLIC_FILES = {
     "docs/release/RELEASE_NOTES_v0.2.0.md",
     "docs/release/RELEASE_NOTES_v0.3.0.md",
     "docs/release/RELEASE_NOTES_v0.4.0.md",
+    "docs/release/RELEASE_NOTES_v0.4.1.md",
     "tests/test_component_catalog.py",
     "tests/test_public_boundary.py",
     "tests/test_site_navigation.py",
     "tests/test_release_links.py",
     "tests/test_reading_skill_route.py",
 }
+LOCAL_BUILD_DIRECTORIES = {".git", "__pycache__", ".venv-docs", "site"}
+
+
+def is_local_build_output(path: Path) -> bool:
+    parts = path.relative_to(ROOT).parts
+    return bool(LOCAL_BUILD_DIRECTORIES & set(parts)) or any(
+        part.startswith("site-validation-") for part in parts
+    )
 
 
 class PublicBoundaryTests(unittest.TestCase):
@@ -78,8 +89,7 @@ class PublicBoundaryTests(unittest.TestCase):
             path.relative_to(ROOT).as_posix()
             for path in ROOT.rglob("*")
             if path.is_file()
-            and ".git" not in path.relative_to(ROOT).parts
-            and "__pycache__" not in path.relative_to(ROOT).parts
+            and not is_local_build_output(path)
             and path.suffix != ".pyc"
         }
         self.assertEqual(actual, ALLOWED_PUBLIC_FILES)

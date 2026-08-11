@@ -1,9 +1,12 @@
-catalog_version: 0.2.0
-reviewed_on: 2026-08-10
+catalog_version: 0.2.3
+reviewed_on: 2026-08-11
 components:
   - component_id: workspace-framework
     display_name: Governed Research Workspace Framework
     kind: framework
+    lifecycle: current
+    ownership: first_party
+    relationship: core_component
     version: v0.4.0
     repository_url: https://github.com/chenhaoran2068/governed-research-workspace-framework
     release_url: https://github.com/chenhaoran2068/governed-research-workspace-framework/releases/tag/v0.4.0
@@ -11,19 +14,31 @@ components:
     purpose: Provide workspace ownership, registration, multi-System boundaries, and an opt-in managed local reference-library boundary.
     entry_conditions: Used when defining or maintaining the governed workspace structure.
     non_goals: Does not define a Study's analysis, manuscript, or ethics decisions.
+    show_on_home: true
+    show_in_catalog: true
+    last_reviewed: 2026-08-10
   - component_id: governed-research-workflow
     display_name: Governed Research Workflow
     kind: system
-    version: v1.12.0
+    lifecycle: current
+    ownership: first_party
+    relationship: core_component
+    version: v1.13.0
     repository_url: https://github.com/chenhaoran2068/governed-research-workflow
-    release_url: https://github.com/chenhaoran2068/governed-research-workflow/releases/tag/v1.12.0
-    official_rule_url: https://github.com/chenhaoran2068/governed-research-workflow/blob/v1.12.0/SKILL.md
-    purpose: Route governed research work, lifecycle control, execution, manuscript, experience boundaries, and optional metadata-only knowledge handoffs.
+    release_url: https://github.com/chenhaoran2068/governed-research-workflow/releases/tag/v1.13.0
+    official_rule_url: https://github.com/chenhaoran2068/governed-research-workflow/blob/v1.13.0/SKILL.md
+    purpose: Route governed research work, lifecycle control, execution, manuscript, experience boundaries, optional metadata-only knowledge handoffs, and the human decision before protocol lock and formal analysis.
     entry_conditions: Used for possible new Studies and explicitly governed existing-Study tasks.
     non_goals: Does not independently approve ethics, access data, submit work, or decide scientific conclusions.
+    show_on_home: true
+    show_in_catalog: true
+    last_reviewed: 2026-08-11
   - component_id: research-ethics
     display_name: research-ethics
-    kind: skill-module
+    kind: skill
+    lifecycle: current
+    ownership: first_party
+    relationship: optional_companion
     version: v1.1.1
     repository_url: https://github.com/chenhaoran2068/research-ethics
     release_url: https://github.com/chenhaoran2068/research-ethics/releases/tag/v1.1.1
@@ -31,9 +46,15 @@ components:
     purpose: Prepare bounded ethics and registration materials for supported China-mainland observational routes.
     entry_conditions: Requires an explicit request, confirmed route, named Study root, material mode, allowed inputs, and deliverable.
     non_goals: Does not infer approval, access data, upload, submit, or support interventional trial routes.
+    show_on_home: true
+    show_in_catalog: true
+    last_reviewed: 2026-08-10
   - component_id: research-paper-reading
     display_name: research-paper-reading
     kind: skill
+    lifecycle: current
+    ownership: first_party
+    relationship: independent_project
     version: v0.3.0
     repository_url: https://github.com/chenhaoran2068/research-paper-reading
     release_url: https://github.com/chenhaoran2068/research-paper-reading/releases/tag/v0.3.0
@@ -41,3 +62,92 @@ components:
     purpose: Guide a human through declared-coverage, stepwise understanding of one scholarly paper and, when explicitly configured, operate a managed local reading-knowledge service.
     entry_conditions: Used only for an explicit paper-reading request; managed retention additionally requires explicit configuration and source-specific human confirmation.
     non_goals: Does not scan a workspace, directly write a reference-manager database, automatically import papers, create a Study, or promote knowledge to rules.
+    show_on_home: true
+    show_in_catalog: true
+    last_reviewed: 2026-08-10
+  - component_id: governed-engineering
+    display_name: Governed Engineering
+    kind: skill
+    lifecycle: current
+    ownership: first_party
+    relationship: skill_package
+    version: v0.1.1
+    repository_url: https://github.com/chenhaoran2068/governed-engineering
+    release_url: https://github.com/chenhaoran2068/governed-engineering/releases/tag/v0.1.1
+    official_rule_url: https://github.com/chenhaoran2068/governed-engineering/blob/v0.1.1/README.md
+    purpose: Provide five focused, human-gated Skills for bounded code, database, data-ingestion, runtime-operation, and delivery-audit work.
+    entry_conditions: Use only when a bounded engineering task has explicit scope, authorization, evidence, recovery, and human approval requirements.
+    non_goals: Does not grant access, manage credentials, deploy unattended changes, or become a Research System dependency.
+    member_skills:
+      - governed-code-change
+      - governed-database-change
+      - governed-data-ingestion
+      - governed-runtime-operation
+      - audit-governed-delivery
+    show_on_home: true
+    show_in_catalog: true
+    last_reviewed: 2026-08-10
+  - component_id: clinical-database
+    display_name: Clinical Database
+    kind: method
+    lifecycle: current
+    ownership: first_party
+    relationship: method_support
+    version: null
+    repository_url: https://github.com/chenhaoran2068/Clinical_Database
+    release_url: null
+    official_rule_url: https://github.com/chenhaoran2068/Clinical_Database/blob/main/README.md
+    purpose: Public method repository for clinical database standardization work.
+    entry_conditions: Use only when its public method documentation is relevant to a separately governed clinical data task.
+    non_goals: Does not become a Research System, create a Study, or establish access to any clinical database.
+    show_on_home: false
+    show_in_catalog: true
+    last_reviewed: 2026-08-10
+  - component_id: four-layer-oced-m-framework
+    display_name: Four-Layer-OCED-M-Framework
+    kind: framework
+    lifecycle: historical
+    ownership: first_party
+    relationship: historical_related
+    version: null
+    repository_url: https://github.com/chenhaoran2068/Four-Layer-OCED-M-Framework
+    release_url: null
+    official_rule_url: https://github.com/chenhaoran2068/Four-Layer-OCED-M-Framework/blob/main/README.md
+    purpose: Earlier public framework for governable agentic workflow systems.
+    entry_conditions: Read only for historical or conceptual context.
+    non_goals: Is not the current workspace Framework and should not be used as a current installation route.
+    show_on_home: false
+    show_in_catalog: true
+    last_reviewed: 2026-08-10
+  - component_id: research-workflow-legacy
+    display_name: Research Workflow
+    kind: system
+    lifecycle: historical
+    ownership: first_party
+    relationship: historical_related
+    version: null
+    repository_url: https://github.com/chenhaoran2068/Research_Workflow
+    release_url: null
+    official_rule_url: https://github.com/chenhaoran2068/Research_Workflow/blob/main/README.md
+    purpose: Earlier public workflow-facing companion repository.
+    entry_conditions: Read only for historical or conceptual context.
+    non_goals: Is not the current Governed Research Workflow System and should not be used as a current installation route.
+    show_on_home: false
+    show_in_catalog: true
+    last_reviewed: 2026-08-10
+  - component_id: llmpet-cat
+    display_name: LLMPET Cat
+    kind: tool
+    lifecycle: current
+    ownership: first_party
+    relationship: independent_project
+    version: v0.10.63
+    repository_url: https://github.com/chenhaoran2068/llmpet-cat
+    release_url: https://github.com/chenhaoran2068/llmpet-cat/releases/tag/v0.10.63
+    official_rule_url: https://github.com/chenhaoran2068/llmpet-cat/blob/v0.10.63/README.md
+    purpose: A separate local desktop companion application for AI work sessions.
+    entry_conditions: Use independently from the governed research collaboration components.
+    non_goals: Is not a Framework, System, Skill, or required dependency of the research stack.
+    show_on_home: false
+    show_in_catalog: true
+    last_reviewed: 2026-08-10

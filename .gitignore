@@ -1,6 +1,8 @@
 _site/
 site/
+site-validation-*/
 .cache/
 __pycache__/
 *.py[cod]
 .venv/
+.venv-docs/

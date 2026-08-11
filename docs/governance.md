@@ -1,24 +1,9 @@
-<div class="portal-document-page">
+<div class="portal-page">
 
-<header class="portal-document-header">
-  <p class="map-context">GOVERNANCE &amp; SAFETY</p>
-  <h1>治理与安全</h1>
-  <p>门户用于解释公开组件关系、提供导航并链接正式来源；它不构成另一套治理层。</p>
-</header>
+<header class="portal-header"><p class="portal-context">治理边界</p><h1>组件协助，人类决定</h1><p>公共组件可以组织工作、发现缺口、生成受限草稿和核对一致性；它们不能自行决定现实世界的研究、伦理、访问、作者、投稿或发布事实。</p></header>
 
-<section class="portal-document-section governance-facts" aria-labelledby="governance-facts-title">
-  <h2 id="governance-facts-title">三条边界</h2>
-  <dl>
-    <div><dt>门户职责</dt><dd>解释组件关系、导航用户并链接公开的正式来源，不覆盖组件自己的协议、测试、发布或安装回执。</dd></div>
-    <div><dt>人类决定</dt><dd>研究问题、设计、伦理、数据访问、分析解释、作者资格、投稿、公开发布和本机采用均需相应的人类决定。</dd></div>
-    <div><dt>公开范围</dt><dd>不公开真实 Study、患者资料、未发表手稿、私有经验、内部审查证据、人员信息、本机路径或安装状态。</dd></div>
-  </dl>
-</section>
+<section class="portal-section" aria-labelledby="governance-title"><div class="section-header"><div><p class="section-context">共同原则</p><h2 id="governance-title">事实、权限与结论分开</h2></div></div><div class="governance-grid"><article><h3>正式来源优先</h3><p>门户的摘要只用于导航。版本、规则和安装状态由精确 Release、正式文件和回执核对。</p></article><article><h3>明确输入范围</h3><p>组件不因存在于工作区就读取项目、数据、论文、伦理材料或本地记忆。</p></article><article><h3>人类保留决定</h3><p>伦理、数据访问、研究结论、作者资格、投稿、发布与现实世界行动均需人类决定。</p></article><article><h3>不确定时停止</h3><p>发现来源、权限、当前性或边界不清时，应报告缺口，不用推测填补。</p></article></div></section>
 
-<section class="portal-document-section" aria-labelledby="governance-stop-title">
-  <p class="map-kicker">WHEN A BOUNDARY IS UNCLEAR</p>
-  <h2 id="governance-stop-title">先停止公开传播</h2>
-  <p>发现公开边界问题时，应先停止公开传播并按相应仓库的安全流程报告。自动检查不能把研究、伦理、数据访问、投稿或发布决定伪装成已完成的事实。</p>
-</section>
+<section class="portal-section" aria-labelledby="portal-boundary-title"><div class="section-header"><div><p class="section-context">门户自身边界</p><h2 id="portal-boundary-title">导航不是控制平面</h2></div></div><div class="boundary-grid"><div><h3>不安装</h3><p>门户不能安装、启用、更新或回滚任何组件。</p></div><div><h3>不执行</h3><p>门户中的路线和链接不会启动 Skill、创建 Study 或读取材料。</p></div></div></section>
 
 </div>

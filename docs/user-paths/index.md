@@ -1,44 +1,9 @@
-<div class="route-index-page">
+<div class="portal-page">
 
-<header class="route-page-header">
-  <p class="map-context">USER PATHS</p>
-  <h1>开始使用</h1>
-  <p>先按任务状态找到合适的公开说明页。选择路线只用于导航，不是研究、治理、伦理或发布决定。</p>
-</header>
+<header class="portal-header"><p class="portal-context">使用指南</p><h1>从明确任务进入</h1><p>这些页面解释各组件何时适用、需要什么前提以及何时应停止。它们不是首页的自动任务判断器，也不会执行所描述的工作。</p></header>
 
-<section class="route-directory" aria-label="使用路线目录">
-  <article class="route-entry">
-    <p>01</p>
-    <div>
-      <h2>可能的新研究</h2>
-      <p>从不完整想法开始，先识别可见事实、未知项和路线限制；不会建目录、读数据或选方法。</p>
-    </div>
-    <a href="possible-new-study/">查看路线 <span aria-hidden="true">&rarr;</span></a>
-  </article>
-  <article class="route-entry">
-    <p>02</p>
-    <div>
-      <h2>既有 Study、手稿与返修</h2>
-      <p>以明确的项目边界和当前权威材料为准；不会把已有项目误建为新 Study。</p>
-    </div>
-    <a href="existing-study-manuscript-revision/">查看路线 <span aria-hidden="true">&rarr;</span></a>
-  </article>
-  <article class="route-entry">
-    <p>03</p>
-    <div>
-      <h2>伦理准备何时可进入</h2>
-      <p>仅在路线、Study 根目录、材料模式、读取范围和交付物均已确认后进入；不会自动提交或认定批准。</p>
-    </div>
-    <a href="ethics-preparation/">查看条件 <span aria-hidden="true">&rarr;</span></a>
-  </article>
-  <article class="route-entry">
-    <p>04</p>
-    <div>
-      <h2>阅读一篇论文</h2>
-      <p>理解或批判性审阅一篇具体论文，默认只在当前会话讨论；不会自动保存或启动新的 Study。</p>
-    </div>
-    <a href="paper-reading/">查看路线 <span aria-hidden="true">&rarr;</span></a>
-  </article>
-</section>
+<section class="portal-section" aria-labelledby="system-guides-title"><div class="section-header"><div><p class="section-context">Research System</p><h2 id="system-guides-title">研究工作指南</h2></div></div><div class="guide-links"><a href="possible-new-study/">可能的新 Study</a><a href="existing-study-manuscript-revision/">已有 Study、手稿与返修</a></div></section>
+
+<section class="portal-section" aria-labelledby="skill-guides-title"><div class="section-header"><div><p class="section-context">Skills</p><h2 id="skill-guides-title">专门能力指南</h2></div></div><div class="guide-links"><a href="ethics-preparation/">伦理准备</a><a href="paper-reading/">阅读一篇论文</a><a href="managed-reading-knowledge/">受控知识保留</a></div></section>
 
 </div>

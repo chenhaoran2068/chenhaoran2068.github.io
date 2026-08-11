@@ -1,38 +1,9 @@
-<div class="portal-document-page">
+<div class="portal-page">
 
-<header class="portal-document-header">
-  <p class="map-context">ROADMAP</p>
-  <h1>路线图</h1>
-  <p>门户记录当前已公开的组件说明，也保留未来可能扩展的类别。任何扩展都需要单独确认边界与维护责任。</p>
-</header>
+<header class="portal-header"><p class="portal-context">路线图</p><h1>已公开、评估中与未承诺</h1><p>路线图只展示已讨论并可安全公开的方向。它不构成发布时间、功能承诺、安装状态或用户权限。</p></header>
 
-<section class="portal-document-section roadmap-columns" aria-labelledby="roadmap-current-title">
-  <div>
-    <p class="map-kicker">CURRENTLY DESCRIBED</p>
-    <h2 id="roadmap-current-title">已公开说明</h2>
-    <ul>
-      <li>工作区 Framework 的结构与 System 边界。</li>
-      <li>Research Workflow 的研究任务路由与受治理生命周期。</li>
-      <li>research-ethics 的明确进入条件和受限范围。</li>
-      <li>research-paper-reading 的单篇论文会话式理解与精读边界。</li>
-    </ul>
-  </div>
-  <div>
-    <p class="map-kicker">POSSIBLE FUTURE WORK</p>
-    <h2>未来可能扩展</h2>
-    <ul>
-      <li>经过审查的其他公开科研组件页面。</li>
-      <li>在明确授权、工具配置和公开边界审查后的受控知识服务集成。</li>
-      <li>经材料、权利和隐私审查后的公开经验衍生物说明。</li>
-      <li>因果设计、随机试验、系统综述或其他专门模块的独立页面。</li>
-    </ul>
-  </div>
-</section>
+<section class="portal-section" aria-labelledby="roadmap-current-title"><div class="section-header"><div><p class="section-context">当前已描述</p><h2 id="roadmap-current-title">公开组件能力</h2></div></div><div class="roadmap-grid"><article><h3>工作区 Framework</h3><p>多 System 边界、项目绑定和可选受管本地文献库边界。</p></article><article><h3>Research System</h3><p>研究生命周期、执行、结果、手稿、经验治理与 metadata-only 知识交接。</p></article><article><h3>research-ethics</h3><p>受支持路线下的伦理与登记准备材料组织。</p></article><article><h3>research-paper-reading</h3><p>单篇论文的引导精读与可选受控知识保留。</p></article><article><h3>Governed Engineering</h3><p>代码、数据库、数据接收、运行操作与交付审计的五项人类授权工程 Skills。</p></article></div></section>
 
-<section class="portal-document-section" aria-labelledby="roadmap-rule-title">
-  <p class="map-kicker">CHANGE RULE</p>
-  <h2 id="roadmap-rule-title">扩展不是自动发生</h2>
-  <p>每项新增组件、经验衍生物或版本更新都应先确认公开边界、正式来源、适用范围和维护责任，再进入相应的测试、审查和发布流程。</p>
-</section>
+<section class="portal-section" aria-labelledby="roadmap-future-title"><div class="section-header"><div><p class="section-context">可能的后续工作</p><h2 id="roadmap-future-title">仍需单独设计与审查</h2></div></div><div class="roadmap-grid"><article><h3>其他研究类型模块</h3><p>因果设计、目标试验模拟、随机试验、系统综述、定性或实验室研究均需专门模块。</p></article><article><h3>更多知识工具</h3><p>Obsidian 或其他工具只有在单独设计、验证与边界审查后才可能列为正式集成。</p></article><article><h3>更多公开组件</h3><p>新的 System、Skill 或方法库须先明确职责、公开边界、测试和发布路线。</p></article><article><h3>公开经验衍生物</h3><p>仅能从去私有化、逐项审查通过的材料形成；不会公开原经验或私有决策记录。</p></article></div></section>
 
 </div>
