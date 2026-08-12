@@ -89,6 +89,7 @@ ALLOWED_PUBLIC_FILES = {
     "docs/data/component_catalog.yaml",
     "docs/overrides/main.html",
     "docs/stylesheets/portal.css",
+    "docs/release/RELEASE_NOTES_v0.5.2.md",
     "docs/release/RELEASE_NOTES_v0.5.1.md",
     "docs/release/RELEASE_NOTES_v0.5.0.md",
     "docs/release/RELEASE_NOTES_v0.1.0.md",

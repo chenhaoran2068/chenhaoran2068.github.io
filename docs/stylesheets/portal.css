@@ -3379,10 +3379,6 @@ body:has(.portal-home) .md-footer { border-top-color: #2c373d; }
     margin-left: auto;
   }
 
-  .navbar .ms-md-auto li:not(:first-child) {
-    display: none;
-  }
-
   .navbar .portal-language-switcher-desktop {
     display: flex;
     margin-left: 8px;
