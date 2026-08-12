@@ -10,6 +10,8 @@
   when a localized page is missing.
 - Refines the public portal's navigation, component directories, visual
   system, setup guidance, and research-workflow explanation.
+- Updates GitHub Actions checkout and Python setup actions to their Node 24
+  runtime versions, removing the observed Node 20 deprecation warnings.
 
 ## Boundaries
 
