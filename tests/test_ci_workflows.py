@@ -20,6 +20,20 @@ class CiWorkflowTests(unittest.TestCase):
             self.assertIn("actions/checkout@v5", actions, name)
             self.assertIn("actions/setup-python@v6", actions, name)
 
+        pages = yaml.safe_load(
+            (ROOT / ".github" / "workflows" / "pages.yml").read_text(
+                encoding="utf-8"
+            )
+        )
+        page_steps = pages["jobs"]["deploy"]["steps"]
+        page_actions = [step["uses"] for step in page_steps if "uses" in step]
+        for expected in (
+            "actions/configure-pages@v6",
+            "actions/upload-pages-artifact@v5",
+            "actions/deploy-pages@v5",
+        ):
+            self.assertIn(expected, page_actions)
+
 
 if __name__ == "__main__":
     unittest.main()
