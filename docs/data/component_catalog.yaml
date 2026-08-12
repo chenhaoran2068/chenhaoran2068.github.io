@@ -61,7 +61,7 @@ components:
     official_rule_url: https://github.com/chenhaoran2068/research-paper-reading/blob/v0.3.0/skill/research-paper-reading/SKILL.md
     purpose: Guide a human through declared-coverage, stepwise understanding of one scholarly paper and, when explicitly configured, operate a managed local reading-knowledge service.
     entry_conditions: Used only for an explicit paper-reading request; managed retention additionally requires explicit configuration and source-specific human confirmation.
-    non_goals: Does not scan a workspace, directly write a reference-manager database, automatically import papers, create a Study, or promote knowledge to rules.
+    non_goals: Does not scan a workspace, directly write a reference-manager database, import an unconfirmed source, create a Study, or promote knowledge to rules.
     show_on_home: true
     show_in_catalog: true
     last_reviewed: 2026-08-10

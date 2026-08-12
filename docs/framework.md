@@ -22,9 +22,9 @@
   <div class="framework-reference-map" aria-label="Framework 工作区参考布局">
     <div class="framework-tree-toolbar">
       <div class="framework-tree-legend" aria-label="目录树颜色说明">
-        <span><i class="framework-color-swatch framework-color-example" aria-hidden="true"></i>绿色：名称示例</span>
-        <span><i class="framework-color-swatch framework-color-placeholder" aria-hidden="true"></i>金黄：替换用占位符</span>
-        <span><i class="framework-color-swatch framework-color-category" aria-hidden="true"></i>蓝色：数据类别示例</span>
+        <span><i class="framework-color-swatch framework-color-example" aria-hidden="true"></i><strong class="framework-legend-example-word">绿色</strong>：名称示例</span>
+        <span><i class="framework-color-swatch framework-color-placeholder" aria-hidden="true"></i><strong class="framework-legend-placeholder-word">金黄</strong>：替换用占位符</span>
+        <span><i class="framework-color-swatch framework-color-category" aria-hidden="true"></i><strong class="framework-legend-category-word">蓝色</strong>：数据类别示例</span>
       </div>
       <button id="framework-examples-toggle" class="framework-examples-toggle" type="button" aria-expanded="false">显示示例</button>
     </div>
@@ -112,7 +112,7 @@
         <p id="framework-reference-detail" class="framework-reference-detail">展开示例后会显示 chenhaoran/。新建工作区时使用小写字母、数字和连字符。</p>
       </aside>
     </div>
-    <p class="framework-reference-note"># 绿色是材料名称示例；金黄尖括号是要替换的占位符；蓝色是 Data_Raw/ 的示意分类。</p>
+    <p class="framework-reference-note"># <span class="framework-legend-example-word">绿色</span>是材料名称示例；<span class="framework-legend-placeholder-word">金黄</span>尖括号是要替换的占位符；<span class="framework-legend-category-word">蓝色</span>是 Data_Raw/ 的示意分类。</p>
   </div>
 </section>
 

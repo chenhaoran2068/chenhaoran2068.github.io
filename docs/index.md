@@ -1,14 +1,14 @@
 <div class="portal-home">
 
 <header class="portal-home-header">
-  <p class="portal-context">公开科研协作组件</p>
+  <p class="portal-context">公开组件目录</p>
   <h1>科研协作组件</h1>
-  <p class="portal-lead">这里汇总当前公开维护的组件及其正式来源。门户用于了解结构和定位入口；规则、版本与安装信息仍以各组件的精确 Release 和正式文档为准。</p>
+  <div class="portal-lead home-intro-lead"><p>这里会介绍一系列 Framework、System、Skills 等内容。</p><p>大家可以下载、配置这些材料。</p><p>结合它们的帮助，可以有效管理各种材料的存放，并合理推进研究。</p></div>
 </header>
 
 <section class="portal-section role-explainer" aria-labelledby="home-roles-title">
   <div class="section-header">
-    <div><p class="section-context">组件如何分工</p><h2 id="home-roles-title">三类组件</h2></div>
+    <div><p class="section-context">基本概念</p><h2 id="home-roles-title">Framework、System 和 Skills 是什么？</h2></div>
   </div>
   <div class="role-terminal" role="group" aria-label="Framework、System 与 Skills 的分工说明">
     <article class="role-terminal-entry">
@@ -32,10 +32,10 @@
   </div>
 </section>
 
-<section class="portal-section" aria-labelledby="home-current-title">
+<section class="portal-section home-workspace-section" aria-labelledby="home-current-title">
   <div class="section-header">
-    <div><p class="section-context">当前公开维护</p><h2 id="home-current-title">工作区组件地图</h2></div>
-    <p>当前公开组件按 Framework 定义的工作区归属/安装位置模型列出，不表示其 Git 源码的实际路径。</p>
+    <div><p class="section-context">当前公开维护</p><h2 id="home-current-title">配套使用这些 Framework、System 和 Skills，可以得到什么？</h2></div>
+    <p>下面用一个工作区例子，说明 Framework、System 和 Skills 可以怎样放在一起使用。</p>
   </div>
   <div class="workspace-map" aria-label="可展开的工作区组件地图">
     <p class="workspace-tone-legend" aria-label="目录类型颜色标记"><span class="workspace-tone-key workspace-framework-key">Framework 骨架</span><span class="workspace-tone-key workspace-system-key">System</span><span class="workspace-tone-key workspace-skill-key">Skill</span></p>
@@ -120,6 +120,35 @@
   </div>
 </section>
 
+<p class="all-projects-link"><a href="catalog/">查看全部公开项目 <span aria-hidden="true">-></span></a></p>
+
+<section class="portal-section home-setup-section" aria-labelledby="home-setup-title">
+  <div class="section-header">
+    <div><p class="section-context">第一次配置</p><h2 id="home-setup-title">一次配置当前公开核心组件</h2></div>
+    <p>复制下面的内容给你的 AI。它会按顺序检查、下载、配置和核验当前的 Framework、System 与 Skills。</p>
+  </div>
+  <p>本次包含：Governed Research Workspace Framework、Governed Research Workflow、research-paper-reading、research-ethics，以及 Governed Engineering 技能包。历史项目、独立工具和 Zotero 等外部工具不在这次自动配置范围内。</p>
+  <pre class="home-setup-prompt"><code>我想在一个新的工作区中，一次配置 Research Collaboration 当前公开维护的核心组件。
+
+候选工作区根目录：[填入你的工作区绝对路径]
+目标 AI 环境：[填入名称；不确定可先检查]
+是否准备受管文献库：[暂不需要 / 先检测已有 Zotero 或其他文献管理器]
+
+我授权你按以下顺序完成：
+1. 先检查上述位置是否已经有工作区；若已有内容，不覆盖、不迁移，先报告实际情况并停止等待我的决定。
+2. 检查当前 AI 环境能否安装并使用以下精确公开 Release；如有不兼容，说明差异后停止，不自行替换环境或已有组件：
+   - Governed Research Workspace Framework v0.4.0
+   - Governed Research Workflow v1.14.0
+   - research-paper-reading v0.3.0
+   - research-ethics v1.1.1
+   - Governed Engineering v0.1.1（含其五项成员 Skill）
+3. 按各 Release 的正式说明下载、配置并核验这些组件；建立 Framework 工作区骨架，并登记已配置的 System 与 Skills。
+4. 论文阅读默认只配置当前对话阅读。若我选择检测文献管理器，只检查是否已有；没有我的后续明确同意，不安装 Zotero 或其他外部工具。
+5. 运行各组件允许的本地验证；汇报实际安装位置、已采用版本、验证结果、尚缺条件和恢复方法。
+
+不要创建实际 Study，不读取、复制或处理真实数据、论文、伦理材料或其他私有材料；不要自动进入伦理准备、研究分析或提交发布动作。</code></pre>
+</section>
+
 </div>
 
 <script>
@@ -142,13 +171,13 @@
       "governed-data-ingestion": ["governed-data-ingestion", "用于来源接收、清单、校验、解析、隔离、重放和异常隔离等数据接收工作。", "它不绕过数据访问、许可、隐私或项目授权要求。", "https://github.com/chenhaoran2068/governed-engineering/blob/v0.1.1/skills/governed-data-ingestion/SKILL.md", "查看 Skill 规则"],
       "governed-runtime-operation": ["governed-runtime-operation", "用于有明确授权的命令行、服务、路径、环境、端点、恢复或回滚操作。", "它不用于无人值守控制，也不发现、请求或保存秘密信息。", "https://github.com/chenhaoran2068/governed-engineering/blob/v0.1.1/skills/governed-runtime-operation/SKILL.md", "查看 Skill 规则"],
       "audit-governed-delivery": ["audit-governed-delivery", "用于审查工程候选或交付物的可追溯性、测试证据、版本、发布门槛、保留与退役提案。", "它只能报告发现，不能自行批准、发布、安装、删除或提升任何材料。", "https://github.com/chenhaoran2068/governed-engineering/blob/v0.1.1/skills/audit-governed-delivery/SKILL.md", "查看 Skill 规则"],
-      shared: ["Shared/", "跨项目可共用但仍需治理的材料区域。其内容应有明确所有者、适用范围和访问边界。", "共享不表示可自由复制到任意项目，也不等同于公开材料。", "framework/", "查看 Framework 介绍"],
-      knowledge: ["Knowledge/", "保存文献阅读、知识卡与可追溯的知识服务材料。它与项目记忆、经验治理和原始论文分别保持边界。", "知识可以服务多个项目，但不能仅因有标签就变成正式规则或项目结论。", "integrations/", "查看知识与集成说明"],
-      methods: ["Methods/", "放置可复用的方法、技术路线或特定领域工具的工作区域。", "它不替代某个 Study 的方案、分析合同或结果权威。", "framework/", "查看 Framework 介绍"],
+      shared: ["Shared/", "跨项目可共用但仍需治理的材料区域。其内容应有明确所有者、适用范围和访问边界。", "例如：跨项目可复用的模板，或已审查的公开安全衍生物。共享不表示可自由复制到任意项目，也不等同于公开材料。", "framework/", "查看 Framework 介绍"],
+      knowledge: ["Knowledge/", "保存文献阅读、知识卡与可追溯的知识服务材料。它与项目记忆、经验治理和原始论文分别保持边界。", "例如：一篇论文的阅读档案，或可关联来源的知识卡。它们不会只因打上标签就成为正式规则或项目结论。", "integrations/", "查看知识与集成说明"],
+      methods: ["Methods/", "放置可复用的方法、技术路线或特定领域工具的工作区域。", "例如：可复用的方法包、统计或建模脚本框架，或某个领域的工具说明。它不替代某个 Study 的方案、分析合同或结果权威。", "framework/", "查看 Framework 介绍"],
       instances: ["Instances/", "存放具体项目或实际工作实例。一项 Study 会在这里建立自己的目录，而不是把方案、数据、分析、结果与手稿混入 System。", "展开下方的 <study-id>/ 可以看到从 00_state/ 到 12_archive/ 的完整目录名称。", "systems/governed-research-workflow/#study-layout-title", "查看完整 Study 布局"],
       "study-layout": ["<study-id>/", "一项实际研究的根目录。它按 00_state/ 到 12_archive/ 分开保存状态、方案、治理资料、数据、分析、结果、手稿、投稿和归档材料。", "这个目录结构由 Governed Research Workflow 提供；它位于 Instances/，不属于 System 本身的规则文件。", "systems/governed-research-workflow/#study-layout-title", "查看完整 Study 布局"],
-      "data-raw": ["Data_Raw/", "受控原始材料的工作区区域。访问、复制、处理和保留均应遵守适用的数据权限与项目规则。", "它不是普通的临时文件夹，也不应被公开组件自动读取。", "framework/", "查看 Framework 介绍"],
-      github: ["Github/", "本地仓库与公开衍生物的工作区域。公开内容仍需经过版本、边界、审查和发布流程。", "在这里存在的材料不等于已公开或适合公开。", "releases/", "查看发布与兼容"],
+      "data-raw": ["Data_Raw/", "受控原始材料的工作区区域。访问、复制、处理和保留均应遵守适用的数据权限与项目规则。", "例如：MIMIC-IV、TCGA 等公开数据源。这里只是来源命名示例，不表示数据已下载、获得访问权或可用于任何项目。", "framework/", "查看 Framework 介绍"],
+      github: ["Github/", "本地仓库与公开衍生物的工作区域。公开内容仍需经过版本、边界、审查和发布流程。", "例如：governed-research-workflow、research-paper-reading 等公开组件仓库。在这里存在的材料不等于已公开或适合公开。", "releases/", "查看发布与兼容"],
       ops: ["Ops/", "用于维护、安装、验证和运行层面的操作性材料。", "操作记录不等于组件规则，也不应被当作用户任务的正式输入。", "governance/", "查看治理边界"],
       archive: ["Archive/", "用于明确退役或保留历史的材料。历史存在不等于它仍是当前规则、当前版本或可复用依据。", "使用历史材料前，需要先确认其当前性与权威状态。", "governance/", "查看治理边界"]
     };

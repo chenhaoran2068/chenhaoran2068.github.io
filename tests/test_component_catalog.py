@@ -128,6 +128,12 @@ class ComponentCatalogTests(unittest.TestCase):
             marker = f'data-component-id="{component["component_id"]}"'
             self.assertEqual(marker in page, component["show_in_catalog"])
 
+        self.assertIn('class="catalog-tree"', page)
+        self.assertNotIn('class="catalog-jump-links"', page)
+        self.assertIn("包含的 Skills", page)
+        self.assertIn("governed-database-change", page)
+        self.assertIn("audit-governed-delivery", page)
+
 
 if __name__ == "__main__":
     unittest.main()

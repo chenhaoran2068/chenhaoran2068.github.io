@@ -2,47 +2,87 @@
 
 <header class="catalog-header">
   <p class="portal-context">公开组件目录</p>
-  <h1>全部组件目录</h1>
-  <p>目录按组件类型、维护状态和关系整理经审查的公开项目。它用于发现与导航；正式规则、版本和安装说明仍以各仓库的精确 Release 或正式文档为准。</p>
+  <h1>全部公开项目</h1>
+  <p>这里列出现在维护中的组件，以及仍可查看的方法仓库、早期项目和独立项目。</p>
 </header>
 
-<nav class="catalog-jump-links" aria-label="目录分区">
-  <a href="#current">当前维护</a>
-  <a href="#methods">方法支持</a>
-  <a href="#historical">历史相关</a>
-  <a href="#independent">独立项目</a>
-</nav>
+<section class="catalog-section" aria-labelledby="catalog-current-title">
+  <div class="section-header"><div><p class="section-context">当前维护</p><h2 id="catalog-current-title">科研协作组件</h2></div></div>
+  <div class="catalog-tree" aria-label="当前维护的科研协作组件">
+    <section class="catalog-tree-group catalog-framework-group">
+      <h3><span aria-hidden="true">|-</span>Framework</h3>
+      <article class="catalog-tree-entry" data-component-id="workspace-framework">
+        <span class="catalog-tree-branch" aria-hidden="true">|_</span>
+        <div><h4>Governed Research Workspace Framework</h4><p>建立工作区时，用来确定目录、组件位置和项目材料的归属。</p></div>
+        <a href="../framework/" class="catalog-entry-link">组件页 <span aria-hidden="true">-></span></a>
+      </article>
+    </section>
 
-<section id="current" class="catalog-section" aria-labelledby="current-title">
-  <div class="section-header"><div><p class="section-context">当前维护</p><h2 id="current-title">科研协作组件</h2></div><p>这些组件属于当前公开维护的科研协作栈。</p></div>
-  <div class="catalog-list">
-    <article class="catalog-entry" data-component-id="workspace-framework"><div class="catalog-entry-meta">Framework<br>当前维护</div><div><h3>Governed Research Workspace Framework</h3><p>定义工作区所有权、System 注册、多 System 边界和可选知识服务边界。</p></div><a href="../framework/" class="link-arrow">查看组件页</a></article>
-    <article class="catalog-entry" data-component-id="governed-research-workflow"><div class="catalog-entry-meta">System<br>当前维护</div><div><h3>Governed Research Workflow</h3><p>提供研究生命周期、执行、结果、手稿与经验治理的受控工作流。</p></div><a href="../systems/governed-research-workflow/" class="link-arrow">查看组件页</a></article>
-    <article class="catalog-entry" data-component-id="research-ethics"><div class="catalog-entry-meta">Skill<br>当前维护</div><div><h3>research-ethics</h3><p>在明确条件和输入范围内，协助组织受支持路线的伦理与登记准备材料。</p></div><a href="../skills/research-ethics/" class="link-arrow">查看组件页</a></article>
-    <article class="catalog-entry" data-component-id="research-paper-reading"><div class="catalog-entry-meta">Skill<br>当前维护</div><div><h3>research-paper-reading</h3><p>以人类理解为中心，逐段、逐图、逐表阅读和批判性分析单篇论文。</p></div><a href="../skills/research-paper-reading/" class="link-arrow">查看组件页</a></article>
-    <article class="catalog-entry" data-component-id="governed-engineering"><div class="catalog-entry-meta">Skill 包<br>当前维护</div><div><h3>Governed Engineering</h3><p>包含代码变更、数据库变更、数据接收、运行操作和交付审计五项人类授权的工程 Skills。</p></div><a href="https://github.com/chenhaoran2068/governed-engineering/releases/tag/v0.1.1" class="link-arrow">查看 Release</a></article>
+    <section class="catalog-tree-group catalog-system-group">
+      <h3><span aria-hidden="true">|-</span>System</h3>
+      <article class="catalog-tree-entry" data-component-id="governed-research-workflow">
+        <span class="catalog-tree-branch" aria-hidden="true">|_</span>
+        <div><h4>Governed Research Workflow</h4><p>开始、推进、写作或返修一项研究时，用它把各阶段和材料衔接起来。</p></div>
+        <a href="../systems/governed-research-workflow/" class="catalog-entry-link">组件页 <span aria-hidden="true">-></span></a>
+      </article>
+    </section>
+
+    <section class="catalog-tree-group catalog-skills-group">
+      <h3><span aria-hidden="true">|_</span>Skills</h3>
+      <article class="catalog-tree-entry" data-component-id="research-ethics">
+        <span class="catalog-tree-branch" aria-hidden="true">|-</span>
+        <div><h4>research-ethics</h4><p>研究设计已经写清、需要准备伦理、备案或登记材料时使用。</p></div>
+        <a href="../skills/research-ethics/" class="catalog-entry-link">组件页 <span aria-hidden="true">-></span></a>
+      </article>
+      <article class="catalog-tree-entry" data-component-id="research-paper-reading">
+        <span class="catalog-tree-branch" aria-hidden="true">|-</span>
+        <div><h4>research-paper-reading</h4><p>把一篇论文交给 AI，一节、一段、一图地读懂时使用。</p></div>
+        <a href="../skills/research-paper-reading/" class="catalog-entry-link">组件页 <span aria-hidden="true">-></span></a>
+      </article>
+      <article class="catalog-tree-entry catalog-engineering-entry" data-component-id="governed-engineering">
+        <span class="catalog-tree-branch" aria-hidden="true">|_</span>
+        <div><h4>Governed Engineering</h4><p>需要做受控的工程变更、资料接收、运行操作或交付核查时使用。</p><div class="catalog-members"><p>包含的 Skills</p><ul><li>governed-code-change</li><li>governed-database-change</li><li>governed-data-ingestion</li><li>governed-runtime-operation</li><li>audit-governed-delivery</li></ul></div></div>
+        <a href="https://github.com/chenhaoran2068/governed-engineering/releases/tag/v0.1.1" class="catalog-entry-link">查看 v0.1.1 Release <span aria-hidden="true">-></span></a>
+      </article>
+    </section>
   </div>
 </section>
 
-<section id="methods" class="catalog-section" aria-labelledby="methods-title">
-  <div class="section-header"><div><p class="section-context">方法支持</p><h2 id="methods-title">公开方法仓库</h2></div><p>方法支持不等于当前 System，也不建立任何数据访问能力。</p></div>
-  <div class="catalog-list">
-    <article class="catalog-entry" data-component-id="clinical-database"><div class="catalog-entry-meta">Method<br>当前维护</div><div><h3>Clinical Database</h3><p>面向临床数据库标准化工作的公开方法仓库。</p></div><a href="https://github.com/chenhaoran2068/Clinical_Database" class="link-arrow">查看仓库</a></article>
+<section class="catalog-section" aria-labelledby="catalog-methods-title">
+  <div class="section-header"><div><p class="section-context">方法与工具</p><h2 id="catalog-methods-title">公开方法仓库</h2></div></div>
+  <div class="catalog-tree catalog-secondary-tree">
+    <article class="catalog-tree-entry" data-component-id="clinical-database">
+      <span class="catalog-tree-branch" aria-hidden="true">|_</span>
+      <div><h4>Clinical Database</h4><p>面向临床数据库标准化工作的公开方法仓库。</p></div>
+      <a href="https://github.com/chenhaoran2068/Clinical_Database" class="catalog-entry-link">GitHub <span aria-hidden="true">-></span></a>
+    </article>
   </div>
 </section>
 
-<section id="historical" class="catalog-section" aria-labelledby="historical-title">
-  <div class="section-header"><div><p class="section-context">历史相关</p><h2 id="historical-title">保留以供理解演进</h2></div><p>以下项目不是当前安装或执行入口。</p></div>
-  <div class="catalog-list">
-    <article class="catalog-entry" data-component-id="four-layer-oced-m-framework"><div class="catalog-entry-meta">Framework<br>历史相关</div><div><h3>Four-Layer-OCED-M-Framework</h3><p>较早期的可治理 agentic workflow 公开框架。</p></div><a href="https://github.com/chenhaoran2068/Four-Layer-OCED-M-Framework" class="link-arrow">查看仓库</a></article>
-    <article class="catalog-entry" data-component-id="research-workflow-legacy"><div class="catalog-entry-meta">System<br>历史相关</div><div><h3>Research Workflow</h3><p>较早期的研究工作流配套仓库。</p></div><a href="https://github.com/chenhaoran2068/Research_Workflow" class="link-arrow">查看仓库</a></article>
+<section class="catalog-section" aria-labelledby="catalog-history-title">
+  <div class="section-header"><div><p class="section-context">历史相关</p><h2 id="catalog-history-title">早期项目</h2></div><p>仍可阅读，但不是新的配置或执行入口。</p></div>
+  <div class="catalog-tree catalog-secondary-tree">
+    <article class="catalog-tree-entry" data-component-id="four-layer-oced-m-framework">
+      <span class="catalog-tree-branch" aria-hidden="true">|-</span>
+      <div><h4>Four-Layer-OCED-M-Framework</h4><p>较早期的可治理 agentic workflow 公开框架。</p></div>
+      <a href="https://github.com/chenhaoran2068/Four-Layer-OCED-M-Framework" class="catalog-entry-link">GitHub <span aria-hidden="true">-></span></a>
+    </article>
+    <article class="catalog-tree-entry" data-component-id="research-workflow-legacy">
+      <span class="catalog-tree-branch" aria-hidden="true">|_</span>
+      <div><h4>Research Workflow</h4><p>较早期的研究工作流配套仓库。</p></div>
+      <a href="https://github.com/chenhaoran2068/Research_Workflow" class="catalog-entry-link">GitHub <span aria-hidden="true">-></span></a>
+    </article>
   </div>
 </section>
 
-<section id="independent" class="catalog-section" aria-labelledby="independent-title">
-  <div class="section-header"><div><p class="section-context">独立项目</p><h2 id="independent-title">同一维护者的其他公开项目</h2></div><p>它不属于科研协作组件栈，也不是其依赖项。</p></div>
-  <div class="catalog-list">
-    <article class="catalog-entry" data-component-id="llmpet-cat"><div class="catalog-entry-meta">Tool<br>独立项目</div><div><h3>LLMPET Cat</h3><p>独立的本地 AI 工作会话陪伴应用。</p></div><a href="https://github.com/chenhaoran2068/llmpet-cat" class="link-arrow">查看仓库</a></article>
+<section class="catalog-section" aria-labelledby="catalog-independent-title">
+  <div class="section-header"><div><p class="section-context">独立项目</p><h2 id="catalog-independent-title">其他公开项目</h2></div><p>它与科研协作组件互不依赖。</p></div>
+  <div class="catalog-tree catalog-secondary-tree">
+    <article class="catalog-tree-entry" data-component-id="llmpet-cat">
+      <span class="catalog-tree-branch" aria-hidden="true">|_</span>
+      <div><h4>LLMPET Cat</h4><p>独立的本地 AI 工作会话陪伴应用。</p></div>
+      <a href="https://github.com/chenhaoran2068/llmpet-cat" class="catalog-entry-link">GitHub <span aria-hidden="true">-></span></a>
+    </article>
   </div>
 </section>
 

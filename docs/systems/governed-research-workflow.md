@@ -3,11 +3,11 @@
 <header class="component-header">
   <p class="component-kind">System</p>
   <h1>Governed Research Workflow</h1>
-  <p>把一项 Study 从研究想法、方案和分析，推进到结果、手稿、返修与归档的一套工作路径。</p>
+  <p>帮助把一项 Study 从研究想法、设计、执行和结果，一直整理到手稿、返修与归档。</p>
 </header>
 
 <section class="component-section component-summary system-summary">
-  <p>当一项研究需要持续整理方案、执行、结果、手稿和返修材料时，使用这个 System。它把材料放到可追溯的位置，并在关键节点保留人类确认。</p>
+  <p>当一项研究需要持续保存方案、运行、结果、手稿和返修材料时，使用这个 System。它规定这些材料在 Study 内怎样组织，也保留关键决定的来处。</p>
   <div class="release-stamp"><span>当前公开 Release</span><strong><a href="https://github.com/chenhaoran2068/governed-research-workflow/releases/tag/v1.14.0">v1.14.0</a></strong></div>
 </section>
 
@@ -93,14 +93,14 @@
                 <button type="button" class="system-flow-node" data-stage-key="4" data-flow-node="4"><span>04</span><strong>确认研究设计</strong><small>把研究对象、比较方式、结局、观察时间等关键设计事项定下来</small></button>
               </div>
               <div class="system-flow-stage-row">
-                <button type="button" class="system-flow-node" data-stage-key="5" data-flow-node="5"><span>05</span><strong>写研究计划书，准备伦理、登记与数据访问材料</strong><small>完成详细研究设计，按适用要求办理伦理与备案</small><span class="system-flow-skill-hint">满足条件时可联动 Skill：<b>research-ethics</b></span></button>
+                <button type="button" class="system-flow-node" data-stage-key="5" data-flow-node="5"><span>05</span><strong>完成研究计划书，办理研究开始前的审查</strong><small>科学性论证、伦理、备案或登记、数据访问及其他所需材料</small><span class="system-flow-skill-hint">满足条件时可联动 Skill：<b>research-ethics</b></span></button>
               </div>
             </section>
 
             <section class="system-flow-phase system-flow-phase-decision" aria-labelledby="system-phase-decision-title">
               <header><span>06</span><strong id="system-phase-decision-title">判断研究是否值得继续</strong></header>
               <div class="system-flow-stage-row">
-                <button type="button" class="system-flow-key-part" data-stage-key="6" data-flow-node="key-part"><span>检查</span><strong>关键部分检查</strong><small>用研究核心部分，以较小范围判断研究是否值得继续。<br>也看它能否发展成一篇有价值、可诚实报告的论文；不以阳性或显著为唯一条件。</small></button>
+                <button type="button" class="system-flow-key-part" data-stage-key="6" data-flow-node="key-part"><span>检查</span><strong>关键部分检查</strong><small>用较小范围先看数据、定义和结果，判断是否值得继续投入。<br>也看能否发展成一篇有价值、可诚实报告的论文；不只看阳性或显著。</small></button>
               </div>
               <div class="system-flow-stage-row system-flow-decision-row">
                 <div class="system-flow-decision" data-flow-node="feasibility-decision"><span>人类决定</span><strong>继续 / 附条件继续 / 重构 / 停止</strong><small>附条件继续时，列明每项条件及其最迟解决关卡；不能把初步检查写成最终研究结论。</small></div>
@@ -117,20 +117,20 @@
                 <button type="button" class="system-flow-node" data-stage-key="7" data-flow-node="7"><span>07</span><strong>完成结果与手稿</strong><small>先完成 Results，再按顺序完成其他章节</small></button>
               </div>
               <div class="system-flow-stage-row">
-                <button type="button" class="system-flow-node" data-stage-key="8" data-flow-node="8"><span>08</span><strong>联合审查全部材料</strong><small>把方案、运行、结果、手稿和声明一起核对</small></button>
+                <button type="button" class="system-flow-node" data-stage-key="8" data-flow-node="8"><span>08</span><strong>联合审查全部材料</strong><small>把方案、运行、结果、手稿和投稿材料放在一起核对</small></button>
               </div>
             </section>
 
             <section class="system-flow-phase system-flow-phase-submission" aria-labelledby="system-phase-submission-title">
               <header><span>09–11</span><strong id="system-phase-submission-title">从投稿到归档</strong></header>
               <div class="system-flow-stage-row">
-                <button type="button" class="system-flow-node" data-stage-key="9" data-flow-node="9"><span>09</span><strong>准备投稿包</strong><small>给出目标期刊和文章类型，整理投稿包</small></button>
+                <button type="button" class="system-flow-node" data-stage-key="9" data-flow-node="9"><span>09</span><strong>准备投稿包</strong><small>确定目标期刊和文章类型，按当前要求准备投稿材料</small></button>
               </div>
               <div class="system-flow-stage-row">
                 <button type="button" class="system-flow-node" data-stage-key="10" data-flow-node="10"><span>10</span><strong>处理编辑意见与返修</strong><small>提供意见，逐条决定并同步修改</small></button>
               </div>
               <div class="system-flow-stage-row">
-                <button type="button" class="system-flow-node" data-stage-key="11" data-flow-node="11"><span>11</span><strong>完成归档与复盘</strong><small>处理校样、权利和最终材料，再归档复盘</small></button>
+                <button type="button" class="system-flow-node" data-stage-key="11" data-flow-node="11"><span>11</span><strong>完成归档与复盘</strong><small>处理校样、版权、开放获取和最终材料，再归档复盘</small></button>
               </div>
             </section>
           </div>
@@ -141,23 +141,19 @@
     <aside class="system-route-inspector" aria-live="polite" aria-label="当前阶段说明">
       <p class="system-inspector-label">当前阶段</p>
       <h3 id="stage-inspector-title">01 研究请求</h3>
+      <p id="stage-inspector-precondition" class="stage-inspector-precondition" hidden></p>
       <dl>
-        <div><dt>从这里开始</dt><dd id="stage-inspector-start">新研究：开一个新对话，在对话框发送“我想开始一个新研究”。已有项目：给出 Study 名称或根目录，再说明当前任务。</dd></div>
-        <div><dt>一起完成</dt><dd id="stage-inspector-work">先把目前知道的情况说出来即可。题目、数据或方法还不清楚也没关系；AI 会先帮你分清这是新研究、已有项目，还是先讨论一个想法。</dd></div>
-        <div><dt>完成以后</dt><dd id="stage-inspector-next">你可以说“按这个方向继续”“我想换一种做法”或“先暂停”。确认继续后，才进入工作区、Study 名称和协作方式的讨论。</dd></div>
+        <div><dt id="stage-inspector-start-label">先做什么</dt><dd id="stage-inspector-start">新研究：开一个新对话，在对话框发送“我想开始一个新研究”。已有项目：给出 Study 名称或根目录，再说明当前任务。</dd></div>
+        <div><dt id="stage-inspector-work-label">这一步看什么</dt><dd id="stage-inspector-work">先把目前知道的情况说出来即可。题目、数据或方法还不清楚也没关系；AI 会先帮你分清这是新研究、已有项目，还是先讨论一个想法。</dd></div>
+        <div id="stage-inspector-next-row"><dt id="stage-inspector-next-label">接下来</dt><dd id="stage-inspector-next">你可以说“按这个方向继续”“我想换一种做法”或“先暂停”。确认继续后，才进入工作区、Study 名称和协作方式的讨论。</dd></div>
       </dl>
-      <details id="stage-inspector-examples" class="system-route-examples" hidden>
-        <summary id="stage-inspector-examples-title"></summary>
-        <ol id="stage-inspector-examples-list"></ol>
+      <details id="stage-inspector-guides" class="system-route-examples" hidden>
+        <summary id="stage-inspector-guides-title"></summary>
+        <div id="stage-inspector-guides-body" class="system-route-guide-groups"></div>
       </details>
       <p class="system-route-boundary">绿色提示表示：此步骤可联动对应的 Skill。独立组件若进入 Study，只保留 <code>metadata-only</code> 信息；需要明确点名，Research System 不会自动启动它。</p>
     </aside>
   </div>
-</section>
-
-<section class="component-section" aria-labelledby="system-guides-title">
-  <div class="section-header"><div><p class="section-context">继续进入</p><h2 id="system-guides-title">两条常见路线</h2></div></div>
-  <div class="guide-links"><a href="../../user-paths/possible-new-study/">可能的新 Study</a><a href="../../user-paths/existing-study-manuscript-revision/">已有 Study、手稿与返修</a></div>
 </section>
 
 </div>
@@ -165,20 +161,20 @@
 <script>
   (() => {
     const studyDescriptions = {
-      "study-root": ["<study-id>/", "一个实际 Study 的根目录。研究相关的方案、数据、运行、结果、手稿和投稿材料都留在这里，而不是混入 System 本身。", "点击左侧目录查看它保存什么，以及它在研究推进中的位置。"],
-      state: ["00_state/", "保存当前状态、生命周期决定、分析状态和冻结记录。它让后续审查能知道目前处于哪个阶段、什么决定仍有效。", "分析状态与冻结决定放在 00_state/lifecycle/；它们引用方案和治理记录，而不替代这些记录。"],
-      intake: ["01_intake/", "保存研究请求、范围讨论和 intake 形成的当前材料。它是从不成熟想法走向可确认研究路径的工作面。", "仅在用户确认开始受控准备后建立；讨论中的口头想法不自动变成正式方案。"],
-      registry: ["02_registry/", "保存登记、合规、访问和外部支持证据的工作面。治理事实应由真实来源支持，并与人类决定保持可追溯关系。", "02_registry/compliance/ 保存治理准备记录与相关材料；它不因有模板或字段就证明伦理、访问或登记已经完成。"],
-      protocol: ["03_protocol/", "保存研究设计、五维分类和当前方案。time zero、测量窗、随访和行政截尾等具体设计问题在这里说明。", "需要伦理准备时，派生草稿可放在 03_protocol/derived/；当前方案本身不被草稿覆盖。"],
-      knowledge: ["04_knowledge/", "保存本 Study 使用的知识、来源说明和应用判断。它把文献或知识的使用与项目结论、经验和正式规则分开。", "论文阅读 Skill 只有在用户明确选择阅读和后续保留时，才可能为这里形成受控交接。"],
-      memory: ["05_memory/", "保存项目决策记忆、未解决问题和项目局部 retrospective。它帮助同一 Study 在修订、交接和归档时恢复上下文。", "项目经验默认留在这个 Study；是否成为共享经验或正式规则需要后续单独审查。"],
-      data: ["06_data/", "保存项目授权范围内的数据工作材料、来源映射或项目快照。它的具体内容受数据权限、许可与本项目规则约束。", "建立目录不授予数据访问权，也不表示真实数据可被 System 自动读取。"],
-      analysis: ["07_analysis/", "保存分析执行合同、环境、配置、实现、测试、正式运行和开发材料。正式运行使用不覆盖的 run 目录保留身份和输入配置。", "00_contract/ 中的 execution contract 引用方案、治理与分析状态；05_runs/<run-id>/ 保存一次正式运行的 manifest。"],
-      results: ["08_results/", "保存各次运行的结果 manifest，以及指向当前可用结果的 authority 记录。表、图和手稿主张应从已审查的结果包形成。", "_manifests/current_result_authority.json 指向相关运行、结果、QA 和人类决定；它不能只凭自身证明结论正确。"],
-      manuscript: ["09_manuscript/", "保存手稿源、表图、补充材料、主张登记和声明材料。它引用当前方案与结果，而不是重新定义它们。", "方法应回到方案和执行记录；结果应回到结果 manifest；讨论再解释证据强度与限制。"],
-      submission: ["10_submission/", "保存目标期刊要求、投稿包、审稿意见、逐条回复、修订追踪和录用相关材料。", "每项回复都应能回到实际修改的位置；涉及方法、结果或主张的变更应重新核对受影响材料。"],
-      qa: ["11_qa/", "保存分析运行和材料检查的 QA 记录、问题与修复后复核。", "analysis_runs/<run-id>/ 中的 QA 记录服务于运行与结果审查，不自动构成科学正确性或投稿许可。"],
-      archive: ["12_archive/", "保存完成阶段需要保留的最终材料、版本和项目收尾记录。", "归档不等于公开；公开代码、材料或数据说明仍取决于实际权利和人类决定。"]
+      "study-root": ["<study-id>/", "这是一个实际 Study 的根目录。与这项研究有关的方案、数据、运行、结果、手稿和投稿材料都留在这里，不混进 System 本身。", "左侧目录按研究推进的顺序展开；点开任一项可以看它放什么、什么时候用。"],
+      state: ["00_state/", "记录这项 Study 现在做到哪一步、已经作过的决定、分析状态和冻结版本。", "分析状态和冻结决定放在 00_state/lifecycle/；它们会引用方案和治理记录。"],
+      intake: ["01_intake/", "放研究刚开始时的请求、范围讨论和 intake 材料。", "只有确认要开始受控准备后才建立；随口讨论的想法不直接变成正式方案。"],
+      registry: ["02_registry/", "放伦理、登记、访问等相关材料，以及能说明当前状态的回执或记录。", "02_registry/compliance/ 用来保留治理准备和证据；只有实际材料和人类决定能说明这些事项目前到了哪一步。"],
+      protocol: ["03_protocol/", "放研究设计、研究分类和当前方案；time zero、测量窗、随访和行政截尾等细节也在这里写清。", "伦理准备生成的草稿可单独放在 03_protocol/derived/，不覆盖当前方案。"],
+      knowledge: ["04_knowledge/", "放这项 Study 会用到的知识、来源说明和应用判断。", "从阅读或知识服务转入的内容，先作为本 Study 的知识和应用判断，不等于共享规则。"],
+      memory: ["05_memory/", "记录项目决定、还没解决的问题和项目复盘，方便修订、交接或归档时找回上下文。", "项目经验先留在这个 Study；是否值得成为共享经验或正式规则，之后再单独讨论。"],
+      data: ["06_data/", "放在授权范围内可用于这项研究的数据工作材料、来源映射和项目快照。", "目录本身不带数据访问权限；能放什么取决于来源许可和项目决定。"],
+      analysis: ["07_analysis/", "放分析怎样运行，以及开发和正式运行留下的设置、代码、测试和记录。", "00_contract/ 写正式执行合同；05_runs/<run-id>/ 为一次正式运行留下 manifest。"],
+      results: ["08_results/", "放每次运行得到的结果，以及说明哪一份是当前可用结果的记录。", "表、图和手稿主张应从已审查的结果包形成；current_result_authority.json 会连回相关运行、QA 和决定。"],
+      manuscript: ["09_manuscript/", "放手稿源、表图、补充材料、主张登记和声明材料。", "Methods 回到方案和实际执行记录；Results 回到结果 manifest；Discussion 再解释证据强度和限制。"],
+      submission: ["10_submission/", "放期刊要求、投稿文件、审稿意见、逐条回复、修订记录和录用材料。", "每项回复都应能找到实际修改的位置；改到方法、结果或主张时，要重新看受影响材料。"],
+      qa: ["11_qa/", "放分析运行和材料检查的 QA 记录，以及发现问题后怎样修复、怎样复核。", "QA 记录说明检查做了什么，不代替对研究结论或投稿的最后决定。"],
+      archive: ["12_archive/", "放研究结束后还需要保留的最终材料、版本和收尾记录。", "归档不等于公开；是否公开代码、材料或数据说明，还要看实际权利和人类决定。"]
     };
 
     const stageDescriptions = {
@@ -190,66 +186,97 @@
       },
       "2": {
         title: "02 协作与工作区确认",
-        start: "在对话框发送“人机交互模式”，或发送“申请受限自主执行：<范围>”。随后给出候选工作区位置、Study 名称和预计材料范围。",
-        work: "人机交互是默认方式：你决定研究方向、准入与结论，AI 协助整理、查验和执行已确认的任务。受限自主执行只适用于一段明确范围内的工作；申请本身不会启动它，还需要写清允许输入和动作、输出、QA、停止条件、人类关卡和复核点。",
-        next: "确认候选 System、工作区位置、Study 名称、材料范围和停止边界后，才建立空工作区并进入问题与环境。申请受限自主执行时，先设计并取得该范围的精确授权；未获批准前，仍按人机交互方式推进。"
+        start: "在对话框发送“人机交互模式”或“AI 自主模式”，再一起确认 Study 名称、候选工作区和准备处理的材料。",
+        work: "人机交互是当前默认路线：研究方向、是否准入、怎样解释结果，都由你来定；AI 帮你把已经确认的事情往下做。AI 自主模式仍需先讨论适用范围和授权方式，不会因为选中它就直接开始自主执行。",
+        next: "选择人机交互后，确认 System、Study 名称、工作区位置、准备处理的材料和暂停边界，再建立空工作区。选择 AI 自主模式时，先完成该模式的路线和授权设计；在此之前，不创建或运行任何研究工作。"
       },
       "3": {
         title: "03 确认研究问题",
-        start: "先从你关心的现象或问题说起：你发现了什么、想弄清什么、为什么认为它值得研究。题目还不完整也可以。",
-        work: "题目还不完整没有关系。需要查文献、指南或数据库时，先说明希望查什么、允许查到什么范围。",
-        next: "讨论清楚后，再把它收成一个可以设计的研究问题。如果发现条件不合适，就换方向，或者先停在这里。"
+        startLabel: "如果已经清楚自己的研究问题",
+        start: "直接说明“我想研究……”，再补充研究对象或场景、想弄清的关系或现象，以及为什么值得研究。需要外查时，同时说明允许查什么。AI 会帮你把这个想法收成可以进入设计讨论的问题，并指出还要核实的地方。",
+        workLabel: "如果尚不清楚自己的研究问题",
+        work: "先说你所在的领域、关心的现象、已有经历或资源，以及希望解决什么实际或学术问题。可以授权 AI 查已有研究、指南和公开数据说明，比较几个可能的研究问题；再由你选择、合并或放弃其中一个方向。",
+        next: ""
       },
       "4": {
         title: "04 确认研究设计",
-        start: "把第 03 阶段的问题落到一个可以执行的设计：研究谁、怎样比较、看什么结局、从何时开始观察、跟多久。",
-        work: "设计要能说明时间线、资料和主要偏倚。因果或治疗效应问题会另行进入因果设计或目标试验模拟审查，不会只靠“数据库研究”这个名称下结论。",
-        next: "设计能站住后，把当前做法写入方案草案，进入第 05 阶段准备研究计划书和治理材料。",
-        examplesTitle: "确认设计时，顺手看四件事",
-        examples: [
-          "研究谁、比较什么、看什么结局。",
-          "从什么时候开始观察，指标在什么时候测，结局跟多久。",
-          "计划使用的资料是否可能提供需要的变量、时间信息和足够对象。",
-          "是否会遇到选择偏倚、混杂、暴露发生在结局之后或 time zero 不一致。"
+        startLabel: "先分清五个方面",
+        start: "分别说明：研究者是否分配干预；对象怎样进入研究；资料是前瞻、回顾还是双向；数据从哪里来；研究要回答描述、关联、因果、预后、预测还是诊断问题。不要把这些不同问题合并成一个“研究类型”标签。",
+        workLabel: "再按两个方向写细",
+        work: "先按对象怎样进入研究，确定纳入/排除、病例和对照选择或抽样等规则，并写清 time zero、测量窗口、随访和行政截尾。再按研究目的补足专门要求。预测、预后或诊断研究如果来自一个队列，仍要先写对象选择规则和时间线。",
+        nextLabel: "设计清楚后",
+        next: "把当前做法写成方案草案，再到第 05 阶段准备研究计划书和治理材料。",
+        guidesTitle: "按研究类型查看要确定什么",
+        guides: [
+          {
+            title: "对象怎样进入研究",
+            items: [
+              ["队列研究", "目标人群与来源、纳入/排除、队列起点或 time zero、测量窗口、随访和行政截尾。"],
+              ["病例对照研究", "病例定义、病例如何确认、对照来自哪里、对照选择方式、参考时间，以及匹配规则（如有）。"],
+              ["横断面研究", "目标人群、资格条件、抽样框或参与者来源、抽样或招募方式，以及测量时点。"],
+              ["常规数据或数据库二次分析", "使用哪个数据源、时间范围、记录单位、识别、链接和去重规则；再说明它实际采用上面的哪一种对象选择方式。"]
+            ]
+          },
+          {
+            title: "研究要回答什么",
+            items: [
+              ["描述或关联", "暴露、结局、主要比较和可能影响比较的因素分别是什么。"],
+              ["因果或治疗效应", "不按普通路线直接推进；另行进入因果设计或目标试验模拟审查，说明治疗策略、time zero、目标效应和混杂处理。"],
+              ["预后或预测", "说明模型给谁用、何时使用、预测什么结局或时间窗、预测因子何时可得，以及是模型开发、内部验证还是独立验证。对象选择规则仍来自上面的设计。"],
+              ["诊断准确性", "说明检测在临床上怎样使用、index test、reference standard、阈值、两者的时间间隔，以及不确定或缺失结果怎样处理。对象选择规则仍来自上面的设计。"]
+            ]
+          }
         ]
       },
       "5": {
-        title: "05 写研究计划书，准备伦理、登记与数据访问材料",
-        start: "把第 04 阶段的设计写成详细研究计划书；再按研究类型、机构和所在地要求，准备伦理审查、备案和数据访问所需材料。",
-        work: "伦理、备案和访问要求不会完全相同，要以实际机构和数据方的要求为准。要使用 `research-ethics` 时，明确点名它，并提供 Study 根目录、允许读取的材料和希望生成的内容。",
-        next: "先分清第 06 阶段的关键检查是否会读取真实材料。会读取的，先完成对应的访问与治理准备；不会读取的，可以保留已知缺口并进入第 06 阶段。"
+        title: "05 完成研究计划书，办理研究开始前的审查",
+        startLabel: "先做什么",
+        start: "把第 04 阶段确定的设计写成完整研究计划书。研究想清楚后，不直接开始真实研究；先按实际机构和政策要求办完需要的审查、备案或登记和访问手续。",
+        workLabel: "需要时可以点名",
+        work: "准备中国大陆医学观察性研究的伦理或登记材料时，已经明确 Study 根目录、允许读取范围和目标交付物，就可以点名 `research-ethics` 协助整理和核对材料。实际的审查意见、备案或登记状态、数据访问权，以机构、数据方或平台回执为准。",
+        nextLabel: "进入第 06 前",
+        next: "第 06 阶段如果要读取真实材料，先核对伦理意见、备案或登记状态和数据访问条件是否已满足。没有满足时，继续完善材料，或只做非真实材料的准备与检查。",
+        guidesTitle: "通常需要完成什么",
+        guides: [
+          {
+            title: "常见的准备主线",
+            items: [
+              ["完整研究计划书", "把第 04 阶段定下来的研究问题、对象、设计、变量、时间线和分析思路写完整。"],
+              ["科学性论证或审查", "说明问题为什么值得做、设计能否回答问题，以及风险和预期价值是否相称。有的机构会把它作为独立审查，有的会要求形成意见后随伦理申请提交。"],
+              ["伦理审查", "按机构要求提交研究计划书、知情同意或豁免说明、数据来源证明等材料，并取得实际审查意见。"],
+              ["备案或登记", "按研究类型、机构和所在地的要求办理；它与伦理审查不是同一件事。"],
+              ["其他材料与访问手续", "视项目需要准备数据访问申请、隐私与安全说明、利益冲突、人员资质、经费说明或招募材料等。"]
+            ]
+          }
+        ]
       },
       "6": {
         title: "06 判断研究是否值得继续",
-        start: "先选研究核心部分：用较小范围的检查，判断结果、数据和设计是否支持继续投入。",
-        work: "先写下继续、附条件继续、重构或停止的判断标准；再在已允许范围内完成检查。它也会帮助判断这项研究能否发展成一篇有价值、可诚实报告的论文；阳性或显著不是唯一标准。",
-        next: "看完后，由你决定继续、附条件继续、重构或停止。只有继续后，才锁定方案，记录分析状态和冻结正式运行版本，再开展正式分析。"
+        start: "选出研究最核心的一部分，用较小范围先看数据、定义和结果能否支撑后续投入。",
+        work: "开始前，和 AI 约好这次检查要回答什么、什么情况算继续、需要补什么，什么情况应当回到前面重做或先停止。它也可以帮助判断研究是否值得做成论文；但阳性或显著不是唯一标准。",
+        next: "检查结束后，由你决定继续、附条件继续、重构或停止。选择继续时，才锁定当前方案、记录分析状态并冻结正式运行版本，然后开始完整分析。"
       },
       "7": {
         title: "07 完成结果与手稿",
-        start: "在已有受控运行和结果包后，可以说“请先把这项 Study 的 Results 部分做完整，再按顺序完成其他章节”。",
-        work: "先完成 Results 的图、表、文字和主张之间的核对；再依次完成 Methods、Discussion 与 Conclusion、Introduction、Abstract 或 Summary，以及声明、补充材料、投稿信和回复材料。期刊最终排版可以不同。",
-        next: "当结果、手稿、图表、结果包和 QA 能够一起审查时，进入第 08 阶段；不要只留下单独的文字草稿或图片。",
-        examplesTitle: "展开查看 Results 怎样逐层完成",
-        examples: [
-          "先定 Results 的结构：主要结果、次要结果、敏感性或探索性结果分别放在哪里；每个表和图负责说明什么。",
-          "每个结果单元可先做图表、图文并行，或先写有限的结果文字。默认可图文并行，但在人工审查前必须把文字、图表和对应结果核对完整。",
-          "按顺序复核：Results 整体目的 → 小节顺序 → 每段要说明什么 → 句子和主张 → 对应结果与图表 → 句子、图表和证据是否对应 → 段落、小节和整个 Results 是否连贯。",
-          "Results 定下来后，Methods 回到方案和实际执行记录；Discussion 与 Conclusion 解释已经确定的结果和限制；Introduction、Abstract 或 Summary 最后与整篇文章核对。",
-          "方法学论文、系统综述、定性研究或期刊采用特殊章节结构时，可以另行说明为什么换顺序；但不能借此改变结果事实或把探索写成预先验证。"
-        ]
+        precondition: "开始条件：已有受控运行和结果包。",
+        startLabel: "01 完成 Results",
+        start: "先安排主要、次要、敏感性和探索性结果分别放在哪里，并决定每张图表要说明什么。每个结果可先做图表、图文并行，或先写有限文字。完成后，从 Results 整体到小节、段落、句子和主张，再到图表和证据，一层层看它们是否对应、是否连贯。",
+        workLabel: "02 完成其余手稿与提交材料",
+        work: "Results 定下来后，Methods 回到方案和实际执行记录；Discussion 与 Conclusion 解释结果和限制；再完成 Introduction、Abstract 或 Summary。最后准备声明、补充材料、投稿信和回复材料。特殊研究或期刊需要调整章节时，说明调整原因。",
+        nextLabel: "03 进入联合审查",
+        next: "把全文、图表、结果包和 QA 放在一起核对；准备好后进入第 08 阶段。",
       },
       "8": {
         title: "08 联合审查全部材料",
-        start: "可以说“请对这项 Study 的方案、运行、结果、手稿、声明和投稿材料做联合审查”。",
-        work: "把方案、治理记录、运行、结果、手稿、声明和投稿材料放在一起核对。AI 会找出版本不一致、材料缺口和需要重新审查的地方；你来决定哪些必须修，哪些应当作为限制保留。",
-        next: "没有与投稿相冲突的问题时，进入投稿包；若发现问题，就回到受影响的阶段修订后再审。"
+        start: "把方案、运行、结果、手稿和准备投稿的材料放在一起看。",
+        work: "对照同一个 Study 的当前版本，一项项核对：方案和实际执行是否一致；结果、图表、文字和主张是否对应；声明和投稿材料有没有漏项。发现问题就列出该回到哪个阶段；哪些只是限制，也明确写下来。",
+        next: "需要处理的问题已经修好，或已明确作为限制保留后，再进入第 09 阶段。"
       },
       "9": {
         title: "09 准备投稿包",
-        start: "给出目标期刊和文章类型，并请求按该期刊当前要求整理投稿包。",
-        work: "按一个明确的期刊和文章类型整理投稿路线。获得许可后，AI 会核对当前官方要求，把手稿、声明、图表、补充材料和必要记录组成一个版本化投稿包。",
-        next: "投稿包准备好后，由你核对并决定是否实际提交；提交后，这条路线进入编辑决定、技术退回或审稿阶段。"
+        start: "确定目标期刊和文章类型，再按该期刊当前要求准备需要提交的材料。",
+        work: "把手稿、声明、图表、补充材料和必要记录整理成这一次投稿对应的一套文件。期刊要求会变，核对时看当前官方要求，不只沿用旧模板。",
+        next: "准备好后，由你核对并决定是否实际提交；提交后，这条路线进入编辑决定、技术退回或审稿阶段。"
       },
       "10": {
         title: "10 处理编辑意见与返修",
@@ -259,9 +286,9 @@
       },
       "11": {
         title: "11 完成归档与复盘",
-        start: "提供录用、校样、权利或发表后更正任务，并说明是否希望同时建立项目局部复盘。",
-        work: "处理校样、版权或开放获取、最终材料和可能的发表后更正。若要复盘，AI 可以帮你整理这一项 Study 的经验；它默认仍只属于该项目，不会自动变成共享规则。",
-        next: "最终材料、权利和归档状态清楚后，这个 Study 就可以收口。若出现值得推广的经验，之后再单独决定是否进入共享审查。"
+        start: "录用、校样、版权、开放获取或发表后更正等事情，集中在这里处理；需要时再决定是否做项目复盘。",
+        work: "核对校样和最终版本，处理版权或开放获取安排，保留之后还需要找得到的材料。复盘时，可以把这一个 Study 做过什么、遇到什么问题整理下来；它先留在项目里。",
+        next: "该留下的最终材料和记录都齐全后，Study 就可以归档收口。某条项目经验是否值得成为共享经验，之后再单独讨论。"
       }
     };
 
@@ -270,12 +297,18 @@
     const studyDetail = document.getElementById("study-inspector-detail");
     const studyEntries = document.querySelectorAll("[data-study-key]");
     const stageTitle = document.getElementById("stage-inspector-title");
+    const stagePrecondition = document.getElementById("stage-inspector-precondition");
+    const stageStartLabel = document.getElementById("stage-inspector-start-label");
     const stageStart = document.getElementById("stage-inspector-start");
+    const stageWorkLabel = document.getElementById("stage-inspector-work-label");
     const stageWork = document.getElementById("stage-inspector-work");
+    const stageNextLabel = document.getElementById("stage-inspector-next-label");
     const stageNext = document.getElementById("stage-inspector-next");
-    const stageExamples = document.getElementById("stage-inspector-examples");
-    const stageExamplesTitle = document.getElementById("stage-inspector-examples-title");
-    const stageExamplesList = document.getElementById("stage-inspector-examples-list");
+    const stageNextRow = document.getElementById("stage-inspector-next-row");
+    const stageGuides = document.getElementById("stage-inspector-guides");
+    const stageGuidesTitle = document.getElementById("stage-inspector-guides-title");
+    const stageGuidesBody = document.getElementById("stage-inspector-guides-body");
+    const stageInspector = document.querySelector(".system-route-inspector");
     const stageEntries = document.querySelectorAll("[data-stage-key]");
     const systemFlow = document.querySelector("[data-system-flow]");
 
@@ -388,23 +421,54 @@
       studyEntries.forEach((element) => element.classList.toggle("is-selected", element.dataset.studyKey === key));
     };
 
-    const selectStage = (key) => {
+    const selectStage = (key, revealInspector = false) => {
       const entry = stageDescriptions[key];
       if (!entry) return;
       stageTitle.textContent = entry.title;
+      stagePrecondition.textContent = entry.precondition || "";
+      stagePrecondition.hidden = !entry.precondition;
+      stageStartLabel.textContent = entry.startLabel || "先做什么";
       stageStart.textContent = entry.start;
+      stageWorkLabel.textContent = entry.workLabel || "这一步看什么";
       stageWork.textContent = entry.work;
+      stageNextLabel.textContent = entry.nextLabel || "接下来";
       stageNext.textContent = entry.next;
-      const examples = entry.examples ?? [];
-      stageExamples.hidden = examples.length === 0;
-      stageExamplesTitle.textContent = entry.examplesTitle ?? "";
-      stageExamples.open = false;
-      stageExamplesList.replaceChildren(...examples.map((example) => {
-        const item = document.createElement("li");
-        item.textContent = example;
-        return item;
+      stageNextRow.hidden = !entry.next;
+      const guides = entry.guides ?? [];
+      stageGuides.hidden = guides.length === 0;
+      stageGuidesTitle.textContent = entry.guidesTitle ?? "";
+      stageGuides.open = false;
+      stageGuidesBody.replaceChildren(...guides.map((guide) => {
+        const group = document.createElement("section");
+        group.className = "system-route-guide-group";
+        const heading = document.createElement("h4");
+        heading.textContent = guide.title;
+        const list = document.createElement("ul");
+        list.replaceChildren(...guide.items.map(([label, detail]) => {
+          const item = document.createElement("li");
+          const term = document.createElement("strong");
+          term.textContent = label;
+          item.append(term, document.createTextNode("："), detail);
+          return item;
+        }));
+        group.append(heading, list);
+        return group;
       }));
       stageEntries.forEach((element) => element.classList.toggle("is-selected", element.dataset.stageKey === key));
+      if (revealInspector) {
+        requestAnimationFrame(() => {
+          if (window.matchMedia("(max-width: 760px)").matches) {
+            (stageInspector || stageTitle).scrollIntoView({ block: "start", behavior: "auto" });
+            return;
+          }
+          if (!stageInspector) return;
+          const stickyTop = Number.parseFloat(getComputedStyle(stageInspector).top) || 0;
+          const currentTop = stageInspector.getBoundingClientRect().top;
+          if (currentTop < stickyTop) {
+            window.scrollBy({ top: currentTop - stickyTop, behavior: "auto" });
+          }
+        });
+      }
     };
 
     studyEntries.forEach((element) => {
@@ -412,7 +476,7 @@
       element.addEventListener("focus", () => selectStudyEntry(element.dataset.studyKey));
     });
     stageEntries.forEach((element) => {
-      element.addEventListener("click", () => selectStage(element.dataset.stageKey));
+      element.addEventListener("click", () => selectStage(element.dataset.stageKey, true));
       element.addEventListener("focus", () => selectStage(element.dataset.stageKey));
     });
     window.addEventListener("resize", drawSystemFlow);
