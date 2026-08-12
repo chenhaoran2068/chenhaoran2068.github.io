@@ -7,27 +7,44 @@
   {% set current_locale = i18n_page_locale|default('zh', true) %}
   {% set labels = {'zh': '中文', 'en': 'EN', 'ja': '日本語'} %}
   {% set aria_labels = {'zh': '语言', 'en': 'Language', 'ja': '言語'} %}
-  <ul class="nav navbar-nav portal-language-switcher {{ class_name }}" aria-label="{{ aria_labels[current_locale] }}">
+  <li class="nav-item portal-language-switcher {{ class_name }}" aria-label="{{ aria_labels[current_locale] }}">
     {% for locale in ('zh', 'en', 'ja') %}
       {% set alternate = page.file.alternates.get(locale) if page and page.file and page.file.alternates else none %}
       {% if alternate %}
-        <li class="nav-item">
-          <a class="nav-link{% if current_locale == locale %} is-current{% endif %}"
-             href="{{ alternate.url|url }}"
-             lang="{{ locale }}"
-             hreflang="{{ locale }}"{% if current_locale == locale %} aria-current="page"{% endif %}>{{ labels[locale] }}</a>
-        </li>
+        <a class="nav-link{% if current_locale == locale %} is-current{% endif %}"
+           href="{{ alternate.url|url }}"
+           lang="{{ locale }}"
+           hreflang="{{ locale }}"{% if current_locale == locale %} aria-current="page"{% endif %}>{{ labels[locale] }}</a>
       {% endif %}
     {% endfor %}
-  </ul>
+  </li>
 {%- endmacro %}
 
 {% block site_nav %}
-  {{ language_switcher('portal-language-switcher-mobile') }}
-  {{ super() }}
+  {% if nav|length > 1 %}
+    <ul class="nav navbar-nav">
+      {{ language_switcher('portal-language-switcher-mobile') }}
+      {% for nav_item in nav %}
+        {% if nav_item.children %}
+          <li class="nav-item dropdown">
+            <a href="#" class="nav-link dropdown-toggle{% if nav_item.active %} active" aria-current="page{% endif %}" role="button" data-bs-toggle="dropdown" aria-expanded="false">{{ nav_item.title }}</a>
+            <ul class="dropdown-menu">
+              {% for nav_item in nav_item.children %}
+                {% include "nav-sub.html" %}
+              {% endfor %}
+            </ul>
+          </li>
+        {% else %}
+          <li class="nav-item">
+            <a href="{{ nav_item.url|url }}" class="nav-link{% if nav_item.active %} active" aria-current="page{% endif %}">{{ nav_item.title }}</a>
+          </li>
+        {% endif %}
+      {% endfor %}
+    </ul>
+  {% endif %}
 {% endblock %}
 
 {% block search_button %}
-  {{ language_switcher('portal-language-switcher-desktop') }}
   {{ super() }}
+  {{ language_switcher('portal-language-switcher-desktop') }}
 {% endblock %}

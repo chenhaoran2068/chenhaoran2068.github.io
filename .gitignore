@@ -1,6 +1,6 @@
 _site/
 site/
-site-validation-*/
+site-*/
 .cache/
 __pycache__/
 *.py[cod]
