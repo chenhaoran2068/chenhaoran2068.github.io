@@ -12,7 +12,7 @@ Before creating anything, show me the proposed workspace path and wait for confi
 
 After confirmation, verify this AI environment can use these exact public releases:
 - Governed Research Workspace Framework v0.4.0
-- Governed Research Workflow v1.14.0
+- Governed Research Workflow v1.15.0
 - research-paper-reading v0.3.0
 - research-ethics v1.1.1
 - Governed Engineering v0.1.1

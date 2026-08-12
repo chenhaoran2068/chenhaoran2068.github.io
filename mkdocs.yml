@@ -63,6 +63,8 @@ plugins:
             路线图: ロードマップ
 extra_css:
   - stylesheets/portal.css
+extra_javascript:
+  - javascripts/system-route-interactive.js
 nav:
   - 首页: index.md
   - 组件:

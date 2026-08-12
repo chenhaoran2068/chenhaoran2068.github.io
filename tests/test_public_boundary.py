@@ -18,6 +18,7 @@ PUBLIC_TEXT_FILES = [
     *sorted((ROOT / "docs").rglob("*.yaml")),
     *sorted((ROOT / "docs").rglob("*.svg")),
     *sorted((ROOT / "docs").rglob("*.css")),
+    *sorted((ROOT / "docs").rglob("*.js")),
 ]
 PROHIBITED = (
     r"(?i)[a-z]:\\",
@@ -87,8 +88,10 @@ ALLOWED_PUBLIC_FILES = {
     "docs/roadmap.en.md",
     "docs/roadmap.ja.md",
     "docs/data/component_catalog.yaml",
+    "docs/javascripts/system-route-interactive.js",
     "docs/overrides/main.html",
     "docs/stylesheets/portal.css",
+    "docs/release/RELEASE_NOTES_v0.5.3.md",
     "docs/release/RELEASE_NOTES_v0.5.2.md",
     "docs/release/RELEASE_NOTES_v0.5.1.md",
     "docs/release/RELEASE_NOTES_v0.5.0.md",

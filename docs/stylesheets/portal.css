@@ -849,19 +849,19 @@
 }
 
 .system-route-decision span {
-  display: grid;
-  grid-template-columns: 25px minmax(0, 1fr);
-  column-gap: 7px;
-  align-items: start;
+  display: block;
   font-size: 11px;
   line-height: 1.5;
 }
 
 .system-route-decision b {
+  display: block;
+  margin-bottom: 6px;
+  color: #e6edef;
   font-family: ui-monospace, "Cascadia Mono", monospace;
-  font-size: 22px;
-  font-weight: 500;
-  line-height: 0.9;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.35;
 }
 
 .system-route-return-arrow {
@@ -897,6 +897,12 @@
     grid-template-columns: 1fr;
     gap: 12px;
     padding-top: 18px;
+  }
+
+  .system-route-decision-two-way,
+  .system-route-decision-three-way,
+  .system-route-decision-return {
+    grid-template-columns: 1fr;
   }
 
   .system-mode-branches::before {
@@ -3351,7 +3357,7 @@ h3 {
 
 body:has(.portal-home) .md-footer { border-top-color: #2c373d; }
 
-@media (min-width: 992px) {
+@media (min-width: 1200px) {
   .navbar .container {
     display: flex;
     align-items: center;
@@ -3394,7 +3400,7 @@ body:has(.portal-home) .md-footer { border-top-color: #2c373d; }
   }
 }
 
-@media (max-width: 991px) {
+@media (max-width: 1199px) {
   .col-md-9 {
     padding-top: 22px;
   }
@@ -3404,7 +3410,7 @@ body:has(.portal-home) .md-footer { border-top-color: #2c373d; }
   }
 }
 
-@media (max-width: 991px) {
+@media (max-width: 1199px) {
   .navbar,
   .navbar-default,
   .navbar-fixed-top {
@@ -3419,6 +3425,7 @@ body:has(.portal-home) .md-footer { border-top-color: #2c373d; }
   }
 
   .navbar .navbar-toggler {
+    display: block;
     flex: 0 0 44px;
     width: 44px;
     height: 40px;
@@ -3427,7 +3434,19 @@ body:has(.portal-home) .md-footer { border-top-color: #2c373d; }
   }
 
   .navbar .navbar-collapse {
+    display: none !important;
     flex-basis: 100%;
+  }
+
+  .navbar .navbar-collapse.show {
+    display: block !important;
+  }
+
+  .navbar .navbar-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
   }
 
   .navbar .portal-language-switcher-desktop {
