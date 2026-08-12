@@ -1,0 +1,9 @@
+<div class="portal-page integrations-page">
+
+<header class="portal-header"><p class="portal-context">外部連携</p><h1>境界を明示した任意ツール</h1><p>Framework、System、Skill は外部ツールと併用できます。導入しただけで、そのツールが Study、データ、意思決定を担うことにはなりません。</p></header>
+
+<section class="portal-section"><div class="section-header"><div><p class="section-context">確認済みの任意連携</p><h2>論文読解のための Zotero</h2></div><p>Zotero は書誌項目と、許可される場合の添付 PDF を所有します。</p></div><div class="integration-flow"><article class="integration-flow-node"><span>01</span><div><h3>名前のある一つの論文</h3><p>出典、読む理由、ダウンロードまたは保存が可能かを明示します。</p></div></article><div class="integration-flow-arrow" aria-hidden="true"><span>↓</span><small>出典ごとの明示的な許可</small></div><article class="integration-flow-node"><span>02</span><div><h3>Zotero</h3><p>書誌項目と許可された PDF を管理し、管理ツール側の項目 ID を保ちます。</p></div></article><div class="integration-flow-arrow" aria-hidden="true"><span>↓</span></div><article class="integration-flow-node"><span>03</span><div><h3><code>Knowledge/</code></h3><p>読解記録と出典に支えられた知識候補を残します。管理されない二つ目の PDF 集合は作りません。</p></div></article><div class="integration-flow-arrow integration-flow-optional" aria-hidden="true"><span>↓</span><small>名前のある Study が必要とする時だけ</small></div><article class="integration-flow-node"><span>04</span><div><h3><code>&lt;Study&gt;/04_knowledge/</code></h3><p>Study 固有の適用判断を記録します。Study の経験は <code>05_memory/</code> に残します。</p></div></article></div><div class="integration-notes"><p>読解しただけで PDF、ライブラリ項目、タグ、知識カード、経験、ルールが自動作成されることはありません。</p><p>論文から得た知識は経験やルールの候補を提案できますが、自動移管・自動昇格はしません。</p><p>読解経路と出典境界は <a href="skills/research-paper-reading/">research-paper-reading</a> を参照してください。</p></div></section>
+
+<section class="portal-section integration-future"><div class="section-header"><div><p class="section-context">まだ連携していないもの</p><h2>Obsidian</h2></div></div><p>Obsidian は将来、ローカルノートまたは人が管理する知識グラフとして検討できます。現在は承認済みの連携、正本、Knowledge サービスの必須要素ではありません。</p></section>
+
+</div>
