@@ -102,6 +102,10 @@ class SiteNavigationTests(unittest.TestCase):
             ".navbar .portal-language-switcher-mobile {\n    display: flex;",
         ):
             self.assertIn(expected, stylesheet)
+        self.assertNotIn(
+            ".navbar .ms-md-auto li:not(:first-child)",
+            stylesheet,
+        )
 
     def test_localized_start_pages_keep_versions_and_setup_boundaries(self) -> None:
         for locale in ("en", "ja"):
@@ -185,7 +189,7 @@ class SiteNavigationTests(unittest.TestCase):
 
     def test_release_page_retains_historical_release_notes_outside_global_navigation(self) -> None:
         page = (DOCS_ROOT / "releases.md").read_text(encoding="utf-8")
-        for version in ("v0.5.1", "v0.5.0", "v0.4.2", "v0.4.1", "v0.4.0", "v0.3.0", "v0.2.0", "v0.1.0"):
+        for version in ("v0.5.2", "v0.5.1", "v0.5.0", "v0.4.2", "v0.4.1", "v0.4.0", "v0.3.0", "v0.2.0", "v0.1.0"):
             self.assertIn(f"RELEASE_NOTES_{version}", page)
             self.assertIn(f">{version}</a>", page)
 
