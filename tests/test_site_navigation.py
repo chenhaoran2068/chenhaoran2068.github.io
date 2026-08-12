@@ -81,14 +81,25 @@ class SiteNavigationTests(unittest.TestCase):
         ):
             self.assertIn(expected, override)
 
+        self.assertIn('<li class="nav-item portal-language-switcher', override)
+        self.assertEqual(
+            override.count("language_switcher('portal-language-switcher-desktop')"),
+            1,
+        )
+        self.assertLess(
+            override.index("{{ super() }}", override.index("{% block search_button %}")),
+            override.index("language_switcher('portal-language-switcher-desktop')"),
+        )
+
         stylesheet = (DOCS_ROOT / "stylesheets" / "portal.css").read_text(
             encoding="utf-8"
         )
         for expected in (
-            "@media (max-width: 767px)",
+            "@media (min-width: 992px)",
+            "@media (max-width: 991px)",
             ".portal-language-switcher-desktop",
             ".portal-language-switcher-mobile",
-            ".portal-language-switcher-mobile {\n    display: flex;",
+            ".navbar .portal-language-switcher-mobile {\n    display: flex;",
         ):
             self.assertIn(expected, stylesheet)
 
@@ -174,7 +185,7 @@ class SiteNavigationTests(unittest.TestCase):
 
     def test_release_page_retains_historical_release_notes_outside_global_navigation(self) -> None:
         page = (DOCS_ROOT / "releases.md").read_text(encoding="utf-8")
-        for version in ("v0.5.0", "v0.4.2", "v0.4.1", "v0.4.0", "v0.3.0", "v0.2.0", "v0.1.0"):
+        for version in ("v0.5.1", "v0.5.0", "v0.4.2", "v0.4.1", "v0.4.0", "v0.3.0", "v0.2.0", "v0.1.0"):
             self.assertIn(f"RELEASE_NOTES_{version}", page)
             self.assertIn(f">{version}</a>", page)
 

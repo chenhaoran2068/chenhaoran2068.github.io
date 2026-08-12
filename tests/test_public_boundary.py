@@ -89,6 +89,7 @@ ALLOWED_PUBLIC_FILES = {
     "docs/data/component_catalog.yaml",
     "docs/overrides/main.html",
     "docs/stylesheets/portal.css",
+    "docs/release/RELEASE_NOTES_v0.5.1.md",
     "docs/release/RELEASE_NOTES_v0.5.0.md",
     "docs/release/RELEASE_NOTES_v0.1.0.md",
     "docs/release/RELEASE_NOTES_v0.2.0.md",
@@ -109,7 +110,7 @@ LOCAL_BUILD_DIRECTORIES = {".git", "__pycache__", ".venv-docs", "site"}
 def is_local_build_output(path: Path) -> bool:
     parts = path.relative_to(ROOT).parts
     return bool(LOCAL_BUILD_DIRECTORIES & set(parts)) or any(
-        part.startswith("site-validation-") for part in parts
+        part.startswith("site-") for part in parts
     )
 
 
