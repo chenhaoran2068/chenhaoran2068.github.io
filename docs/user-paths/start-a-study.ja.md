@@ -8,7 +8,7 @@
 
 確認後、この AI 環境が次の正確な公開 Release を使えるか確認し、候補ワークスペースに設定してください。
 - Governed Research Workspace Framework v0.4.0
-- Governed Research Workflow v1.14.0
+- Governed Research Workflow v1.15.0
 - research-paper-reading v0.3.0
 - research-ethics v1.1.1
 - Governed Engineering v0.1.1

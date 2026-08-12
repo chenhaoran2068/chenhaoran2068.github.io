@@ -138,7 +138,7 @@
 1. 先检查上述位置是否已经有工作区；若已有内容，不覆盖、不迁移，先报告实际情况并停止等待我的决定。
 2. 检查当前 AI 环境能否安装并使用以下精确公开 Release；如有不兼容，说明差异后停止，不自行替换环境或已有组件：
    - Governed Research Workspace Framework v0.4.0
-   - Governed Research Workflow v1.14.0
+   - Governed Research Workflow v1.15.0
    - research-paper-reading v0.3.0
    - research-ethics v1.1.1
    - Governed Engineering v0.1.1（含其五项成员 Skill）

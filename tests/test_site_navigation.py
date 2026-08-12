@@ -95,10 +95,11 @@ class SiteNavigationTests(unittest.TestCase):
             encoding="utf-8"
         )
         for expected in (
-            "@media (min-width: 992px)",
-            "@media (max-width: 991px)",
+            "@media (min-width: 1200px)",
+            "@media (max-width: 1199px)",
             ".portal-language-switcher-desktop",
             ".portal-language-switcher-mobile",
+            ".navbar .navbar-collapse.show {\n    display: block !important;",
             ".navbar .portal-language-switcher-mobile {\n    display: flex;",
         ):
             self.assertIn(expected, stylesheet)
@@ -112,7 +113,7 @@ class SiteNavigationTests(unittest.TestCase):
             page = (
                 DOCS_ROOT / "user-paths" / f"start-a-study.{locale}.md"
             ).read_text(encoding="utf-8")
-            for version in ("v0.4.0", "v1.14.0", "v0.3.0", "v1.1.1", "v0.1.1"):
+            for version in ("v0.4.0", "v1.15.0", "v0.3.0", "v1.1.1", "v0.1.1"):
                 self.assertIn(version, page)
 
         english = (DOCS_ROOT / "user-paths" / "start-a-study.en.md").read_text(
@@ -189,7 +190,7 @@ class SiteNavigationTests(unittest.TestCase):
 
     def test_release_page_retains_historical_release_notes_outside_global_navigation(self) -> None:
         page = (DOCS_ROOT / "releases.md").read_text(encoding="utf-8")
-        for version in ("v0.5.2", "v0.5.1", "v0.5.0", "v0.4.2", "v0.4.1", "v0.4.0", "v0.3.0", "v0.2.0", "v0.1.0"):
+        for version in ("v0.5.3", "v0.5.2", "v0.5.1", "v0.5.0", "v0.4.2", "v0.4.1", "v0.4.0", "v0.3.0", "v0.2.0", "v0.1.0"):
             self.assertIn(f"RELEASE_NOTES_{version}", page)
             self.assertIn(f">{version}</a>", page)
 
@@ -246,7 +247,7 @@ class SiteNavigationTests(unittest.TestCase):
         self.assertIn("我想做一个研究", study_start)
         self.assertIn("开始研究前需要什么", study_start)
         self.assertIn("Governed Research Workspace Framework v0.4.0", study_start)
-        self.assertIn("Governed Research Workflow v1.14.0", study_start)
+        self.assertIn("Governed Research Workflow v1.15.0", study_start)
         self.assertIn("复制这段话给 AI", study_start)
         self.assertIn("在我接受新研究的路线建议前", study_start)
         self.assertIn("人机交互模式", study_start)
@@ -261,7 +262,7 @@ class SiteNavigationTests(unittest.TestCase):
 
         self.assertIn("Zotero", integrations)
         self.assertIn("目前不宣称已支持", integrations)
-        for version in ("v0.4.0", "v1.14.0", "v0.3.0", "v1.1.1", "v0.1.1"):
+        for version in ("v0.4.0", "v1.15.0", "v0.3.0", "v1.1.1", "v0.1.1"):
             self.assertIn(version, releases)
         self.assertIn("网站只是组件入口", governance)
         self.assertIn("尚未承诺的方向", roadmap)
@@ -363,7 +364,7 @@ class SiteNavigationTests(unittest.TestCase):
         )
         self.assertIn("一次配置当前公开核心组件", homepage)
         self.assertIn("Governed Research Workspace Framework v0.4.0", homepage)
-        self.assertIn("Governed Research Workflow v1.14.0", homepage)
+        self.assertIn("Governed Research Workflow v1.15.0", homepage)
         self.assertIn("research-paper-reading v0.3.0", homepage)
         self.assertIn("research-ethics v1.1.1", homepage)
         self.assertIn("Governed Engineering v0.1.1", homepage)
@@ -429,6 +430,43 @@ class SiteNavigationTests(unittest.TestCase):
         self.assertIsNotNone(inspector_rule)
         self.assertIn("align-self: start;", inspector_rule.group("body"))
         self.assertIn("position: sticky;", inspector_rule.group("body"))
+
+    def test_system_route_decision_titles_are_not_forced_into_a_narrow_column(self) -> None:
+        stylesheet = (DOCS_ROOT / "stylesheets" / "portal.css").read_text(
+            encoding="utf-8"
+        )
+
+        decision_text_rule = re.search(
+            r"\.system-route-decision span\s*\{(?P<body>.*?)\n\}",
+            stylesheet,
+            re.DOTALL,
+        )
+        decision_title_rule = re.search(
+            r"\.system-route-decision b\s*\{(?P<body>.*?)\n\}",
+            stylesheet,
+            re.DOTALL,
+        )
+
+        self.assertIsNotNone(decision_text_rule)
+        self.assertIsNotNone(decision_title_rule)
+        self.assertIn("display: block;", decision_text_rule.group("body"))
+        self.assertNotIn("grid-template-columns", decision_text_rule.group("body"))
+        self.assertIn("display: block;", decision_title_rule.group("body"))
+
+    def test_localized_system_pages_expose_the_interactive_stage_route(self) -> None:
+        config = CONFIG.read_text(encoding="utf-8")
+        self.assertIn("javascripts/system-route-interactive.js", config)
+
+        for locale in ("en", "ja"):
+            page = (
+                DOCS_ROOT / "systems" / f"governed-research-workflow.{locale}.md"
+            ).read_text(encoding="utf-8")
+            self.assertIn("data-system-route-interactive", page)
+            self.assertIn("data-system-flow", page)
+            self.assertIn("id=\"system-route-data\"", page)
+            self.assertEqual(page.count("data-stage-key="), 11)
+            self.assertIn("research-ethics", page)
+            self.assertIn("governed-engineering", page)
 
     def test_research_ethics_page_matches_the_stage_five_preparation_chain(self) -> None:
         page = (DOCS_ROOT / "skills" / "research-ethics.md").read_text(

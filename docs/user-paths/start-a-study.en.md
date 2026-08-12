@@ -8,7 +8,7 @@
 
 After I confirm, check whether this AI environment can use these exact public releases and configure them in the candidate workspace:
 - Governed Research Workspace Framework v0.4.0
-- Governed Research Workflow v1.14.0
+- Governed Research Workflow v1.15.0
 - research-paper-reading v0.3.0
 - research-ethics v1.1.1
 - Governed Engineering v0.1.1
