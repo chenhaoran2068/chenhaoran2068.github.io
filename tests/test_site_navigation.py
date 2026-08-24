@@ -113,7 +113,7 @@ class SiteNavigationTests(unittest.TestCase):
             page = (
                 DOCS_ROOT / "user-paths" / f"start-a-study.{locale}.md"
             ).read_text(encoding="utf-8")
-            for version in ("v0.4.0", "v1.15.0", "v0.3.0", "v1.1.1", "v0.1.1"):
+            for version in ("v0.4.0", "v1.16.0", "v0.3.0", "v1.1.1", "v0.1.1"):
                 self.assertIn(version, page)
 
         english = (DOCS_ROOT / "user-paths" / "start-a-study.en.md").read_text(
@@ -247,7 +247,7 @@ class SiteNavigationTests(unittest.TestCase):
         self.assertIn("我想做一个研究", study_start)
         self.assertIn("开始研究前需要什么", study_start)
         self.assertIn("Governed Research Workspace Framework v0.4.0", study_start)
-        self.assertIn("Governed Research Workflow v1.15.0", study_start)
+        self.assertIn("Governed Research Workflow v1.16.0", study_start)
         self.assertIn("复制这段话给 AI", study_start)
         self.assertIn("在我接受新研究的路线建议前", study_start)
         self.assertIn("人机交互模式", study_start)
@@ -262,7 +262,7 @@ class SiteNavigationTests(unittest.TestCase):
 
         self.assertIn("Zotero", integrations)
         self.assertIn("目前不宣称已支持", integrations)
-        for version in ("v0.4.0", "v1.15.0", "v0.3.0", "v1.1.1", "v0.1.1"):
+        for version in ("v0.4.0", "v1.16.0", "v0.3.0", "v1.1.1", "v0.1.1"):
             self.assertIn(version, releases)
         self.assertIn("网站只是组件入口", governance)
         self.assertIn("尚未承诺的方向", roadmap)
@@ -364,7 +364,7 @@ class SiteNavigationTests(unittest.TestCase):
         )
         self.assertIn("一次配置当前公开核心组件", homepage)
         self.assertIn("Governed Research Workspace Framework v0.4.0", homepage)
-        self.assertIn("Governed Research Workflow v1.15.0", homepage)
+        self.assertIn("Governed Research Workflow v1.16.0", homepage)
         self.assertIn("research-paper-reading v0.3.0", homepage)
         self.assertIn("research-ethics v1.1.1", homepage)
         self.assertIn("Governed Engineering v0.1.1", homepage)
