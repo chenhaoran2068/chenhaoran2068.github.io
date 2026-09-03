@@ -1,7 +1,7 @@
-<div class="portal-page guide-page">
+<div class="portal-page">
 
-<header class="guide-header"><p class="section-context">はじめる</p><h1>いま何をしたいですか？</h1><p>主な入口は二つです。研究 Study を始める・続けること、または一つの論文を理解することです。</p></header>
+<header class="portal-header"><p class="portal-context">はじめる</p><h1>今、何をしたいですか？</h1><p>手元にある作業を選び、対応するページへ進みます。</p></header>
 
-<section class="portal-section"><div class="portal-link-list"><a href="start-a-study/"><strong>研究をしたい</strong><span>研究アイデア、既存の Study、まだ固まっていない問いから始められます。</span></a><a href="../skills/research-paper-reading/"><strong>論文を読み解きたい</strong><span>本文、方法、図表、結果、限界を一緒に読みます。</span></a></div></section>
+<section class="portal-section" aria-labelledby="skill-guides-title"><div class="section-header"><div><p class="section-context">二つの入口</p><h2 id="skill-guides-title">どこから始めますか？</h2></div></div><div class="guide-links"><a href="start-a-study/"><span>研究を始めたい</span><span>アイデアまたは既存プロジェクトから、設計、研究計画書、倫理と届出、分析、執筆、投稿、アーカイブへ進みます。</span></a><a href="../skills/research-paper-reading/"><span>一本の論文を理解したい</span><span>本文、方法、図表、結果、限界を一緒に読み、必要なら読了後に知識や経験を整理します。</span></a></div></section>
 
 </div>

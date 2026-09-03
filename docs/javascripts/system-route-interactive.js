@@ -21,6 +21,9 @@
   const stageNextLabel = document.getElementById("stage-inspector-next-label");
   const stageNext = document.getElementById("stage-inspector-next");
   const stageNextRow = document.getElementById("stage-inspector-next-row");
+  const stageGuides = document.getElementById("stage-inspector-guides");
+  const stageGuidesTitle = document.getElementById("stage-inspector-guides-title");
+  const stageGuidesBody = document.getElementById("stage-inspector-guides-body");
   const stageInspector = root.querySelector(".system-route-inspector");
   const stageEntries = root.querySelectorAll("[data-stage-key]");
   const systemFlow = root.querySelector("[data-system-flow]");
@@ -39,6 +42,29 @@
     stageNextLabel.textContent = entry.nextLabel || labels.next || "Next";
     stageNext.textContent = entry.next || "";
     stageNextRow.hidden = !entry.next;
+
+    if (stageGuides && stageGuidesTitle && stageGuidesBody) {
+      const guides = entry.guides || [];
+      stageGuides.hidden = guides.length === 0;
+      stageGuides.open = false;
+      stageGuidesTitle.textContent = entry.guidesTitle || "";
+      stageGuidesBody.replaceChildren(...guides.map((guide) => {
+        const group = document.createElement("section");
+        group.className = "system-route-guide-group";
+        const heading = document.createElement("h4");
+        heading.textContent = guide.title;
+        const list = document.createElement("ul");
+        list.replaceChildren(...guide.items.map(([label, detail]) => {
+          const item = document.createElement("li");
+          const term = document.createElement("strong");
+          term.textContent = label;
+          item.append(term, document.createTextNode(": "), detail);
+          return item;
+        }));
+        group.append(heading, list);
+        return group;
+      }));
+    }
 
     stageEntries.forEach((element) => {
       element.classList.toggle("is-selected", element.dataset.stageKey === key);

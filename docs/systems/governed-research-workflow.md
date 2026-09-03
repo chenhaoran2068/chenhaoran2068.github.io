@@ -8,7 +8,7 @@
 
 <section class="component-section component-summary system-summary">
   <p>当一项研究需要持续保存方案、运行、结果、手稿和返修材料时，使用这个 System。它规定这些材料在 Study 内怎样组织，也保留关键决定的来处。</p>
-  <div class="release-stamp"><span>当前公开 Release</span><strong><a href="https://github.com/chenhaoran2068/governed-research-workflow/releases/tag/v1.15.0">v1.15.0</a></strong></div>
+  <div class="release-stamp"><span>当前公开 Release</span><strong><a href="https://github.com/chenhaoran2068/governed-research-workflow/releases/tag/v1.16.0">v1.16.0</a></strong></div>
 </section>
 
 <section class="component-section" aria-labelledby="joint-review-title">
@@ -20,6 +20,18 @@
     <div><h3>先由人选配置</h3><p>先确认这项研究适用哪一种审查配置。当前默认配置只面向观察性实证原始研究；试验、因果效应、预测模型、系统综述、定性或方法学研究等，需要另定专项配置。</p></div>
     <div><h3>再写出审查顺序</h3><p>把设计与治理事实、数据定义与执行、结果权威、Results、Methods、Discussion、Introduction、摘要和投稿材料依次列入审查计划。后面的修改影响前面已确认的部分时，记录重新审查，而不是静默沿用旧结论。</p></div>
     <div><h3>它只管理计划记录</h3><p>v1.15 只提供空模板、结构校验和重新打开审查的记录方式。它不自动选择配置，不读取 Study、数据、代码、结果或手稿，也不判断审查是否通过。</p></div>
+  </div>
+</section>
+
+<section class="component-section" aria-labelledby="style-profile-title">
+  <div class="section-header">
+    <div><p class="section-context">v1.16 新增</p><h2 id="style-profile-title">手稿要求怎样进入 Study</h2></div>
+    <p>把一般写作要求、研究类型的报告指南和目标期刊要求分开记录，再按明确顺序使用。</p>
+  </div>
+  <div class="boundary-grid">
+    <div><h3>先放入当前写作配置</h3><p>手稿阶段在 <code>09_manuscript/drafting_requirement_stack.yaml</code> 记录当前使用的要求。常规医学健康研究可把 <code>ama_11_default</code> 作为一般写作起点；它只采用公开可核对的 AMA 衍生原则，不表示已逐条核对完整 AMA Manual。</p></div>
+    <div><h3>再补研究类型与期刊要求</h3><p>根据研究类型补充适用的报告指南。确定目标期刊后，再加入该期刊当前的作者、图表、参考文献和声明要求；期刊要求与一般写作配置冲突时，以期刊当前要求为准。</p></div>
+    <div><h3>冲突要重新交回给人</h3><p>目标期刊不能被用来静默删去报告指南要求。要求来源、当前性或冲突不清时，先指出缺口，由人确认后再改手稿、图表、引用或声明。</p></div>
   </div>
 </section>
 

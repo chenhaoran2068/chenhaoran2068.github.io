@@ -1,22 +1,17 @@
-<div class="portal-page guide-page study-start-page">
+<div class="guide-page">
 
-<header class="guide-header"><p class="section-context">GOVERNED RESEARCH WORKFLOW</p><h1>研究をしたい</h1><p>研究アイデア、既存プロジェクト、まだ明確でないテーマから始めます。このページでは、最初に何を設定し、AI 環境へ何を送るかを示します。</p></header>
+<header class="guide-header"><p class="guide-kind">Governed Research Workflow</p><h1>研究を始めたい</h1><p>研究アイデア、既存プロジェクト、まだ整理できていないテーマから始めます。このページでは研究ルートへの入り方を確認します。完全な段階、Study レイアウト、資料の位置は System ページを基準にします。</p></header>
 
-<section class="portal-section"><div class="section-header"><div><p class="section-context">始める前に</p><h2>必要なもの</h2></div></div><div class="boundary-grid"><div><h3>対応する AI 環境</h3><p>記載した公開コンポーネントを導入して使える環境が必要です。</p></div><div><h3>新しい作業空間のパス</h3><p>空の候補ディレクトリを使います。設定中に既存の作業空間を上書き・移行しません。</p></div><div><h3>出発点</h3><p>未完成のアイデア、名前のある Study、既存 Study の限定作業のどれでも構いません。</p></div></div></section>
+<section class="guide-section" aria-labelledby="study-setup-title"><div class="section-header"><div><p class="section-context">基盤を先に準備</p><h2 id="study-setup-title">研究開始前に必要なもの</h2></div></div><div class="guide-step-list"><article><h3>作業空間 Framework</h3><p><a href="https://github.com/chenhaoran2068/governed-research-workspace-framework/releases/tag/v0.4.0">Governed Research Workspace Framework v0.4.0</a> を導入し、作業空間の骨格と、System、Skills、Study、Knowledge、その他資料の位置を定めます。</p></article><article><h3>Research System</h3><p><a href="https://github.com/chenhaoran2068/governed-research-workflow/releases/tag/v1.16.0">Governed Research Workflow v1.16.0</a> を導入し、アイデア、設計、研究計画書から分析、執筆、投稿、アーカイブまで進めます。</p></article><article><h3>コンポーネントを読み込める AI 環境</h3><p>使用する AI が導入済み Framework と System を読める必要があります。設定方法はツールにより異なります。<code>research-paper-reading v0.3.0</code>、<code>research-ethics v1.1.1</code>、<code>governed-engineering v0.1.1</code> は開始条件ではなく、必要な作業に到達した時に追加します。</p></article></div></section>
 
-<section class="portal-section"><div class="section-header"><div><p class="section-context">コピーして送る</p><h2>まず設定し、その後に開始</h2></div></div><pre class="study-setup-prompt"><code>研究協働用の新しい候補ワークスペースを設定してください。何かを作る前に、提案する空のワークスペースパスを示し、私の確認を待ってください。既存ワークスペースの上書き、移行、読み取り、複製、推測はしないでください。
+<section class="guide-section" aria-labelledby="study-setup-prompt-title"><div class="section-header"><div><p class="section-context">初回設定にそのまま使用</p><h2 id="study-setup-prompt-title">この文章を AI に送る</h2></div></div><p>角括弧内の作業空間名と場所を置き換えてください。AI は基盤を設定・検証してから新規 Study のナビゲーションに入ります。テーマやデータが未定でも構いません。</p><pre class="study-setup-prompt"><code>研究協働用の作業空間を設定し、設定の検証後に新しい研究を始めたいです。&#10;&#10;作業空間名：[例：MyResearch]&#10;作業空間の候補場所：[絶対パスを入力]&#10;協働方式：人と AI の対話モード&#10;&#10;次の作業を許可します。&#10;1. 現在の環境に Governed Research Workspace Framework v0.4.0 と Governed Research Workflow v1.16.0 が導入済みか確認する。&#10;2. 不足している場合、該当する正確な公開 Release の正式手順に従い、候補場所へダウンロード、設定、検証する。他の既存作業空間は変更しない。&#10;3. 作業空間の骨格を作成し、実際の導入場所、版、テスト結果、残る条件を報告する。&#10;4. 設定の検証後、「新しい研究を始めたい」と伝えた場合と同様に新規 Study のナビゲーションへ入る。テーマやデータが未定なら、不足情報を先に尋ねる。&#10;&#10;提案されたルートを私が承認するまで、実際の Study を作らず、実データを読取・複製せず、倫理、データアクセス、登録状態を推測しないでください。</code></pre></section>
 
-確認後、この AI 環境が次の正確な公開 Release を使えるか確認し、候補ワークスペースに設定してください。
-- Governed Research Workspace Framework v0.4.0
-- Governed Research Workflow v1.15.0
-- research-paper-reading v0.3.0
-- research-ethics v1.1.1
-- Governed Engineering v0.1.1
+<section class="guide-section" aria-labelledby="study-start-title"><div class="section-header"><div><p class="section-context">現在地を先に伝える</p><h2 id="study-start-title">チャット欄からこのように始める</h2></div></div><div class="guide-step-list"><article><h3>新しい研究を始める</h3><p>新しい会話を開き、「新しい研究を始めたい」と送ります。テーマ、データ、方法が未整理でも構いません。まず気になっていることを伝えます。</p></article><article><h3>既存 Study を続ける</h3><p>Study 名または正確なルートディレクトリを示し、計画書修正、結果審査、原稿作成、査読対応など現在の作業を伝えます。</p></article><article><h3>アイデアだけ先に話す</h3><p>疑問や着想を直接伝えます。AI は新規 Study、既存プロジェクト、単なる議論を先に区別し、自動で Study を作成したり、データを読んだり、研究設計を決めたりしません。</p></article></div></section>
 
-設定中は、実際の Study を作成しない、データや私有ファイルを読まない、論文をダウンロードしない、事実としての倫理判断を作らない、分析・提出・公開を行わないでください。
+<section class="guide-section" aria-labelledby="study-mode-title"><div class="section-header"><div><p class="section-context">次に進め方を選ぶ</p><h2 id="study-mode-title">協働方式を選ぶ</h2></div></div><div class="boundary-grid"><div><h3>人と AI の対話モード</h3><p>チャット欄に「人と AI の対話モード」と送ります。各段階を一緒に確認、推進、審査します。現在の既定方式です。</p></div><div><h3>AI 自律モード</h3><p>チャット欄に「AI 自律モード」と送ります。範囲、入力、操作、出力、停止条件、人の関門が明確な一部分だけに使い、研究全体を AI に任せるものではありません。</p></div></div></section>
 
-設定を確認した後、私は新しい Study を始めるか、既存 Study を続けるか、アイデアを相談するかを伝えます。</code></pre></section>
+<section class="guide-section" aria-labelledby="study-route-title"><div class="section-header"><div><p class="section-context">完全なルートへ</p><h2 id="study-route-title">その後に通る段階</h2></div></div><div class="guide-summary"><p>研究課題、設計、研究計画書、科学性審査、倫理と届出、主要確認、完全な分析、原稿、投稿、改訂、アーカイブは、<a href="../../systems/governed-research-workflow/">Governed Research Workflow</a> の段階に沿って進みます。倫理または登録資料が必要な時は、第 05 段階で <code>research-ethics</code> を明示して使います。</p></div></section>
 
-<section class="portal-section"><div class="section-header"><div><p class="section-context">その後に始める</p><h2>会話に送る内容</h2></div></div><div class="boundary-grid"><div><h3>新しい Study</h3><p>「新しい研究 Study を始めたい」と送ります。テーマ、データ、方法は後から補足できます。</p></div><div><h3>既存 Study</h3><p>Study 名またはルートディレクトリを示し、計画書修正、結果確認、原稿作成、査読対応など現在の作業を説明します。</p></div><div><h3>モードを選ぶ</h3><p>既定は人と AI の協働です。自律実行は、範囲を限定して明確に承認した作業区間だけで使います。</p></div></div><p>完全なライフサイクル、Study レイアウト、<code>research-ethics</code> を指定できる時点は、<a href="../../systems/governed-research-workflow/">Governed Research Workflow</a> を参照してください。</p></section>
+<p class="guide-boundary-note"><strong>ルート承認前：</strong>実際の Study を作成しないでください。実データの読取・複製や、倫理、登録、データアクセス状態の推測も行いません。</p>
 
 </div>

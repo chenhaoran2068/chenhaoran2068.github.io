@@ -54,7 +54,7 @@
     <article class="catalog-tree-entry" data-component-id="clinical-database">
       <span class="catalog-tree-branch" aria-hidden="true">|_</span>
       <div><h4>Clinical Database</h4><p>面向临床数据库标准化工作的公开方法仓库。</p></div>
-      <a href="https://github.com/chenhaoran2068/Clinical_Database" class="catalog-entry-link">GitHub <span aria-hidden="true">-></span></a>
+      <a href="../methods/clinical-database/" class="catalog-entry-link">查看方法 <span aria-hidden="true">-></span></a>
     </article>
   </div>
 </section>

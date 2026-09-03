@@ -32,10 +32,11 @@ plugins:
             language: en
           nav_translations:
             首页: Home
-            组件: Components
+            组件与方法: Components & methods
             Framework 总览: Frameworks
             System 总览: Systems
             Skills 总览: Skills
+            Methods 总览: Methods
             开始使用: Get started
             外部集成: Integrations
             版本与治理: Releases & governance
@@ -51,10 +52,11 @@ plugins:
             language: ja
           nav_translations:
             首页: ホーム
-            组件: コンポーネント
+            组件与方法: コンポーネントと方法
             Framework 总览: Framework 一覧
             System 总览: System 一覧
             Skills 总览: Skills 一覧
+            Methods 总览: Methods 一覧
             开始使用: はじめる
             外部集成: 外部連携
             版本与治理: リリースとガバナンス
@@ -65,12 +67,14 @@ extra_css:
   - stylesheets/portal.css
 extra_javascript:
   - javascripts/system-route-interactive.js
+  - javascripts/database-access-guide.js
 nav:
   - 首页: index.md
-  - 组件:
+  - 组件与方法:
       - Framework 总览: frameworks/index.md
       - System 总览: systems/index.md
       - Skills 总览: skills/index.md
+      - Methods 总览: methods/index.md
   - 开始使用: user-paths/index.md
   - 外部集成: integrations.md
   - 版本与治理:
