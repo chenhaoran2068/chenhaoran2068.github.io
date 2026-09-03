@@ -21,6 +21,11 @@ LOCALIZED_PORTAL_PAGES = (
     "skills/index.md",
     "skills/research-ethics.md",
     "skills/research-paper-reading.md",
+    "methods/index.md",
+    "methods/clinical-database/index.md",
+    "methods/clinical-database/remote-access.md",
+    "methods/clinical-database/client-setup.md",
+    "methods/clinical-database/troubleshooting.md",
     "user-paths/index.md",
     "user-paths/start-a-study.md",
     "integrations.md",
@@ -140,13 +145,14 @@ class SiteNavigationTests(unittest.TestCase):
         }
 
         self.assertEqual(
-            [label for item in menus["组件"] for label in item],
-            ["Framework 总览", "System 总览", "Skills 总览"],
+            [label for item in menus["组件与方法"] for label in item],
+            ["Framework 总览", "System 总览", "Skills 总览", "Methods 总览"],
         )
         self.assertEqual(
             [label for item in menus["版本与治理"] for label in item],
             ["发布与兼容", "治理边界", "路线图"],
         )
+        self.assertEqual(menus["外部集成"], "integrations.md")
         self.assertIsNone(config["edit_uri"])
 
         override = ROOT / "docs" / "overrides" / "main.html"
@@ -190,7 +196,7 @@ class SiteNavigationTests(unittest.TestCase):
 
     def test_release_page_retains_historical_release_notes_outside_global_navigation(self) -> None:
         page = (DOCS_ROOT / "releases.md").read_text(encoding="utf-8")
-        for version in ("v0.5.3", "v0.5.2", "v0.5.1", "v0.5.0", "v0.4.2", "v0.4.1", "v0.4.0", "v0.3.0", "v0.2.0", "v0.1.0"):
+        for version in ("v0.5.4", "v0.5.3", "v0.5.2", "v0.5.1", "v0.5.0", "v0.4.2", "v0.4.1", "v0.4.0", "v0.3.0", "v0.2.0", "v0.1.0"):
             self.assertIn(f"RELEASE_NOTES_{version}", page)
             self.assertIn(f">{version}</a>", page)
 
@@ -262,10 +268,167 @@ class SiteNavigationTests(unittest.TestCase):
 
         self.assertIn("Zotero", integrations)
         self.assertIn("目前不宣称已支持", integrations)
+        self.assertNotIn("PostgreSQL", integrations)
         for version in ("v0.4.0", "v1.16.0", "v0.3.0", "v1.1.1", "v0.1.1"):
             self.assertIn(version, releases)
         self.assertIn("网站只是组件入口", governance)
         self.assertIn("尚未承诺的方向", roadmap)
+
+    def test_clinical_database_method_and_remote_access_guides_are_complete_and_deidentified(self) -> None:
+        relative_pages = (
+            "methods/clinical-database/index.md",
+            "methods/clinical-database/remote-access.md",
+            "methods/clinical-database/client-setup.md",
+            "methods/clinical-database/troubleshooting.md",
+        )
+        pages_by_locale: dict[str, str] = {}
+        for locale in ("zh", "en", "ja"):
+            content = []
+            for relative_path in relative_pages:
+                source = DOCS_ROOT / relative_path
+                path = source if locale == "zh" else source.with_name(
+                    f"{source.stem}.{locale}.md"
+                )
+                content.append(path.read_text(encoding="utf-8"))
+            pages_by_locale[locale] = "\n".join(content)
+
+        page = pages_by_locale["zh"]
+        config = CONFIG.read_text(encoding="utf-8")
+        javascript = (
+            DOCS_ROOT / "javascripts" / "database-access-guide.js"
+        ).read_text(encoding="utf-8")
+
+        for expected in (
+            "Tailscale 私有网络",
+            "Clinical Database",
+            "申请远端只读访问",
+            "自行建设和维护一套临床数据库",
+            "本页导航",
+            "先确认这些信息",
+            "设备可以先准备到哪一步",
+            "不需要提供普通网络 IP",
+            "当前已验证的实施方式需要 Tailscale IPv4",
+            "tailscale ip -4",
+            "不要默认把完整输出贴进申请",
+            "复制后补全这段申请",
+            "我申请从远端电脑只读访问临床数据库",
+            "申请会进入哪种状态",
+            "可以准备个人只读访问",
+            "申请信息还不完整",
+            "当前条件尚未满足",
+            "当前请求不能批准",
+            "拿到完整资料后再配置",
+            "Windows PowerShell",
+            "macOS shell",
+            "&lt;server-magicdns-name&gt;",
+            "&lt;postgresql-port&gt;",
+            "&lt;database-name&gt;",
+            "&lt;read-only-user&gt;",
+            "&lt;path-to-root-ca.crt&gt;",
+            "verify-full",
+            "PGREQUIREAUTH",
+            "scram-sha-256",
+            "PGCHANNELBINDING",
+            "PGCONNECT_TIMEOUT",
+            "current_database()",
+            "current_user",
+            "transaction_read_only",
+            "pg_stat_ssl",
+            "has_schema_privilege",
+            "has_table_privilege",
+            "BEGIN READ ONLY",
+            "probe_absent",
+            "快速检查清单",
+            "连接成功判定标准",
+            "IMP-DB-002",
+        ):
+            self.assertIn(expected, page)
+
+        for official_domain in (
+            "https://www.postgresql.org/",
+            "https://tailscale.com/",
+            "https://dbeaver.com/",
+            "https://dbeaver.io/",
+        ):
+            self.assertIn(official_domain, page)
+
+        self.assertNotIn("PGPASSWORD =", page)
+        self.assertNotRegex(page, r"\b100\.\d{1,3}\.\d{1,3}\.\d{1,3}\b")
+        self.assertIn("javascripts/database-access-guide.js", config)
+        self.assertIn("navigator.clipboard.writeText", javascript)
+        self.assertIn('role="tab"', page)
+
+        cross_language_requirements = (
+            "Clinical Database",
+            "Tailscale",
+            "PostgreSQL",
+            "Windows",
+            "macOS",
+            "DBeaver",
+            "verify-full",
+            "PGREQUIREAUTH",
+            "scram-sha-256",
+            "PGCHANNELBINDING",
+            "PGCONNECT_TIMEOUT",
+            "current_database()",
+            "current_user",
+            "transaction_read_only",
+            "pg_stat_ssl",
+            "has_schema_privilege",
+            "has_table_privilege",
+            "BEGIN READ ONLY",
+            "probe_absent",
+            "IMP-DB-002",
+            'role="tab"',
+            'role="tabpanel"',
+            "data-copy",
+        )
+        official_prefixes = (
+            "https://www.postgresql.org/",
+            "https://tailscale.com/",
+            "https://dbeaver.com/",
+            "https://dbeaver.io/",
+            "https://github.com/chenhaoran2068/Clinical_Database",
+        )
+        for locale, localized_page in pages_by_locale.items():
+            for expected in cross_language_requirements:
+                self.assertIn(expected, localized_page, locale)
+            for client_panel in (
+                "client-windows-dbeaver-panel",
+                "client-windows-psql-panel",
+                "client-macos-dbeaver-panel",
+                "client-macos-psql-panel",
+            ):
+                self.assertIn(client_panel, localized_page, locale)
+            self.assertEqual(
+                localized_page.count('id="client-windows-dbeaver-panel"'),
+                1,
+                locale,
+            )
+            self.assertEqual(
+                localized_page.count('id="client-windows-psql-panel"'),
+                1,
+                locale,
+            )
+            self.assertEqual(
+                localized_page.count('id="client-macos-dbeaver-panel"'),
+                1,
+                locale,
+            )
+            self.assertEqual(
+                localized_page.count('id="client-macos-psql-panel"'),
+                1,
+                locale,
+            )
+            for url in re.findall(r'https://[^\s"<)]+', localized_page):
+                self.assertTrue(url.startswith(official_prefixes), f"{locale}: {url}")
+
+        integrations = (DOCS_ROOT / "integrations.md").read_text(encoding="utf-8")
+        methods = (DOCS_ROOT / "methods" / "index.md").read_text(encoding="utf-8")
+        catalog = (DOCS_ROOT / "catalog.md").read_text(encoding="utf-8")
+        self.assertNotIn("postgresql-remote-read-only", integrations)
+        self.assertIn('href="clinical-database/"', methods)
+        self.assertIn('href="../methods/clinical-database/"', catalog)
 
     def test_markdown_relative_links_resolve(self) -> None:
         for page in (ROOT / "docs").rglob("*.md"):
@@ -467,6 +630,44 @@ class SiteNavigationTests(unittest.TestCase):
             self.assertEqual(page.count("data-stage-key="), 11)
             self.assertIn("research-ethics", page)
             self.assertIn("governed-engineering", page)
+            self.assertIn('id="stage-inspector-guides"', page)
+            self.assertIn('"guidesTitle"', page)
+
+    def test_localized_homepages_and_clinical_database_pages_keep_layout_parity(self) -> None:
+        homepages = []
+        for locale in ("zh", "en", "ja"):
+            path = DOCS_ROOT / ("index.md" if locale == "zh" else f"index.{locale}.md")
+            homepages.append(path.read_text(encoding="utf-8"))
+
+        self.assertEqual([page.count("<details") for page in homepages], [6, 6, 6])
+        for page in homepages:
+            self.assertIn("Clinical_Database/", page)
+            self.assertIn("00_state/", page)
+            self.assertIn("12_archive/", page)
+
+        for relative_path, expected in (
+            ("methods/clinical-database/index.md", (32, 25)),
+            ("methods/clinical-database/remote-access.md", (4, 0)),
+            ("methods/clinical-database/client-setup.md", (9, 2)),
+            ("methods/clinical-database/troubleshooting.md", (5, 0)),
+        ):
+            source = DOCS_ROOT / relative_path
+            versions = [source, source.with_name(f"{source.stem}.en.md"), source.with_name(f"{source.stem}.ja.md")]
+            for path in versions:
+                page = path.read_text(encoding="utf-8")
+                self.assertEqual(page.count("<section"), expected[0], path.name)
+                self.assertEqual(page.count('role="tab"'), expected[1], path.name)
+
+        troubleshooting = DOCS_ROOT / "methods" / "clinical-database" / "troubleshooting.md"
+        for path in (troubleshooting, troubleshooting.with_name("troubleshooting.en.md"), troubleshooting.with_name("troubleshooting.ja.md")):
+            self.assertEqual(path.read_text(encoding="utf-8").count("<details"), 11, path.name)
+
+        clinical_pages = "\n".join(
+            path.read_text(encoding="utf-8")
+            for path in (DOCS_ROOT / "methods" / "clinical-database").glob("*.md")
+        )
+        self.assertNotIn("CREATE TEMP TABLE", clinical_pages)
+        self.assertNotIn("pg_temp.<approved", clinical_pages)
 
     def test_research_ethics_page_matches_the_stage_five_preparation_chain(self) -> None:
         page = (DOCS_ROOT / "skills" / "research-ethics.md").read_text(

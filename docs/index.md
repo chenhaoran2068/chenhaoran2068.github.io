@@ -38,7 +38,7 @@
     <p>下面用一个工作区例子，说明 Framework、System 和 Skills 可以怎样放在一起使用。</p>
   </div>
   <div class="workspace-map" aria-label="可展开的工作区组件地图">
-    <p class="workspace-tone-legend" aria-label="目录类型颜色标记"><span class="workspace-tone-key workspace-framework-key">Framework 骨架</span><span class="workspace-tone-key workspace-system-key">System</span><span class="workspace-tone-key workspace-skill-key">Skill</span></p>
+    <p class="workspace-tone-legend" aria-label="目录类型颜色标记"><span class="workspace-tone-key workspace-framework-key">Framework 骨架</span><span class="workspace-tone-key workspace-system-key">System</span><span class="workspace-tone-key workspace-skill-key">Skill</span><span class="workspace-tone-key workspace-method-key">Method</span></p>
     <div class="workspace-map-layout">
       <div class="workspace-tree" aria-label="工作区目录">
         <details class="workspace-node workspace-root" open>
@@ -79,7 +79,12 @@
 
             <button class="workspace-file workspace-selectable" type="button" data-map-key="shared"><span class="tree-branch" aria-hidden="true">|-</span><span class="tree-folder">Shared/</span><span class="tree-translation"># 共享材料</span></button>
             <button class="workspace-file workspace-selectable" type="button" data-map-key="knowledge"><span class="tree-branch" aria-hidden="true">|-</span><span class="tree-folder">Knowledge/</span><span class="tree-translation"># 知识服务</span></button>
-            <button class="workspace-file workspace-selectable" type="button" data-map-key="methods"><span class="tree-branch" aria-hidden="true">|-</span><span class="tree-folder">Methods/</span><span class="tree-translation"># 方法与工具</span></button>
+            <details class="workspace-node" open>
+              <summary data-map-key="methods"><span class="tree-marker" aria-hidden="true">&gt;</span><span class="tree-branch" aria-hidden="true">|-</span><span class="tree-folder">Methods/</span><span class="tree-translation"># 方法与工具</span></summary>
+              <div class="workspace-children">
+                <button class="workspace-file workspace-selectable" type="button" data-map-key="clinical-database"><span class="tree-branch" aria-hidden="true">|_</span><span class="tree-folder workspace-method-tone">Clinical_Database/</span><span class="tree-translation"># 标准化临床数据库方法</span></button>
+              </div>
+            </details>
             <details class="workspace-node workspace-study-layout" open>
               <summary data-map-key="instances"><span class="tree-marker" aria-hidden="true">&gt;</span><span class="tree-branch" aria-hidden="true">|-</span><span class="tree-folder">Instances/</span><span class="tree-translation"># 项目实例</span></summary>
               <div class="workspace-children">
@@ -173,7 +178,8 @@
       "audit-governed-delivery": ["audit-governed-delivery", "用于审查工程候选或交付物的可追溯性、测试证据、版本、发布门槛、保留与退役提案。", "它只能报告发现，不能自行批准、发布、安装、删除或提升任何材料。", "https://github.com/chenhaoran2068/governed-engineering/blob/v0.1.1/skills/audit-governed-delivery/SKILL.md", "查看 Skill 规则"],
       shared: ["Shared/", "跨项目可共用但仍需治理的材料区域。其内容应有明确所有者、适用范围和访问边界。", "例如：跨项目可复用的模板，或已审查的公开安全衍生物。共享不表示可自由复制到任意项目，也不等同于公开材料。", "framework/", "查看 Framework 介绍"],
       knowledge: ["Knowledge/", "保存文献阅读、知识卡与可追溯的知识服务材料。它与项目记忆、经验治理和原始论文分别保持边界。", "例如：一篇论文的阅读档案，或可关联来源的知识卡。它们不会只因打上标签就成为正式规则或项目结论。", "integrations/", "查看知识与集成说明"],
-      methods: ["Methods/", "放置可复用的方法、技术路线或特定领域工具的工作区域。", "例如：可复用的方法包、统计或建模脚本框架，或某个领域的工具说明。它不替代某个 Study 的方案、分析合同或结果权威。", "framework/", "查看 Framework 介绍"],
+      methods: ["Methods/", "放置可复用的方法、技术路线或特定领域工具的工作区域。", "例如：可复用的方法包、统计或建模脚本框架，或某个领域的工具说明。它不替代某个 Study 的方案、分析合同或结果权威。", "methods/", "查看 Method 总览"],
+      "clinical-database": ["Clinical_Database/", "用于建设和维护标准化临床数据库的 Method。", "公开仓库提供规则、代码和教程；获准使用的本地工作区可以保存数据处理材料与标准化结果。数据库部署并获得许可后，还可以配置远端只读访问。", "methods/clinical-database/", "查看 Clinical Database"],
       instances: ["Instances/", "存放具体项目或实际工作实例。一项 Study 会在这里建立自己的目录，而不是把方案、数据、分析、结果与手稿混入 System。", "展开下方的 <study-id>/ 可以看到从 00_state/ 到 12_archive/ 的完整目录名称。", "systems/governed-research-workflow/#study-layout-title", "查看完整 Study 布局"],
       "study-layout": ["<study-id>/", "一项实际研究的根目录。它按 00_state/ 到 12_archive/ 分开保存状态、方案、治理资料、数据、分析、结果、手稿、投稿和归档材料。", "这个目录结构由 Governed Research Workflow 提供；它位于 Instances/，不属于 System 本身的规则文件。", "systems/governed-research-workflow/#study-layout-title", "查看完整 Study 布局"],
       "data-raw": ["Data_Raw/", "受控原始材料的工作区区域。访问、复制、处理和保留均应遵守适用的数据权限与项目规则。", "例如：MIMIC-IV、TCGA 等公开数据源。这里只是来源命名示例，不表示数据已下载、获得访问权或可用于任何项目。", "framework/", "查看 Framework 介绍"],

@@ -1,7 +1,7 @@
-<div class="portal-page overview-page">
+<div class="portal-page">
 
-<header class="portal-header"><p class="portal-context">COMPONENT OVERVIEW</p><h1>Skills 一覧</h1><p>Skill は、名前の付いた具体的な作業に集中して使う補助機能です。導入しただけで無関係な作業に自動実行されることはありません。</p></header>
+<header class="portal-header"><p class="portal-context">Skills</p><h1>公開保守している Skills</h1><p>個別に名前を指定して使える専門機能です。System の該当段階で組み合わせることもできますが、自動では起動しません。</p></header>
 
-<section class="portal-section"><div class="component-overview-list"><a href="research-paper-reading/"><strong>research-paper-reading</strong><span>v0.3.0 · 論文の結論から節、段落、文、図表、限界まで順に読み解きます。</span></a><a href="research-ethics/"><strong>research-ethics</strong><span>v1.1.1 · 中国本土の観察研究における倫理・登録準備資料の整理と確認を支援します。</span></a></div></section>
+<section class="portal-section" aria-labelledby="skills-current-title"><div class="section-header"><div><p class="section-context">現在公開保守中</p><h2 id="skills-current-title">今の作業から選ぶ</h2></div><p>まず何をしたいかを確認します。すべてのコンポーネントを先に理解する必要はありません。</p></div><div class="skills-directory"><article class="skills-directory-entry"><div class="skills-directory-meta">Skill<br>v1.1.1</div><div><h3>research-ethics</h3><p>Study の設計が定まり、研究計画書、科学性審査、倫理、届出、登録、データアクセス資料を準備する時に使います。</p></div><a href="research-ethics/" class="skills-entry-link">Skill を見る</a></article><article class="skills-directory-entry"><div class="skills-directory-meta">Skill<br>v0.3.0</div><div><h3>research-paper-reading</h3><p>手元の論文を、研究の結論、本文、図表へと順に理解したい時に使います。</p></div><a href="research-paper-reading/" class="skills-entry-link">Skill を見る</a></article><article class="skills-directory-entry"><div class="skills-directory-meta">Skill package<br>v0.1.1</div><div><h3>Governed Engineering</h3><p>範囲が明確なコード、データベース、データ受領、実行操作、交付審査を扱う時に使います。</p><ul class="skills-package-members"><li>governed-code-change</li><li>governed-database-change</li><li>governed-data-ingestion</li><li>governed-runtime-operation</li><li>audit-governed-delivery</li></ul></div><a href="https://github.com/chenhaoran2068/governed-engineering/releases/tag/v0.1.1" class="skills-entry-link">Release を見る</a></article></div></section>
 
 </div>
