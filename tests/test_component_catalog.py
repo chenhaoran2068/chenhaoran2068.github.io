@@ -119,7 +119,7 @@ class ComponentCatalogTests(unittest.TestCase):
             for component in data["components"]
             if component["component_id"] == "governed-research-workflow"
         )
-        self.assertEqual(research_system["version"], "v1.18.0")
+        self.assertEqual(research_system["version"], "v1.18.1")
 
     def test_catalogue_page_lists_only_catalogue_components(self) -> None:
         data = yaml.safe_load(CATALOG.read_text(encoding="utf-8"))
