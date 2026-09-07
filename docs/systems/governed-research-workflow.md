@@ -8,7 +8,31 @@
 
 <section class="component-section component-summary system-summary">
   <p>当一项研究需要持续保存方案、运行、结果、手稿和返修材料时，使用这个 System。它规定这些材料在 Study 内怎样组织，也保留关键决定的来处。</p>
-  <div class="release-stamp"><span>当前公开 Release</span><strong><a href="https://github.com/chenhaoran2068/governed-research-workflow/releases/tag/v1.16.0">v1.16.0</a></strong></div>
+  <div class="release-stamp"><span>当前公开 Release</span><strong><a href="https://github.com/chenhaoran2068/governed-research-workflow/releases/tag/v1.18.0">v1.18.0</a></strong></div>
+</section>
+
+<section class="component-section" aria-labelledby="study-status-title">
+  <div class="section-header">
+    <div><p class="section-context">v1.18 新增</p><h2 id="study-status-title">一眼看清 Study 现在在哪里</h2></div>
+    <p>在 <code>00_state/study_status_snapshot.json</code> 留下一份简短、可核对的当前状态。</p>
+  </div>
+  <div class="boundary-grid">
+    <div><h3>先记录运行状态</h3><p><code>queued</code> 表示等待开始，<code>active</code> 表示正在推进，<code>paused</code> 表示暂时搁置但可以恢复，<code>stopped</code> 表示当前路线已经终止，<code>archived</code> 表示材料已经收口归档。</p></div>
+    <div><h3>正在推进时写清位置</h3><p>处于 <code>active</code> 时，还要记录当前在 01–11 的哪个阶段、正在处理什么，以及下一步要做的事或等待哪项人工决定。暂停或停止时，要保留原因和恢复条件。</p></div>
+    <div><h3>状态必须由人和项目证据确认</h3><p>模板与校验器只检查字段是否完整、彼此是否矛盾，不会扫描目录猜测状态，也不会证明阶段正确、关卡已通过或某项决定已经获批。</p></div>
+  </div>
+</section>
+
+<section class="component-section" aria-labelledby="paper-repository-title">
+  <div class="section-header">
+    <div><p class="section-context">v1.18 新增</p><h2 id="paper-repository-title">为一篇论文准备可公开的材料仓库</h2></div>
+    <p>默认一篇论文或一项可独立引用的研究产出对应一个仓库；先在 Study 内准备，再由人决定是否发布。</p>
+  </div>
+  <div class="boundary-grid">
+    <div><h3>先选择真实的公开方式</h3><p>根据权利和数据条件，选择合成示例、可再分发数据、仅提供数据获取说明，或只发布研究材料。公开仓库不是完整 Study 的复制品，也不自动包含真实数据和真实结果。</p></div>
+    <div><h3>从允许清单建立干净候选</h3><p>使用模板记录纳入和排除的材料、代码与数据许可、运行方法、预期输出、引用信息和版本。候选必须建在新的干净目录，不能直接把 Study 根目录初始化成 Git 仓库。</p></div>
+    <div><h3>核验后仍需人工批准</h3><p>发布前依次核对范围与权利、敏感信息、可运行性、结果映射和独立审查。System 不会自动创建仓库、提交、推送、打标签或发布 Release。</p></div>
+  </div>
 </section>
 
 <section class="component-section" aria-labelledby="joint-review-title">
