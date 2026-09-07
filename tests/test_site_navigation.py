@@ -118,7 +118,7 @@ class SiteNavigationTests(unittest.TestCase):
             page = (
                 DOCS_ROOT / "user-paths" / f"start-a-study.{locale}.md"
             ).read_text(encoding="utf-8")
-            for version in ("v0.4.0", "v1.18.0", "v0.3.0", "v1.1.1", "v0.1.1"):
+            for version in ("v0.4.0", "v1.18.1", "v0.3.0", "v1.1.1", "v0.1.1"):
                 self.assertIn(version, page)
 
         english = (DOCS_ROOT / "user-paths" / "start-a-study.en.md").read_text(
@@ -196,7 +196,7 @@ class SiteNavigationTests(unittest.TestCase):
 
     def test_release_page_retains_historical_release_notes_outside_global_navigation(self) -> None:
         page = (DOCS_ROOT / "releases.md").read_text(encoding="utf-8")
-        for version in ("v0.5.5", "v0.5.4", "v0.5.3", "v0.5.2", "v0.5.1", "v0.5.0", "v0.4.2", "v0.4.1", "v0.4.0", "v0.3.0", "v0.2.0", "v0.1.0"):
+        for version in ("v0.5.6", "v0.5.5", "v0.5.4", "v0.5.3", "v0.5.2", "v0.5.1", "v0.5.0", "v0.4.2", "v0.4.1", "v0.4.0", "v0.3.0", "v0.2.0", "v0.1.0"):
             self.assertIn(f"RELEASE_NOTES_{version}", page)
             self.assertIn(f">{version}</a>", page)
 
@@ -253,7 +253,7 @@ class SiteNavigationTests(unittest.TestCase):
         self.assertIn("我想做一个研究", study_start)
         self.assertIn("开始研究前需要什么", study_start)
         self.assertIn("Governed Research Workspace Framework v0.4.0", study_start)
-        self.assertIn("Governed Research Workflow v1.18.0", study_start)
+        self.assertIn("Governed Research Workflow v1.18.1", study_start)
         self.assertIn("复制这段话给 AI", study_start)
         self.assertIn("在我接受新研究的路线建议前", study_start)
         self.assertIn("人机交互模式", study_start)
@@ -269,7 +269,7 @@ class SiteNavigationTests(unittest.TestCase):
         self.assertIn("Zotero", integrations)
         self.assertIn("目前不宣称已支持", integrations)
         self.assertNotIn("PostgreSQL", integrations)
-        for version in ("v0.4.0", "v1.18.0", "v0.3.0", "v1.1.1", "v0.1.1"):
+        for version in ("v0.4.0", "v1.18.1", "v0.3.0", "v1.1.1", "v0.1.1"):
             self.assertIn(version, releases)
         self.assertIn("网站只是组件入口", governance)
         self.assertIn("尚未承诺的方向", roadmap)
@@ -527,7 +527,7 @@ class SiteNavigationTests(unittest.TestCase):
         )
         self.assertIn("一次配置当前公开核心组件", homepage)
         self.assertIn("Governed Research Workspace Framework v0.4.0", homepage)
-        self.assertIn("Governed Research Workflow v1.18.0", homepage)
+        self.assertIn("Governed Research Workflow v1.18.1", homepage)
         self.assertIn("research-paper-reading v0.3.0", homepage)
         self.assertIn("research-ethics v1.1.1", homepage)
         self.assertIn("Governed Engineering v0.1.1", homepage)
@@ -639,7 +639,7 @@ class SiteNavigationTests(unittest.TestCase):
             name = "governed-research-workflow.md" if locale == "zh" else f"governed-research-workflow.{locale}.md"
             page = (DOCS_ROOT / "systems" / name).read_text(encoding="utf-8")
             pages.append(page)
-            self.assertIn("v1.18.0", page)
+            self.assertIn("v1.18.1", page)
             self.assertIn("study_status_snapshot.json", page)
             self.assertIn("queued", page)
             self.assertIn("active", page)

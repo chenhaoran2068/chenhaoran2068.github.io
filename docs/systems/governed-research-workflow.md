@@ -8,7 +8,7 @@
 
 <section class="component-section component-summary system-summary">
   <p>当一项研究需要持续保存方案、运行、结果、手稿和返修材料时，使用这个 System。它规定这些材料在 Study 内怎样组织，也保留关键决定的来处。</p>
-  <div class="release-stamp"><span>当前公开 Release</span><strong><a href="https://github.com/chenhaoran2068/governed-research-workflow/releases/tag/v1.18.0">v1.18.0</a></strong></div>
+  <div class="release-stamp"><span>当前公开 Release</span><strong><a href="https://github.com/chenhaoran2068/governed-research-workflow/releases/tag/v1.18.1">v1.18.1</a></strong></div>
 </section>
 
 <section class="component-section" aria-labelledby="study-status-title">
@@ -25,13 +25,14 @@
 
 <section class="component-section" aria-labelledby="paper-repository-title">
   <div class="section-header">
-    <div><p class="section-context">v1.18 新增</p><h2 id="paper-repository-title">为一篇论文准备可公开的材料仓库</h2></div>
+    <div><p class="section-context">v1.18.1 补充</p><h2 id="paper-repository-title">为一篇论文准备可公开的材料仓库</h2></div>
     <p>默认一篇论文或一项可独立引用的研究产出对应一个仓库；先在 Study 内准备，再由人决定是否发布。</p>
   </div>
   <div class="boundary-grid">
     <div><h3>先选择真实的公开方式</h3><p>根据权利和数据条件，选择合成示例、可再分发数据、仅提供数据获取说明，或只发布研究材料。公开仓库不是完整 Study 的复制品，也不自动包含真实数据和真实结果。</p></div>
+    <div><h3>仓库名只保留稳定的识别信息</h3><p>根据研究类型，从研究对象或领域、核心问题、暴露或干预、结局、方法和产出类型中选两到三个稳定元素。完整研究问题与适用的 PICOS 或其他设计信息留在 README 和 Study 摘要中。</p></div>
     <div><h3>从允许清单建立干净候选</h3><p>使用模板记录纳入和排除的材料、代码与数据许可、运行方法、预期输出、引用信息和版本。候选必须建在新的干净目录，不能直接把 Study 根目录初始化成 Git 仓库。</p></div>
-    <div><h3>核验后仍需人工批准</h3><p>发布前依次核对范围与权利、敏感信息、可运行性、结果映射和独立审查。System 不会自动创建仓库、提交、推送、打标签或发布 Release。</p></div>
+    <div><h3>通过审查后再进入 Github/</h3><p>发布记录和审查证据留在 Study 内。名称、范围和候选经人工确认后，只把核验过的干净候选放入 <code>Github/&lt;repository-name&gt;/</code>；不复制整个 Study，也不做双向同步。</p></div>
   </div>
 </section>
 

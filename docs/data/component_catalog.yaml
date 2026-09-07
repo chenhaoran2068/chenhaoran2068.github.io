@@ -23,10 +23,10 @@ components:
     lifecycle: current
     ownership: first_party
     relationship: core_component
-    version: v1.18.0
+    version: v1.18.1
     repository_url: https://github.com/chenhaoran2068/governed-research-workflow
-    release_url: https://github.com/chenhaoran2068/governed-research-workflow/releases/tag/v1.18.0
-    official_rule_url: https://github.com/chenhaoran2068/governed-research-workflow/blob/v1.18.0/SKILL.md
+    release_url: https://github.com/chenhaoran2068/governed-research-workflow/releases/tag/v1.18.1
+    official_rule_url: https://github.com/chenhaoran2068/governed-research-workflow/blob/v1.18.1/SKILL.md
     purpose: Route governed research work, lifecycle control, execution, Results-first manuscript work, human-selected joint-review and writing-requirement stacks, experience boundaries, optional metadata-only knowledge handoffs, and the human decision before protocol lock and formal analysis.
     entry_conditions: Used for possible new Studies and explicitly governed existing-Study tasks.
     non_goals: Does not select a review or writing profile, read Study materials, independently approve ethics, access data, submit work, or decide scientific conclusions.

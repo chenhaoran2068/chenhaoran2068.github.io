@@ -110,6 +110,7 @@ ALLOWED_PUBLIC_FILES = {
     "docs/release/RELEASE_NOTES_v0.5.3.md",
     "docs/release/RELEASE_NOTES_v0.5.4.md",
     "docs/release/RELEASE_NOTES_v0.5.5.md",
+    "docs/release/RELEASE_NOTES_v0.5.6.md",
     "docs/release/RELEASE_NOTES_v0.5.2.md",
     "docs/release/RELEASE_NOTES_v0.5.1.md",
     "docs/release/RELEASE_NOTES_v0.5.0.md",
