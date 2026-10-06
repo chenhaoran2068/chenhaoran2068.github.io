@@ -23,6 +23,7 @@ class ComponentCatalogTests(unittest.TestCase):
                 "research-paper-reading",
                 "governed-engineering",
                 "clinical-database",
+                "clinical-deidentifier",
                 "four-layer-oced-m-framework",
                 "research-workflow-legacy",
                 "llmpet-cat",
@@ -31,7 +32,7 @@ class ComponentCatalogTests(unittest.TestCase):
 
     def test_catalogue_models_type_lifecycle_ownership_and_relation(self) -> None:
         data = yaml.safe_load(CATALOG.read_text(encoding="utf-8"))
-        self.assertEqual(data["catalog_version"], "0.2.6")
+        self.assertEqual(data["catalog_version"], "0.2.7")
         kinds = {"framework", "system", "skill", "method", "tool", "other"}
         lifecycles = {
             "current",

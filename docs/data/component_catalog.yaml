@@ -1,5 +1,5 @@
-catalog_version: 0.2.6
-reviewed_on: 2026-08-24
+catalog_version: 0.2.7
+reviewed_on: 2026-10-06
 components:
   - component_id: workspace-framework
     display_name: Governed Research Workspace Framework
@@ -103,6 +103,22 @@ components:
     show_on_home: false
     show_in_catalog: true
     last_reviewed: 2026-08-10
+  - component_id: clinical-deidentifier
+    display_name: Clinical Deidentifier
+    kind: method
+    lifecycle: current
+    ownership: first_party
+    relationship: method_support
+    version: v0.1.0
+    repository_url: https://github.com/chenhaoran2068/clinical-deidentifier
+    release_url: https://github.com/chenhaoran2068/clinical-deidentifier/releases/tag/v0.1.0
+    official_rule_url: https://github.com/chenhaoran2068/clinical-deidentifier/blob/v0.1.0/PUBLIC_RELEASE_REVIEW_v0.1.0.md
+    purpose: Local Windows tool for irreversible, stable pseudonymization of structured clinical research data with user-confirmed cross-table relationships.
+    entry_conditions: Use only with synthetic data or after separately authorized institutional privacy, security, ethics, and data-governance review.
+    non_goals: Does not de-identify free text, certify anonymity, approve real-patient-data use, or replace project-specific governance.
+    show_on_home: false
+    show_in_catalog: true
+    last_reviewed: 2026-10-06
   - component_id: four-layer-oced-m-framework
     display_name: Four-Layer-OCED-M-Framework
     kind: framework

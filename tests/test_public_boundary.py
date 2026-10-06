@@ -84,6 +84,9 @@ ALLOWED_PUBLIC_FILES = {
     "docs/methods/clinical-database/troubleshooting.md",
     "docs/methods/clinical-database/troubleshooting.en.md",
     "docs/methods/clinical-database/troubleshooting.ja.md",
+    "docs/methods/clinical-deidentifier/index.md",
+    "docs/methods/clinical-deidentifier/index.en.md",
+    "docs/methods/clinical-deidentifier/index.ja.md",
     "docs/user-paths/index.md",
     "docs/user-paths/index.en.md",
     "docs/user-paths/index.ja.md",
@@ -127,7 +130,7 @@ ALLOWED_PUBLIC_FILES = {
     "tests/test_release_links.py",
     "tests/test_reading_skill_route.py",
 }
-LOCAL_BUILD_DIRECTORIES = {".git", "__pycache__", ".venv-docs", "site"}
+LOCAL_BUILD_DIRECTORIES = {".git", "__pycache__", ".venv-docs", ".pytest_cache", "site"}
 
 
 def is_local_build_output(path: Path) -> bool:

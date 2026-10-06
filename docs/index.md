@@ -82,7 +82,8 @@
             <details class="workspace-node" open>
               <summary data-map-key="methods"><span class="tree-marker" aria-hidden="true">&gt;</span><span class="tree-branch" aria-hidden="true">|-</span><span class="tree-folder">Methods/</span><span class="tree-translation"># 方法与工具</span></summary>
               <div class="workspace-children">
-                <button class="workspace-file workspace-selectable" type="button" data-map-key="clinical-database"><span class="tree-branch" aria-hidden="true">|_</span><span class="tree-folder workspace-method-tone">Clinical_Database/</span><span class="tree-translation"># 标准化临床数据库方法</span></button>
+                <button class="workspace-file workspace-selectable" type="button" data-map-key="clinical-database"><span class="tree-branch" aria-hidden="true">|-</span><span class="tree-folder workspace-method-tone">Clinical_Database/</span><span class="tree-translation"># 标准化临床数据库方法</span></button>
+                <p class="framework-tree-line">|_ <a href="methods/clinical-deidentifier/"><strong class="workspace-method-tone">Clinical_Deidentifier/</strong></a> <span class="tree-translation"># 本地不可逆稳定假名化工具</span></p>
               </div>
             </details>
             <details class="workspace-node workspace-study-layout" open>

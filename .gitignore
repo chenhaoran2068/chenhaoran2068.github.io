@@ -2,6 +2,7 @@ _site/
 site/
 site-*/
 .cache/
+.pytest_cache/
 __pycache__/
 *.py[cod]
 .venv/

@@ -55,7 +55,7 @@
       <span class="catalog-tree-branch" aria-hidden="true">|_</span>
       <div><h4>Clinical Database</h4><p>面向临床数据库标准化工作的公开方法仓库。</p></div>
       <a href="../methods/clinical-database/" class="catalog-entry-link">查看方法 <span aria-hidden="true">-></span></a>
-    </article>
+    </article><article class="catalog-tree-entry" data-component-id="clinical-deidentifier"><span class="catalog-tree-branch" aria-hidden="true">|_</span><div><h4>Clinical Deidentifier</h4><p>Windows本地运行的结构化临床研究数据不可逆稳定假名化工具。</p></div><a href="../methods/clinical-deidentifier/" class="catalog-entry-link">查看工具 <span aria-hidden="true">-></span></a></article>
   </div>
 </section>
 
