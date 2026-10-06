@@ -1,3 +1,7 @@
+---
+title: Clinical Deidentifier
+---
+
 <div class="portal-page method-page">
 
 <header class="portal-header"><p class="portal-context">METHOD / TOOL</p><h1>Clinical Deidentifier</h1><p>構造化された臨床研究データを不可逆かつ安定的に仮名化する、Windows向けローカルツールです。</p></header>

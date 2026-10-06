@@ -1,3 +1,7 @@
+---
+title: Clinical Deidentifier
+---
+
 <div class="portal-page method-page">
 
 <header class="portal-header"><p class="portal-context">METHOD / TOOL</p><h1>Clinical Deidentifier</h1><p>A local Windows tool for irreversible, stable pseudonymization of structured clinical research data.</p></header>

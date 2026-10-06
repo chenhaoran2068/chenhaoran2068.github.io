@@ -1,3 +1,7 @@
+---
+title: Clinical Deidentifier
+---
+
 <div class="portal-page method-page">
 
 <header class="portal-header"><p class="portal-context">METHOD / TOOL</p><h1>Clinical Deidentifier</h1><p>Windows 本地运行的结构化临床研究数据不可逆稳定假名化工具。</p></header>
