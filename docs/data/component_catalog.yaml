@@ -109,10 +109,10 @@ components:
     lifecycle: current
     ownership: first_party
     relationship: method_support
-    version: v0.1.0
+    version: v0.2.0
     repository_url: https://github.com/chenhaoran2068/clinical-deidentifier
-    release_url: https://github.com/chenhaoran2068/clinical-deidentifier/releases/tag/v0.1.0
-    official_rule_url: https://github.com/chenhaoran2068/clinical-deidentifier/blob/v0.1.0/PUBLIC_RELEASE_REVIEW_v0.1.0.md
+    release_url: https://github.com/chenhaoran2068/clinical-deidentifier/releases/tag/v0.2.0
+    official_rule_url: https://github.com/chenhaoran2068/clinical-deidentifier/blob/v0.2.0/PUBLIC_RELEASE_REVIEW_v0.2.0.md
     purpose: Local Windows tool for irreversible, stable pseudonymization of structured clinical research data with user-confirmed cross-table relationships.
     entry_conditions: Use only with synthetic data or after separately authorized institutional privacy, security, ethics, and data-governance review.
     non_goals: Does not de-identify free text, certify anonymity, approve real-patient-data use, or replace project-specific governance.
