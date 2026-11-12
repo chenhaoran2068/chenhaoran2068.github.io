@@ -8,7 +8,19 @@
 
 <section class="component-section component-summary system-summary">
   <p>当一项研究需要持续保存方案、运行、结果、手稿和返修材料时，使用这个 System。它规定这些材料在 Study 内怎样组织，也保留关键决定的来处。</p>
-  <div class="release-stamp"><span>当前公开 Release</span><strong><a href="https://github.com/chenhaoran2068/governed-research-workflow/releases/tag/v1.18.1">v1.18.1</a></strong></div>
+  <div class="release-stamp"><span>当前公开 Release</span><strong><a href="https://github.com/chenhaoran2068/governed-research-workflow/releases/tag/v1.21.1">v1.21.1</a></strong></div>
+</section>
+
+<section class="component-section" aria-labelledby="study-root-naming-title">
+  <div class="section-header">
+    <div><p class="section-context">v1.21.1 维护</p><h2 id="study-root-naming-title">新 Study 根目录怎样命名</h2></div>
+    <p>只在准备新建本地 Study 时使用；它不改已有项目。</p>
+  </div>
+  <div class="boundary-grid">
+    <div><h3>统一格式</h3><p>新根目录使用 <code>Research&lt;number&gt;-&lt;lowercase-hyphenated-slug&gt;</code>。<code>Research</code> 的首字母大写，编号紧随其后，主题短语用小写英文和连字符。</p></div>
+    <div><h3>名称不是全部身份</h3><p>根目录、<code>study_id</code>、<code>study_title</code> 和 Framework 的 <code>research_program_id</code> 是不同字段。Program ID 继续使用 Framework 自己的小写规则。</p></div>
+    <div><h3>旧 Study 保持原样</h3><p>旧目录可以保留历史写法。不会为了统一格式而自动扫描、改名、移动或迁移已有 Study。</p></div>
+  </div>
 </section>
 
 <section class="component-section" aria-labelledby="study-status-title">
@@ -25,7 +37,7 @@
 
 <section class="component-section" aria-labelledby="paper-repository-title">
   <div class="section-header">
-    <div><p class="section-context">v1.18.1 补充</p><h2 id="paper-repository-title">为一篇论文准备可公开的材料仓库</h2></div>
+    <div><p class="section-context">v1.21.1 补充</p><h2 id="paper-repository-title">为一篇论文准备可公开的材料仓库</h2></div>
     <p>默认一篇论文或一项可独立引用的研究产出对应一个仓库；先在 Study 内准备，再由人决定是否发布。</p>
   </div>
   <div class="boundary-grid">
