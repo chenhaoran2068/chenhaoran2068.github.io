@@ -32,7 +32,7 @@ class ComponentCatalogTests(unittest.TestCase):
 
     def test_catalogue_models_type_lifecycle_ownership_and_relation(self) -> None:
         data = yaml.safe_load(CATALOG.read_text(encoding="utf-8"))
-        self.assertEqual(data["catalog_version"], "0.2.7")
+        self.assertEqual(data["catalog_version"], "0.2.8")
         kinds = {"framework", "system", "skill", "method", "tool", "other"}
         lifecycles = {
             "current",
@@ -120,7 +120,8 @@ class ComponentCatalogTests(unittest.TestCase):
             for component in data["components"]
             if component["component_id"] == "governed-research-workflow"
         )
-        self.assertEqual(research_system["version"], "v1.18.1")
+        self.assertEqual(research_system["version"], "v1.21.1")
+        self.assertIn("new Study-root naming guidance", research_system["purpose"])
 
     def test_catalogue_page_lists_only_catalogue_components(self) -> None:
         data = yaml.safe_load(CATALOG.read_text(encoding="utf-8"))

@@ -1,5 +1,5 @@
-catalog_version: 0.2.7
-reviewed_on: 2026-10-06
+catalog_version: 0.2.8
+reviewed_on: 2026-11-12
 components:
   - component_id: workspace-framework
     display_name: Governed Research Workspace Framework
@@ -23,16 +23,16 @@ components:
     lifecycle: current
     ownership: first_party
     relationship: core_component
-    version: v1.18.1
+    version: v1.21.1
     repository_url: https://github.com/chenhaoran2068/governed-research-workflow
-    release_url: https://github.com/chenhaoran2068/governed-research-workflow/releases/tag/v1.18.1
-    official_rule_url: https://github.com/chenhaoran2068/governed-research-workflow/blob/v1.18.1/SKILL.md
-    purpose: Route governed research work, lifecycle control, execution, Results-first manuscript work, human-selected joint-review and writing-requirement stacks, experience boundaries, optional metadata-only knowledge handoffs, and the human decision before protocol lock and formal analysis.
+    release_url: https://github.com/chenhaoran2068/governed-research-workflow/releases/tag/v1.21.1
+    official_rule_url: https://github.com/chenhaoran2068/governed-research-workflow/blob/v1.21.1/SKILL.md
+    purpose: Route governed research work, lifecycle control, execution, Results-first manuscript work, human-selected joint-review and writing-requirement stacks, new Study-root naming guidance, experience boundaries, optional metadata-only knowledge handoffs, and the human decision before protocol lock and formal analysis.
     entry_conditions: Used for possible new Studies and explicitly governed existing-Study tasks.
     non_goals: Does not select a review or writing profile, read Study materials, independently approve ethics, access data, submit work, or decide scientific conclusions.
     show_on_home: true
     show_in_catalog: true
-    last_reviewed: 2026-08-24
+    last_reviewed: 2026-11-12
   - component_id: research-ethics
     display_name: research-ethics
     kind: skill
