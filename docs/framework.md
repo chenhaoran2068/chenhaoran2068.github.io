@@ -10,12 +10,12 @@
   <div>
     <p>Framework 给出稳定的工作区骨架：顶层区域、登记文件和绑定位置。</p>
   </div>
-  <div class="release-stamp"><span>当前公开 Release</span><strong><a href="https://github.com/chenhaoran2068/governed-research-workspace-framework/releases/tag/v0.4.0">v0.4.0</a></strong></div>
+  <div class="release-stamp"><span>当前公开 Release</span><strong><a href="https://github.com/chenhaoran2068/governed-research-workspace-framework/releases/tag/v0.6.0">v0.6.0</a></strong></div>
 </section>
 
 <section class="component-section" aria-labelledby="framework-tree-title">
   <div class="section-header">
-    <div><p class="section-context">v0.4.0 参考布局</p><h2 id="framework-tree-title">工作区从这里展开</h2></div>
+    <div><p class="section-context">v0.6.0 参考布局</p><h2 id="framework-tree-title">工作区从这里展开</h2></div>
     <p>点击目录查看说明；示例可按需展开。</p>
   </div>
 

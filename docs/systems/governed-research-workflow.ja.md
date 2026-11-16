@@ -2,7 +2,7 @@
 
 <header class="component-header"><p class="component-kind">System</p><h1>Governed Research Workflow</h1><p>Study を、研究アイデアとデザインから実行・結果、原稿、改訂、アーカイブまで整理します。</p></header>
 
-<section class="component-section component-summary system-summary"><p>研究計画書、実行、結果、原稿、改訂の記録を長く保持する必要がある時に使う System です。これらの資料を Study 内に置き、重要な決定がどこから来たかを残します。</p><div class="release-stamp"><span>現在の公開 Release</span><strong><a href="https://github.com/chenhaoran2068/governed-research-workflow/releases/tag/v1.21.1">v1.21.1</a></strong></div></section>
+<section class="component-section component-summary system-summary"><p>研究計画書、実行、結果、原稿、改訂の記録を長く保持する必要がある時に使う System です。これらの資料を Study 内に置き、重要な決定がどこから来たかを残します。</p><p>v1.21.2 は Framework v0.6.0 との正確な互換関係のみを更新します。ワークスペース配置監査は利用者が明示して実行するものであり、Study 資料を自動で走査、移動、整理しません。</p><div class="release-stamp"><span>現在の公開 Release</span><strong><a href="https://github.com/chenhaoran2068/governed-research-workflow/releases/tag/v1.21.2">v1.21.2</a></strong></div></section>
 
 <section class="component-section" aria-labelledby="study-root-naming-title"><div class="section-header"><div><p class="section-context">v1.21.1 の保守</p><h2 id="study-root-naming-title">新しい Study root の命名</h2></div><p>新しいローカル Study を作る時だけに使い、既存プロジェクトは変更しません。</p></div><div class="boundary-grid"><div><h3>統一形式</h3><p><code>Research&lt;number&gt;-&lt;lowercase-hyphenated-slug&gt;</code> を使います。<code>Research</code> は大文字の R で始め、番号を続け、テーマは小文字の英語とハイフンで書きます。</p></div><div><h3>名前は識別情報の全てではない</h3><p>root、<code>study_id</code>、<code>study_title</code>、Framework の <code>research_program_id</code> は別の項目です。Program ID は Framework の小文字規則を使い続けます。</p></div><div><h3>既存 Study はそのまま</h3><p>過去の root 表記も有効です。この規則のために既存 Study を自動走査、改名、移動、移行することはありません。</p></div></div></section>
 

@@ -32,8 +32,8 @@
 何かを作る前に、提案するワークスペースパスを示し、私の確認を待ってください。既存ワークスペースの上書き、移行、読み取り、複製、推測はしないでください。
 
 確認後、この AI 環境が次の正確な公開 Release を使えるか確認してください。
-- Governed Research Workspace Framework v0.4.0
-- Governed Research Workflow v1.21.1
+- Governed Research Workspace Framework v0.6.0
+- Governed Research Workflow v1.21.2
 - research-paper-reading v0.3.0
 - research-ethics v1.1.1
 - Governed Engineering v0.1.1
