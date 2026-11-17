@@ -8,7 +8,8 @@
 
 <section class="component-section component-summary system-summary">
   <p>当一项研究需要持续保存方案、运行、结果、手稿和返修材料时，使用这个 System。它规定这些材料在 Study 内怎样组织，也保留关键决定的来处。</p>
-  <div class="release-stamp"><span>当前公开 Release</span><strong><a href="https://github.com/chenhaoran2068/governed-research-workflow/releases/tag/v1.21.1">v1.21.1</a></strong></div>
+  <p>v1.21.2 仅更新与 Framework v0.6.0 的精确兼容关系；工作区布局审查仍需由使用者主动点名，不会自动扫描、移动或清理任何 Study 材料。</p>
+  <div class="release-stamp"><span>当前公开 Release</span><strong><a href="https://github.com/chenhaoran2068/governed-research-workflow/releases/tag/v1.21.2">v1.21.2</a></strong></div>
 </section>
 
 <section class="component-section" aria-labelledby="study-root-naming-title">
